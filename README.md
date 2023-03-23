@@ -1,2 +1,2 @@
 # pixel
-deutsch ist eine waffe
+Amtsprache ist Deutsch
