@@ -1,3 +1,7 @@
+# This is the CODEOWNERS file of this repo. It governs who is informed when a file is changed in a certian directory
+# and can approve the PR for it.
 
 * @PlaceDE-Official/developer
+.github/ @DerTiedemann @TheCataliasTNT2k
 pictures/* @PlaceDE-Official/designer
+CODEOWNERS @DerTiedemann @TheCataliasTNT2k
