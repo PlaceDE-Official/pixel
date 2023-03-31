@@ -32,6 +32,9 @@ class Config:
         cfg = cfg.split(";")
         self.min_prio = int(cfg[0] or 10)
         self.max_prio = int(cfg[1] or 250)
+        if self.max_prio < self.min_prio:
+            print(f"'min_prio' muss <= 'max_prio' sein! Konfig: '{self.cfg}'")
+            exit(4)
         self.png_is_base64 = cfg[2].startswith("base64:")
         self.png_path_or_prefix = None if not cfg[2] else cfg[2].removeprefix("base64:")
         self.prio_is_base64 = cfg[3].startswith("base64:")
@@ -231,11 +234,11 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg:
                             prio = cfg.max_prio
                         else:
                             continue
-                if prio <= 0:
-                    continue
+                    if prio <= 0:
+                        continue
                 # check for (illegal) overwrites
                 if data := coords.get((x, y)):
-                    if not cfg.allow_overwrites and not cfg.ignore_prio:
+                    if not cfg.allow_overwrites and cfg.ignore_prio:
                         print(f"Illegal overwrite of pixel ({x}, {y}) with image: '{file}'")
                         success = False
                     else:
