@@ -190,15 +190,20 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg:
     :param ignore_colors: list of hex colors to ignore
     :return:
     """
-    # store aalready present pixels
+    # store already present pixels
     coords: dict[(int, int), (str, int)] = {}
+    # strucutres
+    structures: dict[str, dict[(int, int), (str, int)]] = {}
     # guard for illegal overwrites
     success = True
     for struct in reversed(pixel_config["structure"]):
+        struct2: dict[(int, int), (str, int)] = {}
         # open stuff and prepare
         file = struct["file"]
         priority = int(struct.get("priority"), default_prio)
         priority_file = struct.get("priority_file", None)
+        startx = int(struct.get("startx"))
+        starty = int(struct.get("starty"))
         name = struct["name"]
         print(f"Adding file {file} for structure {name}")
 
@@ -212,7 +217,9 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg:
 
         # for each pixel
         for x in range(input_img.size[0]):
+            x = x + startx
             for y in range(input_img.size[1]):
+                y = y + starty
                 if x >= img.width or y >= img.height:
                     print(f"Ran out of normal image with config: '{cfg.cfg}', Pixel: ({x}, {y}), image: {file}")
                     exit(3)
@@ -246,14 +253,19 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg:
                             continue
                 # store pixel
                 coords.update({(x, y): (hex_color, prio)})
+                struct2.update({(x, y): (hex_color, prio)})
+        structures.update({name: struct2})
 
     # generate json and put pixels into images
-    for coord, data in coords.items():
-        pixels_json.update({coord: {"color": data[0], "prio": data[1]}})
-        img.putpixel((shift_coord(coord[0]), shift_coord(coord[1])), hex_to_col(data[0]))
-        if not cfg.ignore_prio:
-            p = hex_to_col(data[0])[0]
-            prio_img.putpixel((shift_coord(coord[0]), shift_coord(coord[1])), (p, p, p))
+    for name, struct_data in structures.items():
+        temp = {}
+        for coord, data in struct_data.items():
+            temp.update({coord: {"color": data[0], "prio": data[1]}})
+            img.putpixel((shift_coord(coord[0]), shift_coord(coord[1])), hex_to_col(data[0]))
+            if not cfg.ignore_prio:
+                p = hex_to_col(data[0])[0]
+                prio_img.putpixel((shift_coord(coord[0]), shift_coord(coord[1])), (p, p, p))
+        pixels_json.update({name: temp})
     return success
 
 
