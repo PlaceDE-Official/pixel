@@ -217,11 +217,11 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg:
 
         # for each pixel
         for x in range(input_img.size[0]):
-            x = x + startx
+            x1 = x + startx
             for y in range(input_img.size[1]):
-                y = y + starty
-                if x >= img.width or y >= img.height:
-                    print(f"Ran out of normal image with config: '{cfg.cfg}', Pixel: ({x}, {y}), image: {file}")
+                y1 = y + starty
+                if x1 >= img.width or y1 >= img.height:
+                    print(f"Ran out of normal image with config: '{cfg.cfg}', Pixel: ({x1}, {y1}), image: {file}")
                     exit(3)
                 # get color as hex (for json later)
                 color = input_img.getpixel((x, y))
@@ -244,16 +244,16 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg:
                     if prio <= 0:
                         continue
                 # check for (illegal) overwrites
-                if data := coords.get((x, y)):
+                if data := coords.get((x1, y1)):
                     if not cfg.allow_overwrites and cfg.ignore_prio:
-                        print(f"Illegal overwrite of pixel ({x}, {y}) with image: '{file}'")
+                        print(f"Illegal overwrite of pixel ({x1}, {y1}) with image: '{file}'")
                         success = False
                     else:
                         if data[1] >= prio:
                             continue
                 # store pixel
-                coords.update({(x, y): (hex_color, prio)})
-                struct2.update({(x, y): (hex_color, prio)})
+                coords.update({(x1, y1): (hex_color, prio)})
+                struct2.update({(x1, y1): (hex_color, prio)})
         structures.update({name: struct2})
 
     # generate json and put pixels into images
