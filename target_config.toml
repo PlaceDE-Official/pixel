@@ -64,14 +64,14 @@ priority = 127
 name = "subredditstra"
 file = "subredditstra.png"
 startx = -500
-starty = -450
+starty = -420
 priority = 127
 
 [[structure]]
 name = "getraenke"
 file = "getraenke.png"
-startx = -330
-starty = -420
+startx = -280
+starty = -448
 priority = 127
 
 [[structure]]
