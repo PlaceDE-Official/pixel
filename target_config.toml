@@ -28,8 +28,8 @@ priority = 127
 [[structure]]
 name = "ottifant"
 file = "ottifant.png"
-startx = 344
-starty = -448
+startx = 348
+starty = -446
 priority = 127
 
 [[structure]]
@@ -79,4 +79,25 @@ name = "leibniz_keks"
 file = "leibniz_keks.png"
 startx = 50
 starty = -448
+priority = 127
+
+[[structure]]
+name = "ketchup"
+file = "ketchup.png"
+startx = 269
+starty = -441
+priority = 127
+
+[[structure]]
+name = "pombaer"
+file = "pombaer.png"
+startx = 89
+starty = -437
+priority = 127
+
+[[structure]]
+name = "berliner"
+file = "berliner.png"
+startx = 51
+starty = -424
 priority = 127
