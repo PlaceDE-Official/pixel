@@ -110,8 +110,8 @@ starty = -449
 priority = 127
 
 [[structure]]
-name = "euros"
-file = "euros.png"
+name = "muenzen"
+file = "muenzen.png"
 startx = -344
 starty = -449
 priority = 127
@@ -128,4 +128,18 @@ name = "spezhs"
 file = "spezhs.png"
 startx = -140
 starty = -450
+priority = 127
+
+[[structure]]
+name = "euro10"
+file = "euro10.png"
+startx = -339
+starty = -419
+priority = 127
+
+[[structure]]
+name = "euro20"
+file = "euro20.png"
+startx = -339
+starty = -439
 priority = 127
