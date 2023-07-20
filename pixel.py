@@ -56,7 +56,7 @@ def get_nearest_color(hex_color: str) -> str:
     distance = 10 ** 30
     new_hex = None
     for k, v in allowed_colors_dict.items():
-        new_distance = sum([f ** 2 + g ** 2 for f, g in zip(rgb, k)])
+        new_distance = sum([abs(f - g) for f, g in zip(rgb, k)])
         if new_distance < distance:
             new_hex = v
             distance = new_distance
@@ -246,9 +246,9 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 # get color as hex (for json later)
                 color = input_img.getpixel((x, y))
                 hex_color = col_to_hex(color[0], color[1], color[2])
-                #if hex_color not in allowed_colors:
-                #    wrong_colors.add(hex_color)
-                #    hex_color = get_nearest_color(hex_color)
+                if hex_color not in allowed_colors:
+                    wrong_colors.add(hex_color)
+                    hex_color = get_nearest_color(hex_color)
                 if hex_color in ignore_colors:
                     continue
                 # get prio if needed
