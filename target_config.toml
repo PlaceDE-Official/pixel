@@ -26,23 +26,16 @@ starty = -435
 priority = 127
 
 [[structure]]
-name = "ottifant"
-file = "ottifant.png"
-startx = 344
-starty = -448
+name = "ottifant_spezi"
+file = "ottifant_spezi.png"
+startx = 299
+starty = -450
 priority = 127
 
 [[structure]]
 name = "paragraf_eins"
 file = "paragraf_eins.png"
 startx = 170
-starty = -450
-priority = 127
-
-[[structure]]
-name = "spezi"
-file = "spezi.png"
-startx = 300
 starty = -450
 priority = 127
 
