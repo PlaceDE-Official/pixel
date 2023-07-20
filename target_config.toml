@@ -1,0 +1,43 @@
+ignore_colors = [
+    #000000, # filter all black, DO NOT USE "#"!!!
+]
+width = 1000
+height = 1000
+default_prio = 120 # priority: higher number = higher chance of being placed
+
+[[structure]]
+name = "jules_pikachu"
+file = "jules_pikachu.png"
+startx = -6
+starty = -434
+priority = 127
+
+[[structure]]
+name = "ottifant"
+file = "ottifant.png"
+startx = 340
+starty = -450
+priority = 127
+
+[[structure]]
+name = "paragraf_eins"
+file = "paragraf_eins.png"
+startx = 170
+starty = -450
+priority = 127
+
+[[structure]]
+name = "spezi"
+file = "spezi.png"
+startx = 280
+starty = -450
+priority = 127
+
+#example:
+# [[structure]]
+# name = "flagge-ost"
+# file = "flagge-ost.png"
+# priority_file = "flagge-ost_prio.png"
+# startx = 1332
+# starty = 1122
+# priority = 127
