@@ -28,8 +28,8 @@ priority = 127
 [[structure]]
 name = "ottifant"
 file = "ottifant.png"
-startx = 348
-starty = -446
+startx = 344
+starty = -448
 priority = 127
 
 [[structure]]
