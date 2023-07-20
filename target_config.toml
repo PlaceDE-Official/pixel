@@ -8,6 +8,16 @@ add-y = 500
 
 default_prio = 120 # priority: higher number = higher chance of being placed
 
+
+# example:
+# [[structure]]
+# name = "flagge-ost"
+# file = "flagge-ost.png"
+# priority_file = "flagge-ost_prio.png"
+# startx = 1332
+# starty = 1122
+# priority = 127
+
 [[structure]]
 name = "jules_pikachu"
 file = "jules_pikachu.png"
@@ -32,15 +42,34 @@ priority = 127
 [[structure]]
 name = "spezi"
 file = "spezi.png"
-startx = 280
+startx = 300
 starty = -450
 priority = 127
 
-#example:
-# [[structure]]
-# name = "flagge-ost"
-# file = "flagge-ost.png"
-# priority_file = "flagge-ost_prio.png"
-# startx = 1332
-# starty = 1122
-# priority = 127
+[[structure]]
+name = "TUEV"
+file = "TUEV.png"
+startx = -400
+starty = -450
+priority = 127
+
+[[structure]]
+name = "JojoCroc"
+file = "JojoCroc.png"
+startx = 125
+starty = -450
+priority = 127
+
+[[structure]]
+name = "subredditstra"
+file = "subredditstra.png"
+startx = -500
+starty = -450
+priority = 127
+
+[[structure]]
+name = "getraenke"
+file = "getraenke.png"
+startx = -330
+starty = -450
+priority = 127

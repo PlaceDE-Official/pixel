@@ -59,11 +59,8 @@ def hex_to_col(hex_str):
 
     def conv(s):
         return int(s, 16)
-    hex_str = hex_str.removeprefix("#")
 
     return conv(hex_str[1:3]), conv(hex_str[3:5]), conv(hex_str[5:7])
-    # return conv(hex_str[5:7]), conv(hex_str[3:5]), conv(hex_str[1:3])
-
 
 def col_to_hex(r, g, b):
     """
@@ -119,8 +116,8 @@ def save(is_base64: bool, path_or_prefix: str | None, data):
             img_str = base64.b64encode(buffered.getvalue()).decode("ascii")
             print(f"{path_or_prefix}:{img_str}")
         else:
-            parent_path_exists(path_or_prefix,)
-            data.save(path_or_prefix)
+            parent_path_exists(path_or_prefix)
+            data.save(path_or_prefix, bitmap_format="png", format="PNG")
         return
     if isinstance(data, dict):
         data = json.dumps(data)
