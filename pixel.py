@@ -133,13 +133,15 @@ def save(is_base64: bool, path_or_prefix: str | None, data):
         return
 
 
-def work_config(cfg: str, width: int, height: int, default_prio: int, pixel_config: dict, picture_folder: pathlib.Path,
+def work_config(cfg: str, width: int, height: int, add_x: int, add_y: int, default_prio: int, pixel_config: dict, picture_folder: pathlib.Path,
                 ignore_colors: list):
     """
     do the work for one of the configs
     :param cfg: str to parse
     :param width: width of image (referred to as x later)
     :param height: height of image (referred to as y later)
+    :param add_x: added to all x coordinates
+    :param add_y: added to all y coordinates
     :param pixel_config: config with all structures as dict
     :param picture_folder: path for images
     :param ignore_colors: hex colors to be ignored
@@ -173,7 +175,7 @@ def work_config(cfg: str, width: int, height: int, default_prio: int, pixel_conf
 
     # fill images with stuff
     # if this returns false we overwrote some pixels without permission
-    success = generate_data(default_prio, img, prio_img, both_img, cfg, pixels_json, shift_coord, pixel_config, picture_folder,
+    success = generate_data(default_prio, img, prio_img, both_img, cfg, add_x, add_y, pixels_json, shift_coord, pixel_config, picture_folder,
                             ignore_colors)
 
     # save all the generated stuff
@@ -190,8 +192,8 @@ def work_config(cfg: str, width: int, height: int, default_prio: int, pixel_conf
 
 
 def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both_img: Optional[Image], cfg: Config,
-                  pixels_json: dict, shift_coord, pixel_config: dict, picture_folder: pathlib.Path, ignore_colors: list
-                  ):
+                  add_x: int, add_y: int, pixels_json: dict, shift_coord, pixel_config: dict,
+                  picture_folder: pathlib.Path, ignore_colors: list):
     """
     generate all stuff for one config
     :param default_prio: default prio for all structures if structure does not have own prio
@@ -199,6 +201,8 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both
     :param prio_img: will container prio map in black / white later
     :param both_img: will contain pixels later, with assigned prios
     :param cfg: instance of config class
+    :param add_x: added to all x coordinates
+    :param add_y: added to all y coordinates
     :param pixels_json: dict to put pixels into, will be saved as json file later
     :param shift_coord: function to shift coord for overlay images
     :param pixel_config: contains structures
@@ -218,8 +222,10 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both
         file = struct["file"]
         priority = max(int(struct.get("priority"), default_prio), 255)
         priority_file = struct.get("priority_file", None)
-        startx = int(struct.get("startx"))
-        starty = int(struct.get("starty"))
+        startx = int(struct.get("startx")) + add_x
+        assert startx >= 0
+        starty = int(struct.get("starty")) + add_y
+        assert starty >= 0
         name = struct["name"]
         print(f"Adding file {file} for structure {name}")
 
@@ -302,7 +308,8 @@ if __name__ == "__main__":
     pixel_config = toml.load(args.pixel_config)
     ignore_colors = list(pixel_config["ignore_colors"])
     width, height = int(pixel_config["width"]), int(pixel_config["height"])
+    add_x, add_y = int(pixel_config["add-x"]), int(pixel_config["add-y"])
     default_prio = int(pixel_config["default_prio"] or 0)
 
     for cfg in args.config:
-        work_config(cfg, width, height, default_prio, pixel_config, args.picture_folder, ignore_colors)
+        work_config(cfg, width, height, add_x, add_y, default_prio, pixel_config, args.picture_folder, ignore_colors)

@@ -11,7 +11,7 @@ Die Generatorkonfiguration hat folgenes Format:
 
 Erklärung der Pfade:  
 `png_path`: Das generierte Bild  
-`prio_path`: Die generierte Prioritätenmaske in schwarz-weiß (schwarz ist maximale Priorität). Wird nur beachtet, wenn `ip` `0` ist.  
+`prio_path`: Die generierte Prioritätenmaske in Graustufen (schwarz ist maximale Priorität). Wird nur beachtet, wenn `ip` `0` ist.  
 `png_prio_path`: Das generierte Bild mit Farbe und Prio in einem PNG (Prio ist Alpha Kanal). Wird nur beachtet, wenn `ip` `0` ist.  
 `json_path`: Die generierte Json Datei, die vom Overlayskript oder Placerskript angenommen wird
 
@@ -42,6 +42,8 @@ toml Datei:
 `ignore_colors`: alle Farben, die ignoriert werden sollen. Die Farben werden in Hex aber OHNE führendes # angegeben.  
 `width`: Breite des generierten Bildes  
 `height`: Höhe des generierten Bildes  
+`add-x`: Offset x (reddit nutzt negative Koordinaten); nach Addition muss kleinste Koordinate 0 sein!
+`add-y`: Offset y (reddit nutzt negative Koordinaten); nach Addition muss kleinste Koordinate 0 sein!
 `default_prio`: Default Priorität für alle Bilder  
 `structure` (Liste)
 
