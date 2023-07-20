@@ -7,17 +7,17 @@ jobs:
   generate:
     runs-on: ubuntu-latest
       steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-          fetch-depth: 0
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-      - run: pip install -r requirements.txt
-      - run: ./bin/generate.sh
-      - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        - uses: actions/checkout@v3
+          with:
+            persist-credentials: false
+            fetch-depth: 0
+        - uses: actions/setup-python@v4
+          with:
+            python-version: '3.11'
+            cache: 'pip'
+        - run: pip install -r requirements.txt
+        - run: ./bin/generate.sh
+        - name: Commit & Push changes
+          uses: actions-js/push@master
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
