@@ -1,12 +1,25 @@
 import argparse
 import base64
 import json
+import logging
 import pathlib
 from io import BytesIO
 from typing import Optional
 
 import toml
 from PIL import Image
+
+from logger import CustomFormatter
+logger = logging.getLogger("Pixel")
+logger.setLevel(logging.DEBUG)
+
+# create console handler with a higher log level
+ch = logging.StreamHandler()
+ch.setLevel(logging.INFO)
+
+ch.setFormatter(CustomFormatter())
+
+logger.addHandler(ch)
 
 
 class Config:
@@ -35,7 +48,7 @@ class Config:
         self.min_prio = int(cfg[0] or 10)
         self.max_prio = int(cfg[1] or 250)
         if self.max_prio < self.min_prio:
-            print(f"'min_prio' muss <= 'max_prio' sein! Konfig: '{self.cfg}'")
+            logger.error(f"'min_prio' muss <= 'max_prio' sein! Konfig: '{self.cfg}'")
             exit(4)
         self.png_is_base64 = cfg[2].startswith("base64:")
         self.png_path_or_prefix = None if not cfg[2] else cfg[2].removeprefix("base64:")
@@ -87,7 +100,7 @@ def parent_path_exists(path_or_prefix):
     check if parent of given path exists (for saving files)
     """
     if not pathlib.Path(path_or_prefix).parent.exists():
-        print(f"Path '{pathlib.Path(path_or_prefix).parent}' does not exist!")
+        logger.critical(f"Path '{pathlib.Path(path_or_prefix).parent}' does not exist!")
         exit(1)
 
 
@@ -96,13 +109,13 @@ def path_exists(path_or_prefix, is_file=True):
     check if given path exists (for opening files)
     """
     if not pathlib.Path(path_or_prefix).exists():
-        print(f"Path '{pathlib.Path(path_or_prefix)}' does not exist!")
+        logger.critical(f"Path '{pathlib.Path(path_or_prefix)}' does not exist!")
         exit(1)
     if is_file and not pathlib.Path(path_or_prefix).is_file():
-        print(f"Path '{pathlib.Path(path_or_prefix)}' is not a file!")
+        logger.critical(f"Path '{pathlib.Path(path_or_prefix)}' is not a file!")
         exit(1)
     if not is_file and not pathlib.Path(path_or_prefix).is_dir():
-        print(f"Path '{pathlib.Path(path_or_prefix)}' is not a directory!")
+        logger.critical(f"Path '{pathlib.Path(path_or_prefix)}' is not a directory!")
         exit(1)
 
 
@@ -151,6 +164,7 @@ def work_config(cfg: str, picture_folder: str):
     :param picture_folder: folder for input pictures
     :return:
     """
+    logger.info(f"Working config\n    {cfg}")
     cfg = Config(cfg)
 
     # init images
@@ -190,8 +204,9 @@ def work_config(cfg: str, picture_folder: str):
 
     # error if illegal overwrite
     if not success:
-        print(f"Overwrite occurred with config '{cfg.cfg}'")
+        logger.error(f"Overwrite occurred with config '{cfg.cfg}'")
         exit(2)
+    logger.info("DONE with config")
 
 
 def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optional[Image.Image], cfg: Config,
@@ -224,7 +239,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         starty = int(struct.get("starty")) + add_y
         assert starty >= 0
         name = struct["name"]
-        print(f"Adding file {file} for structure {name}")
+        logger.info(f"Adding file {file} for structure {name}")
         wrong_colors = set()
         out_of_image = False
 
@@ -269,7 +284,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 # check for (illegal) overwrites
                 if data := coords.get((x1, y1)):
                     if not cfg.allow_overwrites and cfg.ignore_prio:
-                        print(f"Illegal overwrite of pixel ({x1}, {y1}) with image: '{file}'")
+                        logger.error(f"Illegal overwrite of pixel ({x1}, {y1}) with image: '{file}'")
                         success = False
                     else:
                         if data[1] >= prio:
@@ -279,10 +294,9 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 struct2.update({(x1, y1): (hex_color, prio)})
         structures.update({name: struct2})
         if wrong_colors:
-            print(f"{name} has wrong_colors colors:!\n    {', '.join(wrong_colors)}")
+            logger.warning(f"\"{name}\" has wrong_colors colors!\n    {', '.join(wrong_colors)}")
         if out_of_image:
-            print(f"Warning: Ran out of normal image with config: '{cfg.cfg}', image: {name}")
-
+            logger.warning(f"Ran out of normal image with config: '{cfg.cfg}', image: \"{name}\"")
 
     # generate json and put pixels into images
     for name, struct_data in structures.items():
@@ -291,7 +305,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
             temp.update({",".join(map(str, coord)): {"color": data[0], "prio": data[1]}})
             shifted_coords = (shift_coord(coord[0]), shift_coord(coord[1]))
             if shifted_coords[0] >= img.width or shifted_coords[1] >= img.height:
-                print(
+                logger.error(
                     f"Pixel {shifted_coords} outside of image width size of {img.width}x{img.height}!\nStructure: {name}")
                 exit(1)
             img.putpixel(shifted_coords, hex_to_col(data[0]))
