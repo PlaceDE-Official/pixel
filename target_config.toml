@@ -127,14 +127,14 @@ priority = 127
 name = "euro10"
 file = "euro10.png"
 startx = -339
-starty = -419
+starty = -417
 priority = 127
 
 [[structure]]
 name = "euro20"
 file = "euro20.png"
 startx = -339
-starty = -439
+starty = -437
 priority = 127
 
 [[structure]]
