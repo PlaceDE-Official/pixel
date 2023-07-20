@@ -101,3 +101,24 @@ file = "berliner.png"
 startx = 51
 starty = -424
 priority = 127
+
+[[structure]]
+name = "nospeed"
+file = "nospeed.png"
+startx = -20
+starty = -449
+priority = 127
+
+[[structure]]
+name = "euros"
+file = "euros.png"
+startx = -334
+starty = -449
+priority = 127
+
+[[structure]]
+name = "kippfenster"
+file = "kippfenster.png"
+startx = -426
+starty = -432
+priority = 127
