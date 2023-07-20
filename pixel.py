@@ -3,7 +3,7 @@ import base64
 import json
 import pathlib
 from io import BytesIO
-from typing import Optional
+from typing import Optional, Type
 
 import toml
 from PIL import Image
@@ -62,6 +62,7 @@ def hex_to_col(hex_str):
     hex_str = hex_str.removeprefix("#")
 
     return conv(hex_str[1:3]), conv(hex_str[3:5]), conv(hex_str[5:7])
+    # return conv(hex_str[5:7]), conv(hex_str[3:5]), conv(hex_str[1:3])
 
 
 def col_to_hex(r, g, b):
@@ -111,14 +112,14 @@ def save(is_base64: bool, path_or_prefix: str | None, data):
     """
     if path_or_prefix is None:
         return
-    if isinstance(data, Image):
+    if isinstance(data, Image.Image):
         if is_base64:
             buffered = BytesIO()
             data.save(buffered, format="JPEG")
             img_str = base64.b64encode(buffered.getvalue()).decode("ascii")
             print(f"{path_or_prefix}:{img_str}")
         else:
-            parent_path_exists(path_or_prefix)
+            parent_path_exists(path_or_prefix,)
             data.save(path_or_prefix)
         return
     if isinstance(data, dict):
@@ -191,7 +192,7 @@ def work_config(cfg: str, width: int, height: int, add_x: int, add_y: int, defau
         exit(2)
 
 
-def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both_img: Optional[Image], cfg: Config,
+def generate_data(default_prio: int, img: Image, prio_img: Optional[Image.Image], both_img: Optional[Image.Image], cfg: Config,
                   add_x: int, add_y: int, pixels_json: dict, shift_coord, pixel_config: dict,
                   picture_folder: pathlib.Path, ignore_colors: list):
     """
@@ -220,7 +221,7 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both
         struct2: dict[(int, int), (str, int)] = {}
         # open stuff and prepare
         file = struct["file"]
-        priority = max(int(struct.get("priority"), default_prio), 255)
+        priority = max(int(struct.get("priority", default_prio)), 255)
         priority_file = struct.get("priority_file", None)
         startx = int(struct.get("startx")) + add_x
         assert startx >= 0
@@ -253,7 +254,7 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both
                 # get prio if needed
                 prio = 255
                 if not cfg.ignore_prio:
-                    prio = color[4] if len(color) >= 3 else priority
+                    prio = color[3] if len(color) > 3 else priority
                     if input_prio:
                         prio = input_prio.getpixel((x, y))[0]
                     if prio < cfg.min_prio:
@@ -282,7 +283,7 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both
     for name, struct_data in structures.items():
         temp = {}
         for coord, data in struct_data.items():
-            temp.update({coord: {"color": data[0], "prio": data[1]}})
+            temp.update({",".join(map(str, coord)): {"color": data[0], "prio": data[1]}})
             shifted_coords = (shift_coord(coord[0]), shift_coord(coord[1]))
             if shifted_coords[0] >= img.width or shifted_coords[1] >= img.height:
                 print(f"Pixel {shifted_coords} outside of image width size of {img.width}x{img.height}!\nStructure: {name}")

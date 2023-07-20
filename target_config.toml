@@ -3,6 +3,9 @@ ignore_colors = [
 ]
 width = 1000
 height = 1000
+add-x = 500
+add-y = 500
+
 default_prio = 120 # priority: higher number = higher chance of being placed
 
 [[structure]]
