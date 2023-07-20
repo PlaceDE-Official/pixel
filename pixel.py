@@ -19,6 +19,8 @@ class Config:
     png_path_or_prefix: str | None
     prio_is_base64: bool
     prio_path_or_prefix: str | None
+    both_is_base64: bool
+    both_path_or_prefix: str | None
     json_is_base64: bool
     json_path_or_prefix: str | None
     is_overlay: bool
@@ -39,12 +41,14 @@ class Config:
         self.png_path_or_prefix = None if not cfg[2] else cfg[2].removeprefix("base64:")
         self.prio_is_base64 = cfg[3].startswith("base64:")
         self.prio_path_or_prefix = None if not cfg[3] else cfg[3].removeprefix("base64:")
-        self.json_is_base64 = cfg[4].startswith("base64:")
-        self.json_path_or_prefix = None if not cfg[4] else cfg[4].removeprefix("base64:")
-        self.is_overlay = cfg[5] == "1"
-        self.ignore_prio = cfg[6] == "1"
-        self.allow_overwrites = cfg[7] == "1"
-        self.clamp_max_prio = cfg[8] == "1"
+        self.both_is_base64 = cfg[4].startswith("base64:")
+        self.both_path_or_prefix = None if not cfg[4] else cfg[4].removeprefix("base64:")
+        self.json_is_base64 = cfg[5].startswith("base64:")
+        self.json_path_or_prefix = None if not cfg[5] else cfg[5].removeprefix("base64:")
+        self.is_overlay = cfg[6] == "1"
+        self.ignore_prio = cfg[7] == "1"
+        self.allow_overwrites = cfg[8] == "1"
+        self.clamp_max_prio = cfg[9] == "1"
 
 
 def hex_to_col(hex_str):
@@ -145,6 +149,7 @@ def work_config(cfg: str, width: int, height: int, default_prio: int, pixel_conf
 
     # init images
     prio_img = None
+    both_img = None
     if not cfg.is_overlay:
         img = Image.new("RGBA", (width, height), "#00000000")
 
@@ -153,6 +158,7 @@ def work_config(cfg: str, width: int, height: int, default_prio: int, pixel_conf
 
         if not cfg.ignore_prio:
             prio_img = Image.new("RGBA", (width, height), "#00000000")
+            both_img = Image.new("RGBA", (width, height), "#00000000")
     else:
         img = Image.new("RGBA", (width * 3, height * 3), "#00000000")
 
@@ -161,18 +167,20 @@ def work_config(cfg: str, width: int, height: int, default_prio: int, pixel_conf
 
         if not cfg.ignore_prio:
             prio_img = Image.new("RGBA", (width * 3, height * 3), "#00000000")
+            both_img = Image.new("RGBA", (width * 3, height * 3), "#00000000")
 
     pixels_json = {}
 
     # fill images with stuff
     # if this returns false we overwrote some pixels without permission
-    success = generate_data(default_prio, img, prio_img, cfg, pixels_json, shift_coord, pixel_config, picture_folder,
+    success = generate_data(default_prio, img, prio_img, both_img, cfg, pixels_json, shift_coord, pixel_config, picture_folder,
                             ignore_colors)
 
     # save all the generated stuff
     save(cfg.png_is_base64, cfg.png_path_or_prefix, img)
     if not cfg.ignore_prio:
         save(cfg.prio_is_base64, cfg.prio_path_or_prefix, prio_img)
+        save(cfg.both_is_base64, cfg.both_path_or_prefix, both_img)
     save(cfg.json_is_base64, cfg.json_path_or_prefix, pixels_json)
 
     # error if illegal overwrite
@@ -181,13 +189,15 @@ def work_config(cfg: str, width: int, height: int, default_prio: int, pixel_conf
         exit(2)
 
 
-def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg: Config, pixels_json: dict, shift_coord,
-                  pixel_config: dict, picture_folder: pathlib.Path, ignore_colors: list):
+def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], both_img: Optional[Image], cfg: Config,
+                  pixels_json: dict, shift_coord, pixel_config: dict, picture_folder: pathlib.Path, ignore_colors: list
+                  ):
     """
     generate all stuff for one config
     :param default_prio: default prio for all structures if structure does not have own prio
-    :param img: will containe pixels later
+    :param img: will contain pixels later
     :param prio_img: will container prio map in black / white later
+    :param both_img: will contain pixels later, with assigned prios
     :param cfg: instance of config class
     :param pixels_json: dict to put pixels into, will be saved as json file later
     :param shift_coord: function to shift coord for overlay images
@@ -275,6 +285,7 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image], cfg:
             if not cfg.ignore_prio:
                 p = hex_to_col(data[0])[0]
                 prio_img.putpixel(shifted_coords, (p, p, p))
+                both_img.putpixel(shifted_coords, (*hex_to_col(data[0]), p))
         pixels_json.update({name: temp})
     return success
 

@@ -7,11 +7,12 @@
 - `--config`: Kann mehrfach verwendet werden. Eine Konfiguration für einen Generierungsdurchlauf
 
 Die Generatorkonfiguration hat folgenes Format:  
-`--config min_prio;max_prio;png_path;prio_path;json_path;io;ip;ao;cmp`
+`--config min_prio;max_prio;png_path;prio_path;png_prio_path;json_path;io;ip;ao;cmp`
 
 Erklärung der Pfade:  
 `png_path`: Das generierte Bild  
-`prio_path`: Die generierte Prioritätenmaske in schwarz-weiß (schwarz ist maximale Priorität)  
+`prio_path`: Die generierte Prioritätenmaske in schwarz-weiß (schwarz ist maximale Priorität). Wird nur beachtet, wenn `ip` `0` ist.  
+`png_prio_path`: Das generierte Bild mit Farbe und Prio in einem PNG (Prio ist Alpha Kanal). Wird nur beachtet, wenn `ip` `0` ist.  
 `json_path`: Die generierte Json Datei, die vom Overlayskript oder Placerskript angenommen wird
 
 Die einzelnen Parameter:
@@ -27,12 +28,12 @@ Die einzelnen Parameter:
 |    cmp    |                `0` oder `1`                 |      -       |                                                            Alle Pixel, die eine höhere Priorität haben, als durch `max_prio' festgelegt, werden auf diesen Wert gesetzt                                                             |
 
 `""` kennzeichnen einen "leeren Parameter" (wird dann ignoriert, Bsp: `10;250;;/tmp/prio.png;/tmp/json.png;1;1;1;1`
-oder `;;;/tmp/prio.png;/tmp/json.png;1;1;1;1` würde keine png Datei generieren, aber die Prio Datei)  
+oder `;;;/tmp/prio.png;;/tmp/json.png;1;1;1;1` würde keine png Datei generieren, aber die Prio Datei)  
 Beispiele:  
-`20;200;/tmp/png.png;/tmp/prio.png;/tmp/json.json;0;0;0;0`  
-`20;200;;/tmp/prio.png;/tmp/json.json;1;0;0;0`  
-`20;200;/tmp/png.png;;/tmp/json.json;1;1;0;0`  
-`20;200;/tmp/png.png;/tmp/prio.png;/tmp/json.json;0;0;0;0`
+`20;200;/tmp/png.png;/tmp/prio.png;;/tmp/json.json;0;0;0;0`  
+`20;200;;/tmp/prio.png;;/tmp/json.json;1;0;0;0`  
+`20;200;/tmp/png.png;;/tmp/picture_prio.png;/tmp/json.json;1;1;0;0`  
+`20;200;/tmp/png.png;/tmp/prio.png;;/tmp/json.json;0;0;0;0`
 
 
 ------
