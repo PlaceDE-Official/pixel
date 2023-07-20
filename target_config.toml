@@ -143,3 +143,10 @@ file = "curry.png"
 startx = 400
 starty = -458
 priority = 127
+
+[[structure]]
+name = "din"
+file = "din.png"
+startx = -302
+starty = -450
+priority = 127
