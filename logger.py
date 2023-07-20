@@ -2,7 +2,7 @@ import logging
 
 
 class CustomFormatter(logging.Formatter):
-    grey = "\x1b[30;20m"
+    grey = "\x1b[0m"
     yellow = "\x1b[33;20m"
     red = "\x1b[31;20m"
     bold_red = "\x1b[31;1m"
