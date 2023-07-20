@@ -153,3 +153,10 @@ file = "mango.png"
 startx = 9
 starty = -449
 priority = 127
+
+[[structure]]
+name = "train"
+file = "train.png"
+startx = 412
+starty = -386
+priority = 127
