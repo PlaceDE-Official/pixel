@@ -143,3 +143,10 @@ file = "euro20.png"
 startx = -339
 starty = -439
 priority = 127
+
+[[structure]]
+name = "curry"
+file = "curry.png"
+startx = 408
+starty = -458
+priority = 127
