@@ -1,6 +1,16 @@
 ignore_colors = [
     #000000, # filter all black, DO NOT USE "#"!!!
 ]
+allowed_colors = [
+    "FF4500",
+    "FFA800",
+    "FFD635",
+    "00A368",
+    "3690EA",
+    "B44AC0",
+    "000000",
+    "FFFFFF"
+]
 width = 1000
 height = 1000
 add-x = 500

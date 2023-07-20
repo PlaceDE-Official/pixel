@@ -3,7 +3,7 @@ import base64
 import json
 import pathlib
 from io import BytesIO
-from typing import Optional, Type
+from typing import Optional
 
 import toml
 from PIL import Image
@@ -51,7 +51,19 @@ class Config:
         self.clamp_max_prio = cfg[9] == "1"
 
 
-def hex_to_col(hex_str):
+def get_nearest_color(hex_color: str) -> str:
+    rgb = hex_to_col(hex_color)
+    distance = 10 ** 30
+    new_hex = None
+    for k, v in allowed_colors_dict.items():
+        new_distance = sum([f ** 2 + g ** 2 for f, g in zip(rgb, k)])
+        if new_distance < distance:
+            new_hex = v
+            distance = new_distance
+    return new_hex
+
+
+def hex_to_col(hex_str) -> tuple[int, int, int]:
     """
     convert hex to rgb
     """
@@ -61,6 +73,7 @@ def hex_to_col(hex_str):
         return int(s, 16)
 
     return conv(hex_str[1:3]), conv(hex_str[3:5]), conv(hex_str[5:7])
+
 
 def col_to_hex(r, g, b):
     """
@@ -131,18 +144,11 @@ def save(is_base64: bool, path_or_prefix: str | None, data):
         return
 
 
-def work_config(cfg: str, width: int, height: int, add_x: int, add_y: int, default_prio: int, pixel_config: dict, picture_folder: pathlib.Path,
-                ignore_colors: list):
+def work_config(cfg: str, picture_folder: str):
     """
     do the work for one of the configs
     :param cfg: str to parse
-    :param width: width of image (referred to as x later)
-    :param height: height of image (referred to as y later)
-    :param add_x: added to all x coordinates
-    :param add_y: added to all y coordinates
-    :param pixel_config: config with all structures as dict
-    :param picture_folder: path for images
-    :param ignore_colors: hex colors to be ignored
+    :param picture_folder: folder for input pictures
     :return:
     """
     cfg = Config(cfg)
@@ -173,8 +179,7 @@ def work_config(cfg: str, width: int, height: int, add_x: int, add_y: int, defau
 
     # fill images with stuff
     # if this returns false we overwrote some pixels without permission
-    success = generate_data(default_prio, img, prio_img, both_img, cfg, add_x, add_y, pixels_json, shift_coord, pixel_config, picture_folder,
-                            ignore_colors)
+    success = generate_data(img, prio_img, both_img, cfg, pixels_json, shift_coord, picture_folder)
 
     # save all the generated stuff
     save(cfg.png_is_base64, cfg.png_path_or_prefix, img)
@@ -189,23 +194,17 @@ def work_config(cfg: str, width: int, height: int, add_x: int, add_y: int, defau
         exit(2)
 
 
-def generate_data(default_prio: int, img: Image, prio_img: Optional[Image.Image], both_img: Optional[Image.Image], cfg: Config,
-                  add_x: int, add_y: int, pixels_json: dict, shift_coord, pixel_config: dict,
-                  picture_folder: pathlib.Path, ignore_colors: list):
+def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optional[Image.Image], cfg: Config,
+                  pixels_json: dict, shift_coord, picture_folder: str):
     """
     generate all stuff for one config
-    :param default_prio: default prio for all structures if structure does not have own prio
     :param img: will contain pixels later
     :param prio_img: will container prio map in black / white later
     :param both_img: will contain pixels later, with assigned prios
     :param cfg: instance of config class
-    :param add_x: added to all x coordinates
-    :param add_y: added to all y coordinates
     :param pixels_json: dict to put pixels into, will be saved as json file later
     :param shift_coord: function to shift coord for overlay images
-    :param pixel_config: contains structures
-    :param picture_folder: path for the pictures
-    :param ignore_colors: list of hex colors to ignore
+    :param picture_folder: folder for input pictures
     :return:
     """
     # store already present pixels
@@ -226,6 +225,7 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image.Image]
         assert starty >= 0
         name = struct["name"]
         print(f"Adding file {file} for structure {name}")
+        wrong_colors = set()
 
         p = pathlib.Path(picture_folder).joinpath(file)
         path_exists(p)
@@ -246,6 +246,9 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image.Image]
                 # get color as hex (for json later)
                 color = input_img.getpixel((x, y))
                 hex_color = col_to_hex(color[0], color[1], color[2])
+                if hex_color not in allowed_colors:
+                    wrong_colors.add(hex_color)
+                    hex_color = get_nearest_color(hex_color)
                 if hex_color in ignore_colors:
                     continue
                 # get prio if needed
@@ -275,6 +278,8 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image.Image]
                 coords.update({(x1, y1): (hex_color, prio)})
                 struct2.update({(x1, y1): (hex_color, prio)})
         structures.update({name: struct2})
+        if wrong_colors:
+            print(f"{name} has wrong_colors colors!\n{', '.join(wrong_colors)}")
 
     # generate json and put pixels into images
     for name, struct_data in structures.items():
@@ -283,7 +288,8 @@ def generate_data(default_prio: int, img: Image, prio_img: Optional[Image.Image]
             temp.update({",".join(map(str, coord)): {"color": data[0], "prio": data[1]}})
             shifted_coords = (shift_coord(coord[0]), shift_coord(coord[1]))
             if shifted_coords[0] >= img.width or shifted_coords[1] >= img.height:
-                print(f"Pixel {shifted_coords} outside of image width size of {img.width}x{img.height}!\nStructure: {name}")
+                print(
+                    f"Pixel {shifted_coords} outside of image width size of {img.width}x{img.height}!\nStructure: {name}")
                 exit(1)
             img.putpixel(shifted_coords, hex_to_col(data[0]))
             if not cfg.ignore_prio:
@@ -305,9 +311,11 @@ if __name__ == "__main__":
     path_exists(args.picture_folder, False)
     pixel_config = toml.load(args.pixel_config)
     ignore_colors = list(pixel_config["ignore_colors"])
+    allowed_colors = list(map(str.lower, map(lambda x: f"#{x}", pixel_config["allowed_colors"])))
+    allowed_colors_dict = {hex_to_col(f): f for f in allowed_colors}
     width, height = int(pixel_config["width"]), int(pixel_config["height"])
     add_x, add_y = int(pixel_config["add-x"]), int(pixel_config["add-y"])
     default_prio = int(pixel_config["default_prio"] or 0)
 
     for cfg in args.config:
-        work_config(cfg, width, height, add_x, add_y, default_prio, pixel_config, args.picture_folder, ignore_colors)
+        work_config(cfg, args.picture_folder)
