@@ -63,7 +63,7 @@ priority = 127
 [[structure]]
 name = "subredditstra"
 file = "subredditstra.png"
-startx = -500
+startx = -499
 starty = -420
 priority = 127
 
