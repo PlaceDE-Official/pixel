@@ -246,9 +246,9 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 # get color as hex (for json later)
                 color = input_img.getpixel((x, y))
                 hex_color = col_to_hex(color[0], color[1], color[2])
-                if hex_color not in allowed_colors:
-                    wrong_colors.add(hex_color)
-                    hex_color = get_nearest_color(hex_color)
+                #if hex_color not in allowed_colors:
+                #    wrong_colors.add(hex_color)
+                #    hex_color = get_nearest_color(hex_color)
                 if hex_color in ignore_colors:
                     continue
                 # get prio if needed
