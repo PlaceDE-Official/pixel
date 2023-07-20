@@ -21,8 +21,8 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 [[structure]]
 name = "jules_pikachu"
 file = "jules_pikachu.png"
-startx = -6
-starty = -434
+startx = -7
+starty = -435
 priority = 127
 
 [[structure]]
@@ -71,7 +71,7 @@ priority = 127
 name = "getraenke"
 file = "getraenke.png"
 startx = -330
-starty = -450
+starty = -420
 priority = 127
 
 [[structure]]
