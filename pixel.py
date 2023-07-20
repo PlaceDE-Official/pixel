@@ -226,6 +226,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         name = struct["name"]
         print(f"Adding file {file} for structure {name}")
         wrong_colors = set()
+        out_of_image = False
 
         p = pathlib.Path(picture_folder).joinpath(file)
         path_exists(p)
@@ -241,8 +242,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
             for y in range(input_img.size[1]):
                 y1 = y + starty
                 if x1 >= img.width or y1 >= img.height:
-                    print(f"Ran out of normal image with config: '{cfg.cfg}', Pixel: ({x1}, {y1}), image: {file}")
-                    exit(3)
+                    out_of_image = True
                 # get color as hex (for json later)
                 color = input_img.getpixel((x, y))
                 hex_color = col_to_hex(color[0], color[1], color[2])
@@ -279,7 +279,10 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 struct2.update({(x1, y1): (hex_color, prio)})
         structures.update({name: struct2})
         if wrong_colors:
-            print(f"{name} has wrong_colors colors!\n{', '.join(wrong_colors)}")
+            print(f"{name} has wrong_colors colors:!\n    {', '.join(wrong_colors)}")
+        if out_of_image:
+            print(f"Warning: Ran out of normal image with config: '{cfg.cfg}', image: {name}")
+
 
     # generate json and put pixels into images
     for name, struct_data in structures.items():
