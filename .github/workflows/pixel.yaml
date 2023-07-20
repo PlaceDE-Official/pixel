@@ -40,7 +40,7 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      
+      - run: echo $(git rev-parse HEAD)
       - id: head
         run: echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT" 
 
@@ -53,7 +53,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo  ${{needs.generate.outputs.head}}
+      - run: echo ${{needs.generate.outputs.head}}
       - name: Checkout
         uses: actions/checkout@v3
         with:
