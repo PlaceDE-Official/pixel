@@ -109,7 +109,7 @@ priority = 127
 name = "nospeed"
 file = "nospeed.png"
 startx = -20
-starty = -449
+starty = -450
 priority = 127
 
 [[structure]]
