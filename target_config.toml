@@ -112,7 +112,7 @@ priority = 127
 [[structure]]
 name = "euros"
 file = "euros.png"
-startx = -334
+startx = -344
 starty = -449
 priority = 127
 
@@ -121,4 +121,11 @@ name = "kippfenster"
 file = "kippfenster.png"
 startx = -426
 starty = -432
+priority = 127
+
+[[structure]]
+name = "spezhs"
+file = "spezhs.png"
+startx = 140
+starty = -450
 priority = 127
