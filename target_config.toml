@@ -147,6 +147,6 @@ priority = 127
 [[structure]]
 name = "curry"
 file = "curry.png"
-startx = 408
+startx = 400
 starty = -458
 priority = 127
