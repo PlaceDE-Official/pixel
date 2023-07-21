@@ -223,6 +223,13 @@ startx = 170
 starty = -450
 priority = 127
 
+[[structure]]
+name = "d-ticket"
+file = "d-ticket.png"
+startx = 771
+starty = -418
+priority = 127
+
 # [[structure]]
 # name = "canada"
 # file = "canada.png"
