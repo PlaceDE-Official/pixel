@@ -201,6 +201,20 @@ startx = 550
 starty = -463
 priority = 127
 
+[[structure]]
+name = "d-ticket"
+file = "d-ticket.png"
+startx = 771
+starty = -418
+priority = 127
+
+[[structure]]
+name = "Rettungsfahrzeuge"
+file = "Rettungsfahrzeuge.png"
+startx = 853
+starty = -425
+priority = 127
+
 # AUSERHALB DER FLAGGE:
 
 [[structure]]
@@ -222,13 +236,6 @@ name = "paragraf_einsneu"
 file = "paragraf_einsneu.png"
 startx = 170
 starty = -450
-priority = 127
-
-[[structure]]
-name = "d-ticket"
-file = "d-ticket.png"
-startx = 771
-starty = -418
 priority = 127
 
 # [[structure]]
