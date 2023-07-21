@@ -129,8 +129,8 @@ priority = 127
 [[structure]]
 name = "spezhs"
 file = "spezhs.png"
-startx = -140
-starty = -450
+startx = -137
+starty = -449
 priority = 127
 
 [[structure]]
