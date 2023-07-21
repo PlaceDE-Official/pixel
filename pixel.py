@@ -329,7 +329,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                         break
 
                 if outline_color is not None:
-                    outlines_struct_data[(nx, ny)] = (outline_color, 255)
+                    outlines_struct_data[(nx, ny)] = (outline_color, default_prio)
 
     structures.update({"outlines": outlines_struct_data})
 
