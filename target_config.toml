@@ -177,3 +177,10 @@ file = "Big_Ying_Yang.png"
 startx = -344
 starty = -467
 priority = 127
+
+[[structure]]
+name = "ukrainetemp"
+file = "ukrainetemp.png"
+startx = -79
+starty = -171
+priority = 127
