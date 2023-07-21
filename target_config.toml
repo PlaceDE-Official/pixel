@@ -172,7 +172,12 @@ startx = 299
 starty = -450
 priority = 127
 
-# Radierer
+[[structure]]
+name = "radiergummi"
+file = "radiergummi.png"
+startx = 337
+starty = -415
+priority = 127
 
 [[structure]]
 name = "curryneu"
