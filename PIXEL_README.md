@@ -1,9 +1,9 @@
-# Anleitung für das Pixel Skript:
+# Anleitung für das Pixel-Skript:
 
 ### Das Skript braucht folgende Angaben:
 
 - `picture_folder`: Pfad zum Ordner, in dem die Bilder liegen
-- `pixel_config`: Pfad zur Konfigurationsdatei im TOML Format, welche angibt, welches Bild an welche Stelle muss  
+- `pixel_config`: Pfad zur Konfigurationsdatei im TOML-Format, welche angibt, welches Bild an welche Stelle muss  
 - `--config`: Kann mehrfach verwendet werden. Eine Konfiguration für einen Generierungsdurchlauf
 
 Die Generatorkonfiguration hat folgenes Format:  
@@ -12,8 +12,8 @@ Die Generatorkonfiguration hat folgenes Format:
 Erklärung der Pfade:  
 `png_path`: Das generierte Bild  
 `prio_path`: Die generierte Prioritätenmaske in Graustufen (schwarz ist maximale Priorität). Wird nur beachtet, wenn `ip` `0` ist.  
-`png_prio_path`: Das generierte Bild mit Farbe und Prio in einem PNG (Prio ist Alpha Kanal). Wird nur beachtet, wenn `ip` `0` ist.  
-`json_path`: Die generierte Json Datei, die vom Overlayskript oder Placerskript angenommen wird
+`png_prio_path`: Das generierte Bild mit Farbe und Prio in einem PNG (Prio ist Alpha-Kanal). Wird nur beachtet, wenn `ip` `0` ist.  
+`json_path`: Die generierte JSON-Datei, die vom Overlayskript oder Placerskript angenommen wird
 
 Die einzelnen Parameter:
 
@@ -28,7 +28,7 @@ Die einzelnen Parameter:
 |    cmp    |                `0` oder `1`                 |      -       |                                                            Alle Pixel, die eine höhere Priorität haben, als durch `max_prio' festgelegt, werden auf diesen Wert gesetzt                                                             |
 
 `""` kennzeichnen einen "leeren Parameter" (wird dann ignoriert, Bsp: `10;250;;/tmp/prio.png;/tmp/json.png;1;1;1;1`
-oder `;;;/tmp/prio.png;;/tmp/json.png;1;1;1;1` würde keine png Datei generieren, aber die Prio Datei)  
+oder `;;;/tmp/prio.png;;/tmp/json.png;1;1;1;1` würde keine PNG-Datei generieren, aber die Prio-Datei)  
 Beispiele:  
 `20;200;/tmp/png.png;/tmp/prio.png;;/tmp/json.json;0;0;0;0`  
 `20;200;;/tmp/prio.png;;/tmp/json.json;1;0;0;0`  
@@ -45,7 +45,7 @@ toml Datei:
 `height`: Höhe des generierten Bildes  
 `add-x`: Offset x (reddit nutzt negative Koordinaten); nach Addition muss kleinste Koordinate 0 sein!
 `add-y`: Offset y (reddit nutzt negative Koordinaten); nach Addition muss kleinste Koordinate 0 sein!
-`default_prio`: Default Priorität für alle Bilder  
+`default_prio`: Default-Priorität für alle Bilder  
 `structure` (Liste)
 
 Jedes `structure` hat folgende Werte:
@@ -58,11 +58,11 @@ Jedes `structure` hat folgende Werte:
 |    startx     |         100         |    N     | x (links-nach-rechts) Startwert, an den die Struktur gesetzt werden soll |
 |    starty     |         100         |    N     |  y (oben-nach-unten) Startwert, an den die Struktur gesetzt werden soll  |
 |   priority    |         127         |    J     |     Priorität für Pixel des Bildes, die keine eigene Priorität haben     |
-| overlay_only  |        false        |    J     |     Struktur nur im Overlay Modus übernehmen, nicht in andere Bilder     |
+| overlay_only  |        false        |    J     |     Struktur nur im Overlay-Modus übernehmen, nicht in andere Bilder     |
 
 255 ist die höchste Priorität.
 Die Prioritäten der Pixel werden wie folgt berechnet (last match):
 1. Default prio
 2. Prio der Struktur, falls gegeben
-3. Alpha Channel des Pixels, falls das Bild einen solchen hat
-4. Wert des roten Kanals des entsprechenden Pixels im Prio PNG, falls es ein Prio PNG gibt (die anderen Kanäle werden ignoriert)
+3. Alpha-Channel des Pixels, falls das Bild einen solchen hat
+4. Wert des roten Kanals des entsprechenden Pixels im Prio-PNG, falls es ein Prio-PNG gibt (die anderen Kanäle werden ignoriert)
