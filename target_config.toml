@@ -210,6 +210,13 @@ starty = -463
 priority = 127
 
 [[structure]]
+name = "sandale"
+file = "sandale.png"
+startx = 602
+starty = -415
+priority = 127
+
+[[structure]]
 name = "d-ticket"
 file = "d-ticket.png"
 startx = 771
