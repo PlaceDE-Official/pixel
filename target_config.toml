@@ -191,3 +191,10 @@ file = "maggi.png"
 startx = 469
 starty = -449
 priority = 127
+
+[[structure]]
+name = "pfand"
+file = "pfand.png"
+startx = -486
+starty = -434
+priority = 127
