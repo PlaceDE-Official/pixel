@@ -30,40 +30,7 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # priority = 127
 # overlay_only = false
 
-[[structure]]
-name = "jules_pikachu"
-file = "jules_pikachu.png"
-startx = -3
-starty = -430
-priority = 127
-
-[[structure]]
-name = "ottifant_spezi"
-file = "ottifant_spezi.png"
-startx = 299
-starty = -450
-priority = 127
-
-[[structure]]
-name = "paragraf_einsneu"
-file = "paragraf_einsneu.png"
-startx = 170
-starty = -450
-priority = 127
-
-[[structure]]
-name = "TUEV"
-file = "TUEV.png"
-startx = -400
-starty = -450
-priority = 127
-
-[[structure]]
-name = "JojoCroc"
-file = "JojoCroc.png"
-startx = 125
-starty = -450
-priority = 127
+# FROM LEFT TO RIGHT
 
 [[structure]]
 name = "subredditstra"
@@ -73,44 +40,23 @@ starty = -420
 priority = 127
 
 [[structure]]
-name = "getrankeneu"
-file = "getrankeneu.png"
-startx = -231
-starty = -450
+name = "pfand"
+file = "pfand.png"
+startx = -486
+starty = -434
 priority = 127
 
 [[structure]]
-name = "leibniz_keks"
-file = "leibniz_keks.png"
-startx = 50
-starty = -448
+name = "kippfenster"
+file = "kippfenster.png"
+startx = -426
+starty = -432
 priority = 127
 
 [[structure]]
-name = "ketchup"
-file = "ketchup.png"
-startx = 269
-starty = -441
-priority = 127
-
-[[structure]]
-name = "pombaer"
-file = "pombaer.png"
-startx = 89
-starty = -437
-priority = 127
-
-[[structure]]
-name = "berliner"
-file = "berliner.png"
-startx = 51
-starty = -424
-priority = 127
-
-[[structure]]
-name = "nospeed"
-file = "nospeed.png"
-startx = -20
+name = "TUEV"
+file = "TUEV.png"
+startx = -400
 starty = -450
 priority = 127
 
@@ -122,24 +68,10 @@ starty = -428
 priority = 127
 
 [[structure]]
-name = "kippfenster"
-file = "kippfenster.png"
-startx = -426
-starty = -432
-priority = 127
-
-[[structure]]
-name = "spezadlerkombi"
-file = "spezadlerkombi.png"
-startx = -137
-starty = -449
-priority = 127
-
-[[structure]]
-name = "curryneu"
-file = "curryneu.png"
-startx = 399
-starty = -458
+name = "Big_Ying_Yang"
+file = "Big_Ying_Yang.png"
+startx = -344
+starty = -467
 priority = 127
 
 [[structure]]
@@ -150,59 +82,37 @@ starty = -458
 priority = 127
 
 [[structure]]
+name = "getrankeneu"
+file = "getrankeneu.png"
+startx = -231
+starty = -450
+priority = 127
+
+[[structure]]
+name = "spezadlerkombi"
+file = "spezadlerkombi.png"
+startx = -137
+starty = -449
+priority = 127
+
+[[structure]]
+name = "nospeed"
+file = "nospeed.png"
+startx = -20
+starty = -450
+priority = 127
+
+[[structure]]
+name = "jules_pikachu"
+file = "jules_pikachu.png"
+startx = -3
+starty = -430
+priority = 127
+
+[[structure]]
 name = "mango"
 file = "mango.png"
 startx = 9
-starty = -449
-priority = 127
-
-# [[structure]]
-# name = "alltrains"
-# file = "alltrains.png"
-# startx = -500
-# starty = -406
-# priority = 127
-
-#[[structure]]
-#name = "canada"
-#file = "canada.png"
-#startx = 90
-#starty = 165
-#priority = 127
-#overlay_only = false
-
-[[structure]]
-name = "Big_Ying_Yang"
-file = "Big_Ying_Yang.png"
-startx = -344
-starty = -467
-priority = 127
-
-#[[structure]]
-#name = "ukrainetemp"
-#file = "ukrainetemp.png"
-#startx = -500
-#starty = -500
-#priority = 127
-
-[[structure]]
-name = "maggi"
-file = "maggi.png"
-startx = 469
-starty = -449
-priority = 127
-
-[[structure]]
-name = "pfand"
-file = "pfand.png"
-startx = -486
-starty = -434
-priority = 127
-
-[[structure]]
-name = "Brudimussmal"
-file = "Brudimussmal.png"
-startx = 483
 starty = -449
 priority = 127
 
@@ -214,11 +124,85 @@ starty = -466
 priority = 127
 
 [[structure]]
+name = "leibniz_keks"
+file = "leibniz_keks.png"
+startx = 50
+starty = -448
+priority = 127
+
+[[structure]]
+name = "berliner"
+file = "berliner.png"
+startx = 51
+starty = -424
+priority = 127
+
+[[structure]]
+name = "pombaer"
+file = "pombaer.png"
+startx = 89
+starty = -437
+priority = 127
+
+[[structure]]
+name = "JojoCroc"
+file = "JojoCroc.png"
+startx = 125
+starty = -450
+priority = 127
+
+[[structure]]
+name = "paragraf_einsneu"
+file = "paragraf_einsneu.png"
+startx = 170
+starty = -450
+priority = 127
+
+[[structure]]
+name = "ketchup"
+file = "ketchup.png"
+startx = 269
+starty = -441
+priority = 127
+
+[[structure]]
+name = "ottifant_spezi"
+file = "ottifant_spezi.png"
+startx = 299
+starty = -450
+priority = 127
+
+# Radierer
+
+[[structure]]
+name = "curryneu"
+file = "curryneu.png"
+startx = 399
+starty = -458
+priority = 127
+
+[[structure]]
+name = "maggi"
+file = "maggi.png"
+startx = 469
+starty = -449
+priority = 127
+
+[[structure]]
+name = "Brudimussmal"
+file = "Brudimussmal.png"
+startx = 483
+starty = -449
+priority = 127
+
+[[structure]]
 name = "kasette"
 file = "kasette.png"
 startx = 550
 starty = -463
 priority = 127
+
+# AUSERHALB DER FLAGGE:
 
 [[structure]]
 name = "panzer"
@@ -226,3 +210,25 @@ file = "panzer.png"
 startx = -30
 starty = -174
 priority = 127
+
+# [[structure]]
+# name = "alltrains"
+# file = "alltrains.png"
+# startx = -500
+# starty = -406
+# priority = 127
+
+# [[structure]]
+# name = "canada"
+# file = "canada.png"
+# startx = 90
+# starty = 165
+# priority = 127
+# overlay_only = false
+
+# [[structure]]
+# name = "ukrainetemp"
+# file = "ukrainetemp.png"
+# startx = -500
+# starty = -500
+# priority = 127
