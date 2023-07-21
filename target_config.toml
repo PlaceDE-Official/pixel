@@ -143,8 +143,8 @@ starty = -458
 priority = 127
 
 [[structure]]
-name = "DINFCKAFDneu"
-file = "DINFCKAFDneu.png"
+name = "dinafd"
+file = "dinafd.png"
 startx = -312
 starty = -458
 priority = 127
