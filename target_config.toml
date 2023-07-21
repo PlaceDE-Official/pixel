@@ -169,3 +169,10 @@ file = "canada.png"
 startx = 90
 starty = 165
 priority = 127
+
+[[structure]]
+name = "Bundesadler"
+file = "Bundesadler.png"
+startx = -64
+starty = -440
+priority = 127
