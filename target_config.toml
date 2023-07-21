@@ -145,7 +145,7 @@ priority = 127
 [[structure]]
 name = "dinafd"
 file = "dinafd.png"
-startx = -312
+startx = -307
 starty = -458
 priority = 127
 
