@@ -1,7 +1,8 @@
-ignore_colors = [
-    #000000, # filter all black, DO NOT USE "#"!!!
+ignored_colors = [
+    #000000, # filter black, DO NOT USE "#"!!!
 ]
 allowed_colors = [
+    #000000, # allow black, DO NOT USE "#"!!!
     "FF4500",
     "FFA800",
     "FFD635",
@@ -27,6 +28,7 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # startx = 1332
 # starty = 1122
 # priority = 127
+# overlay_only = false
 
 [[structure]]
 name = "jules_pikachu"

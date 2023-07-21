@@ -240,6 +240,8 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         assert starty >= 0
         name = struct["name"]
         logger.info(f"Adding file {file} for structure {name}")
+        if struct.get("overlay_only", False) and not cfg.is_overlay:
+            continue
         wrong_colors = set()
         out_of_image = False
 
@@ -264,7 +266,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 if hex_color not in allowed_colors:
                     wrong_colors.add(hex_color)
                     hex_color = get_nearest_color(hex_color)
-                if hex_color in ignore_colors:
+                if hex_color in ignored_colors:
                     continue
                 # get prio if needed
                 prio = 255
@@ -327,7 +329,7 @@ if __name__ == "__main__":
     path_exists(args.pixel_config)
     path_exists(args.picture_folder, False)
     pixel_config = toml.load(args.pixel_config)
-    ignore_colors = list(pixel_config["ignore_colors"])
+    ignored_colors = list(pixel_config["ignored_colors"])
     allowed_colors = list(map(str.lower, map(lambda x: f"#{x}", pixel_config["allowed_colors"])))
     allowed_colors_dict = {hex_to_col(f): f for f in allowed_colors}
     width, height = int(pixel_config["width"]), int(pixel_config["height"])
