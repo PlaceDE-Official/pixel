@@ -181,6 +181,6 @@ priority = 127
 [[structure]]
 name = "ukrainetemp"
 file = "ukrainetemp.png"
-startx = -235
-starty = -167
+startx = -500
+starty = -500
 priority = 127
