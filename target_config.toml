@@ -117,18 +117,18 @@ starty = -449
 priority = 127
 
 [[structure]]
+name = "leibniz_keks"
+file = "leibniz_keks.png"
+startx = 50
+starty = -448
+priority = 127
+
+[[structure]]
 name = "bikenl"
 file = "bikenl.png"
 startx = 29
 starty = -466
 priority = 127
-
-[[structure]]
-name = "leibniz_keks"
-file = "leibniz_keks.png"
-startx = 50
-starty = -448
-priority = 120
 
 [[structure]]
 name = "berliner"
@@ -148,13 +148,6 @@ priority = 127
 name = "JojoCroc"
 file = "JojoCroc.png"
 startx = 125
-starty = -450
-priority = 127
-
-[[structure]]
-name = "paragraf_einsneu"
-file = "paragraf_einsneu.png"
-startx = 170
 starty = -450
 priority = 127
 
@@ -221,6 +214,13 @@ name = "alltrains"
 file = "alltrains.png"
 startx = -500
 starty = -406
+priority = 127
+
+[[structure]]
+name = "paragraf_einsneu"
+file = "paragraf_einsneu.png"
+startx = 170
+starty = -450
 priority = 127
 
 # [[structure]]
