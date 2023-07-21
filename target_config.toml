@@ -267,3 +267,4 @@ file = "ukrainetemp.png"
 startx = -500
 starty = -500
 priority = 127
+overlay_only = true
