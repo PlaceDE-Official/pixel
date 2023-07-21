@@ -178,9 +178,9 @@ startx = -344
 starty = -467
 priority = 127
 
-[[structure]]
-name = "ukrainetemp"
-file = "ukrainetemp.png"
-startx = -500
-starty = -500
-priority = 127
+#[[structure]]
+#name = "ukrainetemp"
+#file = "ukrainetemp.png"
+#startx = -500
+#starty = -500
+#priority = 127
