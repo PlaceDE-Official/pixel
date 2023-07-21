@@ -77,29 +77,29 @@ starty = -428
 priority = 127
 
 [[structure]]
-name = "Big_Ying_Yang"
-file = "Big_Ying_Yang.png"
+name = "ying_yang_nl"
+file = "ying_yang_nl.png"
 startx = -344
 starty = -467
 priority = 127
 
 [[structure]]
-name = "DINFCKAFDneuneu"
-file = "DINFCKAFDneuneu.png"
+name = "din_fckafd_kombi"
+file = "din_fckafd_kombi.png"
 startx = -312
 starty = -458
 priority = 127
 
 [[structure]]
-name = "getrankeneu"
-file = "getrankeneu.png"
+name = "getraenke"
+file = "getraenke.png"
 startx = -231
 starty = -450
 priority = 127
 
 [[structure]]
-name = "spezadlerkombi"
-file = "spezadlerkombi.png"
+name = "spez_adler_kombi"
+file = "spez_adler_kombi.png"
 startx = -137
 starty = -449
 priority = 127
@@ -133,8 +133,8 @@ starty = -448
 priority = 127
 
 [[structure]]
-name = "bikenl"
-file = "bikenl.png"
+name = "bike_nl"
+file = "bike_nl.png"
 startx = 29
 starty = -466
 priority = 127
@@ -154,8 +154,8 @@ starty = -437
 priority = 127
 
 [[structure]]
-name = "JojoCroc"
-file = "JojoCroc.png"
+name = "yoyo_croc"
+file = "yoyo_croc.png"
 startx = 125
 starty = -450
 priority = 127
@@ -196,8 +196,8 @@ starty = -449
 priority = 127
 
 [[structure]]
-name = "Brudimussmal"
-file = "Brudimussmal.png"
+name = "brudi_muss_mal"
+file = "brudi_muss_mal.png"
 startx = 483
 starty = -449
 priority = 127
@@ -217,15 +217,22 @@ starty = -449
 priority = 127
 
 [[structure]]
-name = "d-ticket"
-file = "d-ticket.png"
+name = "d_ticket"
+file = "d_ticket.png"
 startx = 771
 starty = -418
 priority = 127
 
 [[structure]]
-name = "Rettungsfahrzeuge"
-file = "Rettungsfahrzeuge.png"
+name = "pumuckl"
+file = "pumuckl.png"
+startx = 725
+starty = -435
+priority = 127
+
+[[structure]]
+name = "rettungsfahrzeuge"
+file = "rettungsfahrzeuge.png"
 startx = 853
 starty = -425
 priority = 127
@@ -247,8 +254,8 @@ starty = -406
 priority = 127
 
 [[structure]]
-name = "paragraf_einsneu"
-file = "paragraf_einsneu.png"
+name = "paragraf_eins"
+file = "paragraf_eins.png"
 startx = 170
 starty = -450
 priority = 127
