@@ -241,6 +241,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         name = struct["name"]
         logger.info(f"Adding file {file} for structure {name}")
         if struct.get("overlay_only", False) and not cfg.is_overlay:
+            logger.info(f"Skipping {name} because it should be skipped on overlays!")
             continue
         wrong_colors = set()
         out_of_image = False
