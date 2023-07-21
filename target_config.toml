@@ -184,3 +184,10 @@ priority = 127
 #startx = -500
 #starty = -500
 #priority = 127
+
+[[structure]]
+name = "maggi"
+file = "maggi.png"
+startx = 469
+starty = -449
+priority = 127
