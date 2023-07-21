@@ -71,10 +71,10 @@ starty = -420
 priority = 127
 
 [[structure]]
-name = "getraenke"
-file = "getraenke.png"
-startx = -280
-starty = -448
+name = "getrankeneu"
+file = "getrankeneu.png"
+startx = -231
+starty = -450
 priority = 127
 
 [[structure]]
@@ -141,9 +141,9 @@ starty = -458
 priority = 127
 
 [[structure]]
-name = "din"
-file = "din.png"
-startx = -302
+name = "DINFCKAFD"
+file = "DINFCKAFD.png"
+startx = -301
 starty = -450
 priority = 127
 
