@@ -205,3 +205,10 @@ file = "Brudimussmal.png"
 startx = 483
 starty = -449
 priority = 127
+
+[[structure]]
+name = "bikenl"
+file = "bikenl.png"
+startx = 29
+starty = -466
+priority = 127
