@@ -198,3 +198,10 @@ file = "pfand.png"
 startx = -486
 starty = -434
 priority = 127
+
+[[structure]]
+name = "Brudimussmal"
+file = "Brudimussmal.png"
+startx = 483
+starty = -449
+priority = 127
