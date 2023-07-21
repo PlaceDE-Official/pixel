@@ -172,8 +172,8 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "yinyangdenl"
-file = "yinyangdenl.png"
-startx = -347
+name = "Big_Ying_Yang"
+file = "Big_Ying_Yang.png"
+startx = -344
 starty = -467
 priority = 127
