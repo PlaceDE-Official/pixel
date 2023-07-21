@@ -45,8 +45,8 @@ starty = -450
 priority = 127
 
 [[structure]]
-name = "paragraf_eins"
-file = "paragraf_eins.png"
+name = "paragraf_einsneu"
+file = "paragraf_einsneu.png"
 startx = 170
 starty = -450
 priority = 127
