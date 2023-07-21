@@ -232,12 +232,12 @@ priority = 127
 
 # AUSERHALB DER FLAGGE:
 
-[[structure]]
-name = "panzer"
-file = "panzer.png"
-startx = -30
-starty = -174
-priority = 127
+#[[structure]]
+#name = "panzer"
+#file = "panzer.png"
+#startx = -30
+#starty = -174
+#priority = 127
 
 [[structure]]
 name = "alltrains"
@@ -261,9 +261,9 @@ priority = 127
 # priority = 127
 # overlay_only = false
 
-# [[structure]]
-# name = "ukrainetemp"
-# file = "ukrainetemp.png"
-# startx = -500
-# starty = -500
-# priority = 127
+[[structure]]
+name = "ukrainetemp"
+file = "ukrainetemp.png"
+startx = -500
+starty = -500
+priority = 127
