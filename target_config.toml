@@ -128,7 +128,7 @@ name = "leibniz_keks"
 file = "leibniz_keks.png"
 startx = 50
 starty = -448
-priority = 127
+priority = 120
 
 [[structure]]
 name = "berliner"
