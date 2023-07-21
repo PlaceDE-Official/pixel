@@ -216,12 +216,12 @@ startx = -30
 starty = -174
 priority = 127
 
-# [[structure]]
-# name = "alltrains"
-# file = "alltrains.png"
-# startx = -500
-# starty = -406
-# priority = 127
+[[structure]]
+name = "alltrains"
+file = "alltrains.png"
+startx = -500
+starty = -406
+priority = 127
 
 # [[structure]]
 # name = "canada"
