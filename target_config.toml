@@ -32,6 +32,10 @@ color = "#FF4500"
 range = [[-500, -410], [499, -391]]
 color = "#FFD635"
 
+[[flag.gold]]
+range = [[-500, -389], [499, -369]]
+color = "#FFD635"
+
 # example:
 # [[structure]]
 # name = "flagge-ost"
