@@ -240,6 +240,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         assert starty >= 0
         name = struct["name"]
         logger.info(f"Adding file {file} for structure {name}")
+        ignore_alpha_channel = struct.get("ignore_prio_in_picture", False)
         if struct.get("overlay_only", False) and not cfg.is_overlay:
             logger.info(f"Skipping {name} because it should be skipped on overlays!")
             continue
@@ -272,7 +273,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 # get prio if needed
                 prio = 255
                 if not cfg.ignore_prio:
-                    prio = color[3] if len(color) > 3 else priority
+                    prio = color[3] if len(color) > 3 and not ignore_alpha_channel else priority
                     if input_prio:
                         prio = input_prio.getpixel((x, y))[0]
                     if prio < cfg.min_prio:

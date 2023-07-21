@@ -3,7 +3,7 @@
 ### Das Skript braucht folgende Angaben:
 
 - `picture_folder`: Pfad zum Ordner, in dem die Bilder liegen
-- `pixel_config`: Pfad zur Konfigurationsdatei im TOML-Format, welche angibt, welches Bild an welche Stelle muss  
+- `pixel_config`: Pfad zur Konfigurationsdatei im TOML-Format, welche angibt, welches Bild an welche Stelle muss
 - `--config`: Kann mehrfach verwendet werden. Eine Konfiguration für einen Generierungsdurchlauf
 
 Die Generatorkonfiguration hat folgenes Format:  
@@ -11,8 +11,10 @@ Die Generatorkonfiguration hat folgenes Format:
 
 Erklärung der Pfade:  
 `png_path`: Das generierte Bild  
-`prio_path`: Die generierte Prioritätenmaske in Graustufen (schwarz ist maximale Priorität). Wird nur beachtet, wenn `ip` `0` ist.  
-`png_prio_path`: Das generierte Bild mit Farbe und Prio in einem PNG (Prio ist Alpha-Kanal). Wird nur beachtet, wenn `ip` `0` ist.  
+`prio_path`: Die generierte Prioritätenmaske in Graustufen (schwarz ist maximale Priorität). Wird nur beachtet,
+wenn `ip` `0` ist.  
+`png_prio_path`: Das generierte Bild mit Farbe und Prio in einem PNG (Prio ist Alpha-Kanal). Wird nur beachtet,
+wenn `ip` `0` ist.  
 `json_path`: Die generierte JSON-Datei, die vom Overlayskript oder Placerskript angenommen wird
 
 Die einzelnen Parameter:
@@ -50,19 +52,22 @@ toml Datei:
 
 Jedes `structure` hat folgende Werte:
 
-|   Parameter   |      Beispiel       | Optional |                               Beschreibung                               |
-|:-------------:|:-------------------:|:--------:|:------------------------------------------------------------------------:|
-|     name      |     flagge-ost      |    N     |                  Name der Struktur, muss eindeutig sein                  |
-|     file      |   flagge-ost.png    |    N     |                  Dateiname, relativ zu `picture_folder`                  |
-| priority_file | flagge-ost-prio.png |    J     |         Dateiname für die Priodatei, relativ zu `picture_folder`         |
-|    startx     |         100         |    N     | x (links-nach-rechts) Startwert, an den die Struktur gesetzt werden soll |
-|    starty     |         100         |    N     |  y (oben-nach-unten) Startwert, an den die Struktur gesetzt werden soll  |
-|   priority    |         127         |    J     |     Priorität für Pixel des Bildes, die keine eigene Priorität haben     |
-| overlay_only  |        false        |    J     |     Struktur nur im Overlay-Modus übernehmen, nicht in andere Bilder     |
+|       Parameter        |      Beispiel       | Optional |                               Beschreibung                               |
+|:----------------------:|:-------------------:|:--------:|:------------------------------------------------------------------------:|
+|          name          |     flagge-ost      |    N     |                  Name der Struktur, muss eindeutig sein                  |
+|          file          |   flagge-ost.png    |    N     |                  Dateiname, relativ zu `picture_folder`                  |
+|     priority_file      | flagge-ost-prio.png |    J     |         Dateiname für die Priodatei, relativ zu `picture_folder`         |
+|         startx         |         100         |    N     | x (links-nach-rechts) Startwert, an den die Struktur gesetzt werden soll |
+|         starty         |         100         |    N     |  y (oben-nach-unten) Startwert, an den die Struktur gesetzt werden soll  |
+|        priority        |         127         |    J     |     Priorität für Pixel des Bildes, die keine eigene Priorität haben     |
+|      overlay_only      |        false        |    J     |     Struktur nur im Overlay-Modus übernehmen, nicht in andere Bilder     |
+| ignore_prio_in_picture |        false        |    J     |     Deaktiviert die "Alphachannelprio" aus dem Bild (siehe 3. unten)     |
 
 255 ist die höchste Priorität.
 Die Prioritäten der Pixel werden wie folgt berechnet (last match):
+
 1. Default prio
 2. Prio der Struktur, falls gegeben
 3. Alpha-Channel des Pixels, falls das Bild einen solchen hat
-4. Wert des roten Kanals des entsprechenden Pixels im Prio-PNG, falls es ein Prio-PNG gibt (die anderen Kanäle werden ignoriert)
+4. Wert des roten Kanals des entsprechenden Pixels im Prio-PNG, falls es ein Prio-PNG gibt (die anderen Kanäle werden
+   ignoriert)
