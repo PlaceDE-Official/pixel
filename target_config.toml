@@ -212,3 +212,10 @@ file = "bikenl.png"
 startx = 29
 starty = -466
 priority = 127
+
+[[structure]]
+name = "kasette"
+file = "kasette.png"
+startx = 550
+starty = -463
+priority = 127
