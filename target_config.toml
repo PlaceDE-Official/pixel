@@ -136,9 +136,9 @@ starty = -449
 priority = 127
 
 [[structure]]
-name = "curry"
-file = "curry.png"
-startx = 400
+name = "curryneu"
+file = "curryneu.png"
+startx = 399
 starty = -458
 priority = 127
 
