@@ -216,12 +216,12 @@ startx = 602
 starty = -449
 priority = 127
 
-# [[structure]]
-# name = "aspen_schuessel."
-# file = "aspen_schuessel.png"
-# startx = 639
-# starty = -441
-# priority = 127
+[[structure]]
+name = "aspen_schuessel."
+file = "aspen_schuessel.png"
+startx = 639
+starty = -441
+priority = 127
 
 [[structure]]
 name = "d_ticket"
