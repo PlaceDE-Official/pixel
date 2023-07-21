@@ -169,7 +169,7 @@ file = "canada.png"
 startx = 90
 starty = 165
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "yinyangdenl"
