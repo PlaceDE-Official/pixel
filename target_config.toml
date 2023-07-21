@@ -185,3 +185,11 @@ file = "canada.png"
 startx = 90
 starty = 165
 priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Big_Ying_Yang"
+file = "Big_Ying_Yang.png"
+startx = -344
+starty = -467
+priority = 127
