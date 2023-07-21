@@ -10,6 +10,7 @@ import toml
 from PIL import Image
 
 from logger import CustomFormatter
+
 logger = logging.getLogger("Pixel")
 logger.setLevel(logging.DEBUG)
 
@@ -301,6 +302,37 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         if out_of_image:
             logger.warning(f"Ran out of normal image with config: '{cfg.cfg}', image: \"{name}\"")
 
+    # generate outlines
+    all_non_empty_coords = set()
+    for name, struct_data in structures.items():
+        all_non_empty_coords |= struct_data.keys()
+
+    def _empty_neighbours(_x, _y):
+        for _nx, _ny in [(_x - 1, _y - 1), (_x, _y - 1), (_x + 1, _y - 1),
+                         (_x + 1, _y), (_x + 1, _y + 1), (_x, _y + 1),
+                         (_x - 1, _y + 1), (_x - 1, _y)]:
+            if (_nx, _ny) not in all_non_empty_coords and (0 <= _nx < width) and (0 <= _ny < height):
+                yield _nx, _ny
+
+    outlines_struct_data = {}
+    for name, struct_data in structures.items():
+        for (x, y), data in struct_data.items():
+            for nx, ny in _empty_neighbours(x, y):
+                outline_color = None
+                for flag_sections in flag_config.values():
+                    for flag_section in flag_sections:
+                        (sx, sy), (ex, ey) = flag_section["range"]
+                        if (sx + add_x) <= nx <= (ex + add_x) and (sy + add_y) <= ny <= (ey + add_y):
+                            outline_color = flag_section["color"]
+                            break
+                    if outline_color is not None:
+                        break
+
+                if outline_color is not None:
+                    outlines_struct_data[(nx, ny)] = (outline_color, 255)
+
+    structures.update({"outlines": outlines_struct_data})
+
     # generate json and put pixels into images
     for name, struct_data in structures.items():
         temp = {}
@@ -336,6 +368,7 @@ if __name__ == "__main__":
     width, height = int(pixel_config["width"]), int(pixel_config["height"])
     add_x, add_y = int(pixel_config["add-x"]), int(pixel_config["add-y"])
     default_prio = int(pixel_config["default_prio"] or 0)
+    flag_config = pixel_config["flag"]
 
     for cfg in args.config:
         work_config(cfg, args.picture_folder)
