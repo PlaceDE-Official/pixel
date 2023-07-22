@@ -273,7 +273,16 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 # get prio if needed
                 prio = 255
                 if not cfg.ignore_prio:
-                    prio = color[3] if len(color) > 3 and not ignore_alpha_channel else priority
+                    if ignore_alpha_channel:
+                        if len(color) > 3:
+                            if cfg.min_prio <= color[3] <= cfg.max_prio:
+                                prio = priority
+                            else:
+                                continue
+                        else:
+                            prio = priority
+                    else:
+                        prio = color[3] if len(color) > 3 else priority
                     if input_prio:
                         prio = input_prio.getpixel((x, y))[0]
                     if prio < cfg.min_prio:
