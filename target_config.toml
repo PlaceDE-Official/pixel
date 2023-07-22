@@ -300,7 +300,7 @@ priority = 127
 [[structure]]
 name = "netherlands"
 file = "netherlands.png"
-startx = -500
+startx = -1000
 starty = -500
 priority = 126
 overlay_only = false
