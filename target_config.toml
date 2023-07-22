@@ -3,7 +3,7 @@ allowed_colors = ["FF4500","FFA800","FFD635","00A368","7EED56","2450A4","3690EA"
 width = 2000
 height = 1500
 add-x = 1000
-add-y = 100
+add-y = 1000
 default_prio = 120
 
 [[structure]]
