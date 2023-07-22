@@ -260,8 +260,9 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
             x1 = x + startx
             for y in range(input_img.size[1]):
                 y1 = y + starty
-                if x1 >= img.width or y1 >= img.height:
+                if shift_coord(x1) >= img.width or shift_coord(y1) >= img.height:
                     out_of_image = True
+                    continue
                 # get color as hex (for json later)
                 color = input_img.getpixel((x, y))
                 hex_color = col_to_hex(color[0], color[1], color[2])
