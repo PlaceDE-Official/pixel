@@ -42,6 +42,20 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # FROM LEFT TO RIGHT
 
 [[structure]]
+name = "was_ist_was"
+file = "was_ist_was.png"
+startx = -788
+starty = -429
+priority = 127
+
+[[structure]]
+name = "trabi_mauer"
+file = "trabi_mauer.png"
+startx = -731
+starty = -442
+priority = 127
+
+[[structure]]
 name = "subredditstra"
 file = "subredditstra.png"
 startx = -499
@@ -242,13 +256,6 @@ name = "rettungsfahrzeuge"
 file = "rettungsfahrzeuge.png"
 startx = 854
 starty = -424
-priority = 127
-
-[[structure]]
-name = "Was_ist_Was"
-file = "Was_ist_Was.png"
-startx = -788
-starty = -429
 priority = 127
 
 # AUSERHALB DER FLAGGE:
