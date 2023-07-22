@@ -1,11 +1,45 @@
-ignored_colors = []
-allowed_colors = ["FF4500","FFA800","FFD635","00A368","7EED56","2450A4","3690EA","51E9F4","811E9F","B44AC0","FF99AA","9C6926","000000","898D90","D4D7D9","FFFFFF"]
+ignored_colors = [
+    #000000, # filter black, DO NOT USE "#"!!!
+]
+allowed_colors = [
+    #000000, # allow black, DO NOT USE "#"!!!
+    "FF4500",
+    "FFA800",
+    "FFD635",
+    "00A368",
+    "7EED56",
+    "2450A4",
+    "3690EA",
+    "51E9F4",
+    "811E9F",
+    "B44AC0",
+    "FF99AA",
+    "9C6926",
+    "000000",
+    "898D90",
+    "D4D7D9",
+    "FFFFFF"
+]
 width = 2000
 height = 1000
 add-x = 1000
 add-y = 500
-default_prio = 120
 
+default_prio = 120 # priority: higher number = higher chance of being placed
+
+
+# example:
+# [[structure]]
+# name = "flagge-ost"
+# file = "flagge-ost.png"
+# priority_file = "flagge-ost_prio.png"
+# startx = 1332
+# starty = 1122
+# priority = 127
+# overlay_only = false
+# prio_in_picture = false
+
+# FROM LEFT TO RIGHT
 [[structure]]
 name = "subredditstra"
 file = "subredditstra.png"
@@ -58,7 +92,7 @@ priority = 127
 [[structure]]
 name = "TUEV"
 file = "TUEV.png"
-startx = -40
+startx = -400
 starty = -450
 priority = 127
 
@@ -251,12 +285,29 @@ startx = 854
 starty = -426
 priority = 127
 
+# AUSERHALB DER FLAGGE:
+
+#[[structure]]
+#name = "panzer"
+#file = "panzer.png"
+#startx = -30
+#starty = -174
+#priority = 127
+
 [[structure]]
 name = "alltrains"
 file = "alltrains.png"
 startx = -1000
 starty = -392
 priority = 127
+
+# [[structure]]
+# name = "canada"
+# file = "canada.png"
+# startx = 90
+# starty = 165
+# priority = 127
+# overlay_only = false
 
 [[structure]]
 name = "ukrainetemp"
@@ -265,6 +316,14 @@ startx = -1000
 starty = -500
 priority = 127
 overlay_only = false
+
+# [[structure]]
+# name = "netherlands"
+# file = "netherlands.png"
+# startx = -1000
+# starty = -500
+# priority = 126
+# overlay_only = false
 
 [[structure]]
 name = "nett_hier"
@@ -279,13 +338,5 @@ name = "was"
 file = "was.png"
 startx = 682
 starty = -458
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "corporate_fare.png"
-file = "corporate_fare.png"
-startx = 0
-starty = 0
 priority = 127
 overlay_only = false
