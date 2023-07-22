@@ -244,6 +244,13 @@ startx = 854
 starty = -424
 priority = 127
 
+[[structure]]
+name = "Was_ist_Was"
+file = "Was_ist_Was.png"
+startx = -788
+starty = -429
+priority = 127
+
 # AUSERHALB DER FLAGGE:
 
 #[[structure]]
