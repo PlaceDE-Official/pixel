@@ -69,6 +69,13 @@ starty = -445
 priority = 127
 
 [[structure]]
+name = "tagesschau"
+file = "tagesschau.png"
+startx = -515
+starty = -448
+priority = 127
+
+[[structure]]
 name = "pfandrec"
 file = "pfandrec.png"
 startx = -454
