@@ -48,8 +48,7 @@ name = "skandinavien"
 file = "skandinavien.png"
 startx = -1000
 starty = -500
-priority = 100
-prio_in_picture = false
+priority = 127
 overlay_only = true
 
 
