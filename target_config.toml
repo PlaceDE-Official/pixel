@@ -325,3 +325,11 @@ startx = 319
 starty = -496
 priority = 127
 overlay_only = false
+
+[[structure]]
+name = "was"
+file = "was.png"
+startx = 682
+starty = -458
+priority = 127
+overlay_only = false
