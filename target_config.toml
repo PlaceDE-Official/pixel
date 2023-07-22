@@ -40,12 +40,12 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # prio_in_picture = false
 
 # FROM LEFT TO RIGHT
-# [[structure]]
-# name = "subredditstra"
-# file = "subredditstra.png"
-# startx = -1000
-# starty = -450
-# priority = 127
+[[structure]]
+name = "subredditstra"
+file = "subredditstra.png"
+startx = -1000
+starty = -450
+priority = 127
 
 [[structure]]
 name = "was_ist_was"
