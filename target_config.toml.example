@@ -97,8 +97,8 @@ priority = 127
 [[structure]]
 name = "pettersson_findus"
 file = "pettersson_findus.png"
-startx = -671
-starty = -445
+startx = -612
+starty = -450
 priority = 127
 
 [[structure]]
