@@ -335,7 +335,6 @@ startx = -1000
 starty = -500
 priority = 126
 overlay_only = false
-disabled = true
 
 [[structure]]
 name = "nett_hier"
@@ -344,6 +343,7 @@ startx = 319
 starty = -496
 priority = 127
 overlay_only = false
+disabled = true
 
 [[structure]]
 name = "was"
@@ -352,6 +352,7 @@ startx = 682
 starty = -458
 priority = 127
 overlay_only = false
+disabled = true
 
 [[structure]]
 name = "transplace_teil1"
