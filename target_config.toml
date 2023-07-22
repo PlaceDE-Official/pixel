@@ -241,7 +241,7 @@ priority = 127
 name = "rettungsfahrzeuge"
 file = "rettungsfahrzeuge.png"
 startx = 854
-starty = -425
+starty = -424
 priority = 127
 
 # AUSERHALB DER FLAGGE:
