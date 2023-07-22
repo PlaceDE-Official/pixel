@@ -37,7 +37,7 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # starty = 1122
 # priority = 127
 # overlay_only = false
-# ignore_prio_in_picture = false
+# prio_in_picture = false
 
 # FROM LEFT TO RIGHT
 

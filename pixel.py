@@ -224,7 +224,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
     """
     # store already present pixels
     coords: dict[(int, int), (str, int)] = {}
-    # strucutres
+    # structures
     structures: dict[str, dict[(int, int), (str, int)]] = {}
     # guard for illegal overwrites
     success = True
@@ -232,7 +232,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         struct2: dict[(int, int), (str, int)] = {}
         # open stuff and prepare
         file = struct["file"]
-        priority = max(int(struct.get("priority", default_prio)), 255)
+        priority = min(int(struct.get("priority", default_prio)), 255)
         priority_file = struct.get("priority_file", None)
         startx = int(struct.get("startx")) + add_x
         assert startx >= 0
@@ -240,7 +240,7 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         assert starty >= 0
         name = struct["name"]
         logger.info(f"Adding file {file} for structure {name}")
-        ignore_alpha_channel = struct.get("ignore_prio_in_picture", False)
+        prio_in_picture = struct.get("prio_in_picture", False)
         if struct.get("overlay_only", False) and not cfg.is_overlay:
             logger.info(f"Skipping {name} because it should be skipped on overlays!")
             continue
@@ -274,16 +274,16 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 # get prio if needed
                 prio = 255
                 if not cfg.ignore_prio:
-                    if ignore_alpha_channel:
+                    if prio_in_picture:
+                        prio = color[3] if len(color) > 3 else priority
+                    else:
                         if len(color) > 3:
-                            if cfg.min_prio <= color[3] <= cfg.max_prio:
+                            if cfg.min_prio <= color[3]:
                                 prio = priority
                             else:
                                 continue
                         else:
                             prio = priority
-                    else:
-                        prio = color[3] if len(color) > 3 else priority
                     if input_prio:
                         prio = input_prio.getpixel((x, y))[0]
                     if prio < cfg.min_prio:
@@ -324,8 +324,8 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
                 exit(1)
             img.putpixel(shifted_coords, hex_to_col(data[0]))
             if not cfg.ignore_prio:
-                p = hex_to_col(data[0])[0]
-                prio_img.putpixel(shifted_coords, (p, p, p))
+                p = data[1]
+                prio_img.putpixel(shifted_coords, (p, 0, 0))
                 both_img.putpixel(shifted_coords, (*hex_to_col(data[0]), p))
         pixels_json.update({name: temp})
     return success
