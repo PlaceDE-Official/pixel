@@ -62,8 +62,8 @@ starty = -442
 priority = 127
 
 [[structure]]
-name = "hanf"
-file = "hanf.png"
+name = "hanf_karl"
+file = "hanf_karl.png"
 startx = -671
 starty = -445
 priority = 127
