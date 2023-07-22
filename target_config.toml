@@ -38,20 +38,20 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # priority = 127
 # overlay_only = false
 # prio_in_picture = false
-# disabled = false
+#disabled = false
 
 
 
 # LOW PRIO
 
-#[[structure]]
-#name = "skandinavien"
-#file = "skandinavien.png"
-#startx = -1000
-#starty = -500
-#priority = 127
-#overlay_only = true
-
+[[structure]]
+name = "skandinavien"
+file = "skandinavien.png"
+startx = -1000
+starty = -500
+priority = 127
+overlay_only = true
+disabled = true
 
 
 
@@ -71,7 +71,7 @@ name = "a380"
 file = "a380.png"
 startx = -969
 starty = -416
-priority = 127
+priority = 128
 
 [[structure]]
 name = "was_ist_was"
