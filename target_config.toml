@@ -27,6 +27,22 @@ add-y = 500
 
 default_prio = 120 # priority: higher number = higher chance of being placed
 
+# Used for drawing outlines around the structures
+[[flag.black]]
+range = [[-500, -450], [499, -431]]
+color = "#000000"
+
+[[flag.red]]
+range = [[-500, -430], [499, -411]]
+color = "#FF4500"
+
+[[flag.gold]]
+range = [[-500, -410], [499, -391]]
+color = "#FFD635"
+
+[[flag.gold]]
+range = [[-500, -389], [499, -369]]
+color = "#FFD635"
 
 # example:
 # [[structure]]
