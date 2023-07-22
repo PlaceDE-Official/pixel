@@ -95,6 +95,13 @@ starty = -445
 priority = 127
 
 [[structure]]
+name = "pettersson_findus"
+file = "pettersson_findus.png"
+startx = -671
+starty = -445
+priority = 127
+
+[[structure]]
 name = "tagesschau"
 file = "tagesschau.png"
 startx = -515
