@@ -310,3 +310,11 @@ priority = 127
 # starty = -500
 # priority = 126
 # overlay_only = false
+
+[[structure]]
+name = "nett_hier"
+file = "nett_hier.png"
+startx = 319
+starty = -496
+priority = 127
+overlay_only = false
