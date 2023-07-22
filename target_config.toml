@@ -290,8 +290,8 @@ priority = 127
 [[structure]]
 name = "alltrains"
 file = "alltrains.png"
-startx = -500
-starty = -406
+startx = -1000
+starty = -392
 priority = 127
 
 # [[structure]]
