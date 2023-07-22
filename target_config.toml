@@ -42,7 +42,8 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 
 
 
-LOW PRIO
+# LOW PRIO
+
 [[structure]]
 name = "skandinavien"
 file = "skandinavien.png"
