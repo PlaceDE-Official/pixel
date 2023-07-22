@@ -153,8 +153,8 @@ starty = -448
 priority = 127
 
 [[structure]]
-name = "bike_nl"
-file = "bike_nl.png"
+name = "bikenl"
+file = "bikenl.png"
 startx = 29
 starty = -466
 priority = 127
