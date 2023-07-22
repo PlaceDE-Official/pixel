@@ -74,6 +74,13 @@ starty = -416
 priority = 128
 
 [[structure]]
+name = "overhead"
+file = "overhead.png"
+startx = -902
+starty = -440
+priority = 127
+
+[[structure]]
 name = "de_nl_love"
 file = "de_nl_love.png"
 startx = -885
