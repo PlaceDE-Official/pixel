@@ -63,6 +63,7 @@ Jedes `structure` hat folgende Werte:
 |    priority     |         127         |    -    |    J     |     Priorität für Pixel des Bildes, die keine eigene Priorität haben     |
 |  overlay_only   |        false        |  false  |    J     |     Struktur nur im Overlay-Modus übernehmen, nicht in andere Bilder     |
 | prio_in_picture |        false        |  false  |    J     |        Nutzt die "Alphachannelprio" aus dem Bild (siehe 3. unten)        |
+|    disabled     |        false        |  false  |    J     |               Deaktiviert die Struktur in Bot und Overlay                |
 ------
 ## Prioritäten:
 

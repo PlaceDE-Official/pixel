@@ -231,6 +231,10 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
     for struct in reversed(pixel_config["structure"]):
         struct2: dict[(int, int), (str, int)] = {}
         # open stuff and prepare
+        name = struct["name"]
+        if struct.get("disabled", False):
+            logger.info(f"SKipping {name}, it is disabled!")
+            continue
         file = struct["file"]
         priority = min(int(struct.get("priority", default_prio)), 255)
         priority_file = struct.get("priority_file", None)
@@ -238,7 +242,6 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         assert startx >= 0
         starty = int(struct.get("starty")) + add_y
         assert starty >= 0
-        name = struct["name"]
         logger.info(f"Adding file {file} for structure {name}")
         prio_in_picture = struct.get("prio_in_picture", False)
         if struct.get("overlay_only", False) and not cfg.is_overlay:
