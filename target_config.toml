@@ -306,7 +306,7 @@ priority = 127
 name = "ukrainetemp"
 file = "ukrainetemp.png"
 startx = -1000
-starty = -1000
+starty = -500
 priority = 127
 overlay_only = true
 
