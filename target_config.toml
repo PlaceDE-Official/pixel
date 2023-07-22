@@ -251,12 +251,12 @@ startx = 725
 starty = -435
 priority = 127
 
-[[structure]]
-name = "rettungsfahrzeuge"
-file = "rettungsfahrzeuge.png"
-startx = 854
-starty = -426
-priority = 127
+# [[structure]]
+# name = "rettungsfahrzeuge"
+# file = "rettungsfahrzeuge.png"
+# startx = 854
+# starty = -426
+# priority = 127
 
 # AUSERHALB DER FLAGGE:
 
