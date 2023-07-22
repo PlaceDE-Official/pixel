@@ -311,8 +311,8 @@ starty = -392
 priority = 127
 
 [[structure]]
-name = "canada"
-file = "canada.png"
+name = "canada_left"
+file = "canada_left.png"
 startx = 90
 starty = 165
 priority = 127
@@ -371,10 +371,19 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "canada_without_small_flags.png"
-file = "canada_without_small_flags.png"
-disabled = false
+name = "canada_right_without_small_flags"
+file = "canada_right_without_small_flags.png"
+disabled = true
 startx = 681
 starty = -114
 priority = 126
+overlay_only = false
+
+[[structure]]
+name = "canada_right"
+file = "canada_right.png"
+disabled = false
+startx = 680
+starty = -118
+priority = 127
 overlay_only = false
