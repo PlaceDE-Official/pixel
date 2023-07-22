@@ -181,6 +181,13 @@ starty = -450
 priority = 127
 
 [[structure]]
+name = "paragraf_eins"
+file = "paragraf_eins.png"
+startx = 170
+starty = -450
+priority = 127
+
+[[structure]]
 name = "ketchup"
 file = "ketchup.png"
 startx = 269
@@ -285,13 +292,6 @@ name = "alltrains"
 file = "alltrains.png"
 startx = -500
 starty = -406
-priority = 127
-
-[[structure]]
-name = "paragraf_eins"
-file = "paragraf_eins.png"
-startx = 170
-starty = -450
 priority = 127
 
 # [[structure]]
