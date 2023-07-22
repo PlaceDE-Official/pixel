@@ -382,7 +382,7 @@ overlay_only = false
 [[structure]]
 name = "canada_right"
 file = "canada_right.png"
-disabled = false
+disabled = true
 startx = 680
 starty = -118
 priority = 127
