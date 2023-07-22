@@ -310,13 +310,13 @@ starty = -500
 priority = 127
 overlay_only = true
 
-[[structure]]
-name = "netherlands"
-file = "netherlands.png"
-startx = -1000
-starty = -500
-priority = 126
-overlay_only = false
+# [[structure]]
+# name = "netherlands"
+# file = "netherlands.png"
+# startx = -1000
+# starty = -500
+# priority = 126
+# overlay_only = false
 
 [[structure]]
 name = "nett_hier"
