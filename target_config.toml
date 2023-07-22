@@ -251,6 +251,13 @@ starty = -418
 priority = 127
 
 [[structure]]
+name = "baustelle"
+file = "baustelle.png"
+startx = 818
+starty = -447
+priority = 127
+
+[[structure]]
 name = "pumuckl"
 file = "pumuckl.png"
 startx = 725
