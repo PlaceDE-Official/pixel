@@ -308,7 +308,7 @@ file = "ukrainetemp.png"
 startx = -1000
 starty = -500
 priority = 127
-overlay_only = true
+overlay_only = false
 
 # [[structure]]
 # name = "netherlands"
