@@ -39,12 +39,37 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # overlay_only = false
 # prio_in_picture = false
 
+
+
+# LOW PRIO
+[[structure]]
+name = "skandinavien"
+file = "skandinavien.png"
+startx = -1000
+starty = -500
+priority = 100
+prio_in_picture = false
+
+
+
+
+
+
+
 # FROM LEFT TO RIGHT
+
 [[structure]]
 name = "subredditstra"
 file = "subredditstra.png"
 startx = -1000
 starty = -450
+priority = 127
+
+[[structure]]
+name = "a380"
+file = "a380.png"
+startx = -969
+starty = -416
 priority = 127
 
 [[structure]]
