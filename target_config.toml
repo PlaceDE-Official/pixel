@@ -38,6 +38,7 @@ default_prio = 120 # priority: higher number = higher chance of being placed
 # priority = 127
 # overlay_only = false
 # prio_in_picture = false
+# disabled = false
 
 # FROM LEFT TO RIGHT
 [[structure]]
@@ -287,12 +288,13 @@ priority = 127
 
 # AUSERHALB DER FLAGGE:
 
-#[[structure]]
-#name = "panzer"
-#file = "panzer.png"
-#startx = -30
-#starty = -174
-#priority = 127
+[[structure]]
+name = "panzer"
+file = "panzer.png"
+startx = -30
+starty = -174
+priority = 127
+disabled = true
 
 [[structure]]
 name = "alltrains"
@@ -301,13 +303,14 @@ startx = -1000
 starty = -392
 priority = 127
 
-# [[structure]]
-# name = "canada"
-# file = "canada.png"
-# startx = 90
-# starty = 165
-# priority = 127
-# overlay_only = false
+[[structure]]
+name = "canada"
+file = "canada.png"
+startx = 90
+starty = 165
+priority = 127
+overlay_only = false
+disabled = true
 
 [[structure]]
 name = "ukrainetemp"
@@ -317,13 +320,14 @@ starty = -500
 priority = 127
 overlay_only = false
 
-# [[structure]]
-# name = "netherlands"
-# file = "netherlands.png"
-# startx = -1000
-# starty = -500
-# priority = 126
-# overlay_only = false
+[[structure]]
+name = "netherlands"
+file = "netherlands.png"
+startx = -1000
+starty = -500
+priority = 126
+overlay_only = false
+disabled = true
 
 [[structure]]
 name = "nett_hier"
