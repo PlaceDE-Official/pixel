@@ -250,10 +250,12 @@ def generate_data(img: Image, prio_img: Optional[Image.Image], both_img: Optiona
         p = pathlib.Path(picture_folder).joinpath(file)
         path_exists(p)
         input_img = Image.open(p)
+        input_img = input_img.convert("RGBA")
         input_prio = None
         if priority_file and not cfg.ignore_prio:
             p_file = pathlib.Path(picture_folder).joinpath(priority_file)
             input_prio = Image.open(p_file)
+            input_prio = input_prio.convert("RGBA")
 
         # for each pixel
         for x in range(input_img.size[0]):
