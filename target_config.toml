@@ -240,7 +240,7 @@ priority = 127
 [[structure]]
 name = "rettungsfahrzeuge"
 file = "rettungsfahrzeuge.png"
-startx = 853
+startx = 854
 starty = -425
 priority = 127
 
