@@ -282,3 +282,11 @@ startx = -500
 starty = -500
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "netherlands"
+file = "netherlands.png"
+startx = -500
+starty = -500
+priority = 126
+overlay_only = false
