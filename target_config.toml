@@ -69,10 +69,10 @@ starty = -445
 priority = 127
 
 [[structure]]
-name = "pfand"
-file = "pfand.png"
-startx = -486
-starty = -434
+name = "pfandrec"
+file = "pfandrec.png"
+startx = -454
+starty = -441
 priority = 127
 
 [[structure]]
