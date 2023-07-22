@@ -344,6 +344,7 @@ startx = -1000
 starty = -500
 priority = 127
 overlay_only = false
+disabled = true
 
 [[structure]]
 name = "netherlands"
