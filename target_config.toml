@@ -475,6 +475,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "terraria.png"
+file = "terraria.png"
+disabled = false
+startx = -799
+starty = -944
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
