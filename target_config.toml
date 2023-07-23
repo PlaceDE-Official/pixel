@@ -1,7 +1,7 @@
 ignored_colors = []
 allowed_colors = ["FF4500","FFA800","FFD635","00A368","7EED56","2450A4","3690EA","51E9F4","811E9F","B44AC0","FF99AA","9C6926","000000","898D90","D4D7D9","FFFFFF"]
 width = 2000
-height = 1500
+height = 2000
 add-x = 1000
 add-y = 1000
 default_prio = 120
