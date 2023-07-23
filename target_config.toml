@@ -709,6 +709,33 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "steiff.png"
+file = "steiff.png"
+disabled = false
+startx = 185
+starty = -591
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "beethoven.png"
+file = "beethoven.png"
+disabled = false
+startx = 142
+starty = -591
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "rtypewriter.png"
+file = "rtypewriter.png"
+disabled = false
+startx = -361
+starty = -567
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
