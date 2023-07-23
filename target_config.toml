@@ -520,6 +520,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "maulwurf.png"
+file = "maulwurf.png"
+disabled = false
+startx = -296
+starty = -595
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
