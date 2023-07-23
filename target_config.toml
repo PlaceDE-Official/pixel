@@ -54,7 +54,7 @@ priority = 127
 [[structure]]
 name = "tabaluga"
 file = "tabaluga.png"
-startx = -582
+startx = -581
 starty = -598
 priority = 127
 
@@ -341,9 +341,6 @@ startx = 854
 starty = -426
 priority = 127
 
-
-# FLAGGE 2
-
 [[structure]]
 name = "olympiastadion"
 file = "olympiastadion.png"
@@ -364,8 +361,6 @@ file = "loewenbraeu.png"
 startx = -185
 starty = -960
 priority = 127
-
-# OUTSIDE
 
 [[structure]]
 name = "panzer"
@@ -424,6 +419,13 @@ startx = -636
 starty = -184
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "hasenkatze"
+file = "hasenkatze.png"
+startx = 199
+starty = -610
+priority = 127
 
 [[structure]]
 name = "a380"
