@@ -7,6 +7,13 @@ add-y = 1000
 default_prio = 120
 
 [[structure]]
+name = "brezel"
+file = "brezel.png"
+startx = -801
+starty = -613
+priority = 127
+
+[[structure]]
 name = "badewanneloriot"
 file = "badewanneloriot.png"
 startx = -775
