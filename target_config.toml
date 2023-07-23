@@ -547,6 +547,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "dresdenfrauenkirche.png"
+file = "dresdenfrauenkirche.png"
+disabled = false
+startx = 347
+starty = -606
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
