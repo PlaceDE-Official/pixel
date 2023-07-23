@@ -435,16 +435,16 @@ disabled = true
 [[structure]]
 name = "transplace_teil1"
 file = "transplace_teil1.png"
-startx = 48
-starty = -3
+startx = 1048
+starty = 997
 priority = 127
 overlay_only = true
 
 [[structure]]
 name = "transplace_teil2"
 file = "transplace_teil2.png"
-startx = -636
-starty = -184
+startx = 364
+starty = 816
 priority = 127
 overlay_only = true
 
