@@ -341,9 +341,6 @@ startx = 854
 starty = -426
 priority = 127
 
-
-# FLAGGE_2
-
 [[structure]]
 name = "olympiastadion"
 file = "olympiastadion.png"
@@ -385,8 +382,6 @@ file = "ente.png"
 startx = 175
 starty = -993
 priority = 127
-
-# OUTSIDE
 
 [[structure]]
 name = "panzer"
@@ -447,16 +442,25 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "a380"
-file = "a380.png"
-startx = -969
-starty = -416
-priority = 128
-
-[[structure]]
 name = "pride_logo_up"
 file = "pride_logo_up.png"
 startx = 307
 starty = -675
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "hasenkatzeV2.png"
+file = "hasenkatzeV2.png"
+disabled = false
+startx = 199
+starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "a380"
+file = "a380.png"
+startx = -969
+starty = -416
+priority = 128
