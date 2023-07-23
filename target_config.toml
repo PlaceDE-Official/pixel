@@ -18,7 +18,6 @@ overlay_only = false
 [[structure]]
 name = "netherlands"
 file = "netherlands.png"
-disabled = true
 startx = -1000
 starty = -1000
 priority = 126
@@ -472,6 +471,15 @@ file = "aldi.png"
 disabled = false
 startx = -29
 starty = -596
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "terraria.png"
+file = "terraria.png"
+disabled = false
+startx = -799
+starty = -944
 priority = 127
 overlay_only = false
 
