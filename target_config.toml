@@ -19,7 +19,7 @@ overlay_only = false
 name = "netherlands"
 file = "netherlands.png"
 startx = -1000
-starty = -500
+starty = -1000
 priority = 126
 overlay_only = false
 
