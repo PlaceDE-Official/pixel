@@ -1,5 +1,28 @@
 ignored_colors = []
-allowed_colors = ["FF4500","FFA800","FFD635","00A368","7EED56","2450A4","3690EA","51E9F4","811E9F","B44AC0","FF99AA","9C6926","000000","898D90","D4D7D9","FFFFFF"]
+allowed_colors = ["BE0039",
+"FF4500",
+"FFA800",
+"FFD635",
+"00A368",
+"00CC78",
+"7EED56",
+"00756F",
+"009EAA",
+"2450A4",
+"3690EA",
+"51E9F4",
+"493AC1",
+"6A5CFF",
+"811E9F",
+"B44AC0",
+"FF3881",
+"FF99AA",
+"6D482F",
+"9C6926",
+"000000",
+"898D90",
+"D4D7D9",
+"FFFFFF"]
 width = 2000
 height = 2000
 add-x = 1000
@@ -643,6 +666,33 @@ disabled = false
 startx = -82
 starty = -329
 priority = 127
+overlay_only = false
+
+[[structure]]
+name = "coat_of_arms_island"
+file = "coat_of_arms_island.png"
+disabled = false
+startx = -18
+starty = -300
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "coat_of_arms_nordics"
+file = "coat_of_arms_nordics.png"
+disabled = false
+startx = -82
+starty = -329
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "frame.png"
+file = "frame.png"
+disabled = false
+startx = -920
+starty = 602
+priority = 160
 overlay_only = false
 
 [[structure]]
