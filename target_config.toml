@@ -341,9 +341,6 @@ startx = 854
 starty = -426
 priority = 127
 
-
-# FLAGGE 2
-
 [[structure]]
 name = "olympiastadion"
 file = "olympiastadion.png"
@@ -364,8 +361,6 @@ file = "loewenbraeu.png"
 startx = -185
 starty = -960
 priority = 127
-
-# OUTSIDE
 
 [[structure]]
 name = "panzer"
@@ -426,16 +421,24 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "a380"
-file = "a380.png"
-startx = -969
-starty = -416
-priority = 128
-
-[[structure]]
 name = "hasenkatze"
 file = "hasenkatze.png"
 startx = -610
 starty = 199
 priority = 127
 
+[[structure]]
+name = "badewanneloriot2.png"
+file = "badewanneloriot2.png"
+disabled = false
+startx = -782
+starty = -782
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "a380"
+file = "a380.png"
+startx = -969
+starty = -416
+priority = 128
