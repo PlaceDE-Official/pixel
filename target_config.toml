@@ -493,6 +493,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "rapunzel.png"
+file = "rapunzel.png"
+disabled = false
+startx = -184
+starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
