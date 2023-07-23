@@ -656,7 +656,7 @@ file = "frame.png"
 disabled = false
 startx = -920
 starty = 602
-priority = 127
+priority = 160
 overlay_only = false
 
 [[structure]]
