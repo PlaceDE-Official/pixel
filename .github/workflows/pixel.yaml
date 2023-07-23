@@ -51,7 +51,7 @@ jobs:
         with:
           message: |
             ![Default](https://raw.githubusercontent.com/PlaceDE-Official/pixel/${{ steps.head.outputs.head }}/outputs/default_target.png)
-            ![Overlay](https://raw.githubusercontent.com/PlaceDE-Official/pixel/${{ steps.head.outputs.head }}/outputs/default_overlay.png)
+            ![Overlay](https://raw.githubusercontent.com/PlaceDE-Official/pixel/${{ steps.head.outputs.head }}/outputs/overlay_target.png)
 
   # Single deploy job since we're just deploying
   deploy:
