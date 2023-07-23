@@ -341,6 +341,32 @@ startx = 854
 starty = -426
 priority = 127
 
+
+# FLAGGE 2
+
+[[structure]]
+name = "olympiastadion"
+file = "olympiastadion.png"
+startx = 741
+starty = -978
+priority = 127
+
+[[structure]]
+name = "ralsei_beer.png"
+file = "ralsei_beer.png.png"
+startx = -160
+starty = -959
+priority = 127
+
+[[structure]]
+name = "loewenbraeu"
+file = "loewenbraeu.png"
+startx = -185
+starty = -960
+priority = 127
+
+# OUTSIDE
+
 [[structure]]
 name = "panzer"
 file = "panzer.png"
