@@ -497,7 +497,7 @@ name = "rapunzel.png"
 file = "rapunzel.png"
 disabled = false
 startx = -184
-starty = -610
+starty = -611
 priority = 127
 overlay_only = false
 
@@ -601,6 +601,13 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "a380"
+file = "a380.png"
+startx = -969
+starty = -416
+priority = 128
+
+[[structure]]
 name = "1up.png"
 file = "1up.png"
 disabled = false
@@ -608,10 +615,3 @@ startx = -511
 starty = -387
 priority = 130
 overlay_only = false
-
-[[structure]]
-name = "a380"
-file = "a380.png"
-startx = -969
-starty = -416
-priority = 128
