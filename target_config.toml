@@ -26,8 +26,8 @@ overlay_only = false
 [[structure]]
 name = "brotthanos"
 file = "brotthanos.png"
-startx = -753
-starty = -992
+startx = -756
+starty = -993
 priority = 127
 
 [[structure]]
