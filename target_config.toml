@@ -431,3 +431,10 @@ file = "a380.png"
 startx = -969
 starty = -416
 priority = 128
+
+[[structure]]
+name = "hasenkatze"
+file = "hasenkatze.png"
+startx = -610
+starty = 199
+priority = 127
