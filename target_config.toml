@@ -610,11 +610,11 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "laurasstern.png"
-file = "laurasstern.png"
+name = "nurburgring.png"
+file = "nurburgring.png"
 disabled = false
-startx = 688
-starty = -964
+startx = 107
+starty = -999
 priority = 127
 overlay_only = false
 
