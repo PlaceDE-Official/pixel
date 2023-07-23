@@ -439,4 +439,4 @@ disabled = false
 startx = -1000
 starty = -1000
 priority = 126
-overlay_only = true
+overlay_only = false
