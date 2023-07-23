@@ -7,6 +7,15 @@ add-y = 1000
 default_prio = 120
 
 [[structure]]
+name = "not-valorant.png"
+file = "not-valorant.png"
+disabled = false
+startx = 677
+starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "canada"
 file = "canada_without_flags.png"
 disabled = false
