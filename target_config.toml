@@ -719,10 +719,10 @@ priority = 128
 name = "eu.png"
 file = "eu.png"
 disabled = false
-startx = -353
-starty = 625
+startx = -367
+starty = 617
 priority = 130
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "1up.png"
@@ -736,7 +736,7 @@ overlay_only = false
 [[structure]]
 name = "marchrevo.png"
 file = "marchrevo.png"
-disabled = false
+disabled = true
 startx = -772
 starty = 642
 priority = 150
@@ -745,7 +745,7 @@ overlay_only = false
 [[structure]]
 name = "frame.png"
 file = "frame.png"
-disabled = false
+disabled = true
 startx = -920
 starty = 602
 priority = 160
