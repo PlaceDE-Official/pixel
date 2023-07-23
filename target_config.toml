@@ -606,7 +606,7 @@ file = "1up.png"
 disabled = false
 startx = -511
 starty = -387
-priority = 127
+priority = 130
 overlay_only = false
 
 [[structure]]
