@@ -673,6 +673,24 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "minesweeper.png"
+file = "minesweeper.png"
+disabled = false
+startx = 321
+starty = -607
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "kleinerDCServer.png"
+file = "kleinerDCServer.png"
+disabled = false
+startx = 301
+starty = -605
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
