@@ -799,6 +799,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "german_lattice_heart"
+file = "german_lattice_heart.png"
+disabled = false
+startx = 461
+starty = -953
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
