@@ -397,46 +397,10 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "canada_left_og"
-file = "canada_left.png"
-disabled = true
-startx = 89
-starty = 145
-priority = 64
-overlay_only = false
-
-[[structure]]
-name = "canada_left_leaf"
-file = "canada_right_leaf.png"
-disabled = true
-startx = 90
-starty = 150
-priority = 64
-overlay_only = false
-
-[[structure]]
-name = "canada_right_without_flags"
-file = "canada_right_without_flags.png"
+name = "canada"
+file = "canada_without_flags.png"
 disabled = false
 startx = 90
 starty = 150
-priority = 64
-overlay_only = false
-
-[[structure]]
-name = "canada_right_beaver"
-file = "canada_right_beaver.png"
-disabled = true
-startx = 680
-starty = -118
-priority = 64
-overlay_only = false
-
-[[structure]]
-name = "canada_right_leaf"
-file = "canada_right_leaf.png"
-disabled = true
-startx = 680
-starty = -118
 priority = 64
 overlay_only = false
