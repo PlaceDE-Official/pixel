@@ -352,8 +352,8 @@ starty = -978
 priority = 127
 
 [[structure]]
-name = "ralsei_beer.png"
-file = "ralsei_beer.png.png"
+name = "ralsei_beer"
+file = "ralsei_beer.png"
 startx = -160
 starty = -959
 priority = 127
