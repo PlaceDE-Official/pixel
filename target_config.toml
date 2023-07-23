@@ -13,6 +13,12 @@ startx = -775
 starty = -594
 priority = 127
 
+[[structure]]
+name = "tabaluga"
+file = "tabaluga.png"
+startx = -582
+starty = -598
+priority = 127
 
 [[structure]]
 name = "skandinavien"
