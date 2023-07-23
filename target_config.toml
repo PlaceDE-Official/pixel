@@ -342,7 +342,7 @@ starty = -426
 priority = 127
 
 
-# FLAGGE 2
+# FLAGGE_2
 
 [[structure]]
 name = "olympiastadion"
@@ -370,6 +370,20 @@ name = "werner"
 file = "werner.png"
 startx = -443
 starty = -596
+priority = 127
+
+[[structure]]
+name = "muelltrennung"
+file = "muelltrennung.png"
+startx = -261
+starty = -626
+priority = 127
+
+[[structure]]
+name = "ente"
+file = "ente.png"
+startx = 175
+starty = -993
 priority = 127
 
 # OUTSIDE
