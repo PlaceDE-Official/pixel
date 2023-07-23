@@ -592,6 +592,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "nightwatch.png"
+file = "nightwatch.png"
+disabled = false
+startx = -849
+starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
