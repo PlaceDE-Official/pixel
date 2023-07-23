@@ -601,11 +601,11 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "Heldentasse.png"
-file = "Heldentasse.png"
+name = "Ampel.png"
+file = "Ampel.png"
 disabled = false
-startx = 503
-starty = -590
+startx = -452
+starty = -1000
 priority = 127
 overlay_only = false
 
