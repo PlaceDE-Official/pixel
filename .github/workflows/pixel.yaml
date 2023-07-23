@@ -40,6 +40,7 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref || github.ref_name }}
       - run: echo $(git rev-parse HEAD)
       - id: head
         run: echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT" 
