@@ -75,8 +75,8 @@ starty = -450
 priority = 127
 
 [[structure]]
-name = "overhead"
-file = "overhead.png"
+name = "overhead_autobahn"
+file = "overhead_autobahn.png"
 startx = -902
 starty = -440
 priority = 127
