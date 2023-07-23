@@ -365,6 +365,13 @@ startx = -185
 starty = -960
 priority = 127
 
+[[structure]]
+name = "werner"
+file = "werner.png"
+startx = -443
+starty = -596
+priority = 127
+
 # OUTSIDE
 
 [[structure]]
@@ -431,3 +438,11 @@ file = "a380.png"
 startx = -969
 starty = -416
 priority = 128
+
+[[structure]]
+name = "pride_logo_up"
+file = "pride_logo_up.png"
+startx = 307
+starty = -675
+priority = 127
+overlay_only = true
