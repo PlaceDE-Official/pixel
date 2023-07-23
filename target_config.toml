@@ -8,7 +8,7 @@ default_prio = 120
 
 [[structure]]
 name = "brezel"
-file = "brezel.png"
+file = "Brezel.png"
 startx = -801
 starty = -613
 priority = 127
