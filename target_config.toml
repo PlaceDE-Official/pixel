@@ -628,6 +628,24 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "coat_of_arms_island"
+file = "coat_of_arms_island.png"
+disabled = false
+startx = -18
+starty = -300
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "coat_of_arms_nordics"
+file = "coat_of_arms_nordics.png"
+disabled = false
+startx = -82
+starty = -329
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
