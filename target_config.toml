@@ -61,7 +61,7 @@ priority = 127
 [[structure]]
 name = "skandinavien"
 file = "skandinavien.png"
-startx = -1000
+startx = -1008
 starty = -1000
 priority = 127
 overlay_only = true
@@ -624,6 +624,24 @@ file = "pokeball.png"
 disabled = false
 startx = -107
 starty = -948
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "coat_of_arms_island"
+file = "coat_of_arms_island.png"
+disabled = false
+startx = -18
+starty = -300
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "coat_of_arms_nordics"
+file = "coat_of_arms_nordics.png"
+disabled = false
+startx = -90
+starty = -329
 priority = 127
 overlay_only = false
 
