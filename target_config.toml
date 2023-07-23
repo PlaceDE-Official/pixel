@@ -7,6 +7,23 @@ add-y = 1000
 default_prio = 120
 
 [[structure]]
+name = "canada"
+file = "canada_without_flags.png"
+disabled = false
+startx = 90
+starty = 150
+priority = 64
+overlay_only = false
+
+[[structure]]
+name = "netherlands"
+file = "netherlands.png"
+startx = -1000
+starty = -500
+priority = 126
+overlay_only = false
+
+[[structure]]
 name = "brotthanos"
 file = "brotthanos.png"
 startx = -753
@@ -56,13 +73,6 @@ file = "subredditstra.png"
 startx = -1000
 starty = -450
 priority = 127
-
-[[structure]]
-name = "a380"
-file = "a380.png"
-startx = -969
-starty = -416
-priority = 128
 
 [[structure]]
 name = "overhead"
@@ -356,14 +366,6 @@ overlay_only = false
 disabled = true
 
 [[structure]]
-name = "netherlands"
-file = "netherlands.png"
-startx = -1000
-starty = -500
-priority = 126
-overlay_only = false
-
-[[structure]]
 name = "nett_hier"
 file = "nett_hier.png"
 startx = 319
@@ -398,10 +400,8 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "canada"
-file = "canada_without_flags.png"
-disabled = false
-startx = 90
-starty = 150
-priority = 64
-overlay_only = false
+name = "a380"
+file = "a380.png"
+startx = -969
+starty = -416
+priority = 128
