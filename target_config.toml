@@ -263,6 +263,7 @@ priority = 127
 [[structure]]
 name = "maggi"
 file = "maggi.png"
+disabled = true
 startx = 469
 starty = -449
 priority = 127
