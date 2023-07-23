@@ -50,7 +50,9 @@ jobs:
         if: github.event_name == 'pull_request'
         with:
           message: |
+            # Default:
             ![Default](https://raw.githubusercontent.com/PlaceDE-Official/pixel/${{ steps.head.outputs.head }}/outputs/default_target.png)
+            # Overlay:
             ![Overlay](https://raw.githubusercontent.com/PlaceDE-Official/pixel/${{ steps.head.outputs.head }}/outputs/overlay_target.png)
 
   # Single deploy job since we're just deploying
