@@ -243,13 +243,6 @@ starty = -450
 priority = 127
 
 [[structure]]
-name = "Beutolomaus"
-file = "Beutolomaus.png"
-startx = 220
-starty = -587
-priority = 127
-
-[[structure]]
 name = "ketchup"
 file = "ketchup.png"
 startx = 269
@@ -462,6 +455,15 @@ file = "hasenkatzeV2.png"
 disabled = false
 startx = 199
 starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "notreparatur-katze.png"
+file = "notreparatur.png"
+disabled = false
+startx = 231
+starty = -646
 priority = 127
 overlay_only = false
 
