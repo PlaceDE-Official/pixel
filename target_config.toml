@@ -655,6 +655,24 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "Kuh.png"
+file = "Kuh.png"
+disabled = false
+startx = 119
+starty = -961
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Siebenstein.png"
+file = "Siebenstein.png"
+disabled = false
+startx = 276
+starty = -590
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
