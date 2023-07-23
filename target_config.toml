@@ -16,6 +16,15 @@ priority = 64
 overlay_only = false
 
 [[structure]]
+name = "maus.png"
+file = "maus.png"
+disabled = false
+startx = -791
+starty = -581
+priority = 110
+overlay_only = false
+
+[[structure]]
 name = "netherlands"
 file = "netherlands.png"
 startx = -1000
