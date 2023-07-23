@@ -379,7 +379,7 @@ overlay_only = true
 [[structure]]
 name = "transplace_teil2"
 file = "transplace_teil2.png"
-startx = -632
+startx = -636
 starty = -184
 priority = 127
 overlay_only = true
