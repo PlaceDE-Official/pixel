@@ -496,7 +496,7 @@ overlay_only = false
 name = "rapunzel.png"
 file = "rapunzel.png"
 disabled = false
-startx = -184
+startx = -185
 starty = -611
 priority = 127
 overlay_only = false
@@ -732,60 +732,6 @@ file = "rtypewriter.png"
 disabled = false
 startx = -361
 starty = -567
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "gekte.png"
-file = "gekte.png"
-disabled = false
-startx = -1000
-starty = -389
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "violetevergarden.png"
-file = "violetevergarden.png"
-disabled = false
-startx = -362
-starty = -969
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "loona.png"
-file = "loona.png"
-disabled = false
-startx = -589
-starty = -964
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "Flaschbier.png"
-file = "Flaschbier.png"
-disabled = false
-startx = -396
-starty = -575
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "laurasstern.png"
-file = "laurasstern.png"
-disabled = false
-startx = 688
-starty = -964
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "bembel.png"
-file = "bembel.png"
-disabled = false
-startx = 467
-starty = -582
 priority = 127
 overlay_only = false
 
