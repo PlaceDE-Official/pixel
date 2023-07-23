@@ -403,10 +403,10 @@ overlay_only = false
 [[structure]]
 name = "canada_right"
 file = "canada_right.png"
-disabled = true
+disabled = false
 startx = 680
 starty = -118
-priority = 127
+priority = 64
 overlay_only = false
 
 [[structure]]
