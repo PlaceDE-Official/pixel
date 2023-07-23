@@ -243,6 +243,13 @@ starty = -450
 priority = 127
 
 [[structure]]
+name = "Beutolomaus"
+file = "Beutolomaus.png"
+startx = 220
+starty = -587
+priority = 127
+
+[[structure]]
 name = "ketchup"
 file = "ketchup.png"
 startx = 269
