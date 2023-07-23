@@ -167,7 +167,7 @@ priority = 127
 
 [[structure]]
 name = "getraenke"
-file = "getraenke.png"
+file = "alltrains.png"
 startx = -231
 starty = -450
 priority = 127
