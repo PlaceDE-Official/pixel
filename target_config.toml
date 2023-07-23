@@ -401,8 +401,17 @@ priority = 126
 overlay_only = false
 
 [[structure]]
-name = "canada_right"
-file = "canada_right.png"
+name = "canada_right_beaver"
+file = "canada_right_beaver.png"
+disabled = false
+startx = 680
+starty = -118
+priority = 64
+overlay_only = false
+
+[[structure]]
+name = "canada_right_leaf"
+file = "canada_right_leaf.png"
 disabled = false
 startx = 680
 starty = -118
