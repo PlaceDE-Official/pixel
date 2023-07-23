@@ -653,15 +653,6 @@ starty = -416
 priority = 128
 
 [[structure]]
-name = "eu.png"
-file = "eu.png"
-disabled = false
-startx = -353
-starty = 625
-priority = 130
-overlay_only = false
-
-[[structure]]
 name = "1up.png"
 file = "1up.png"
 disabled = false
