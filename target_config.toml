@@ -1185,6 +1185,22 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "dragon"
+file = "dragon.png"
+startx = 1108
+starty = 522
+priority = 127
+
+[[structure]]
+name = "fsociety_2.png"
+file = "fsociety_2.png"
+disabled = false
+startx = 185
+starty = -1000
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
@@ -1217,10 +1233,3 @@ startx = -772
 starty = 642
 priority = 150
 overlay_only = false
-
-[[structure]]
-name = "dragon"
-file = "dragon.png"
-startx = 1108
-starty = 522
-priority = 127
