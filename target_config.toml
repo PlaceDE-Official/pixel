@@ -422,6 +422,7 @@ file = "alltrains.png"
 startx = -1500
 starty = -392
 priority = 127
+disabled = true
 
 [[structure]]
 name = "ukrainetemp"
