@@ -586,7 +586,7 @@ overlay_only = false
 name = "tja.png"
 file = "tja.png"
 disabled = false
-startx = -1000
+startx = -1500
 starty = -610
 priority = 127
 overlay_only = false
@@ -975,6 +975,15 @@ file = "spyro.png"
 disabled = false
 startx = 78
 starty = -574
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "traumschifftaxi.png"
+file = "traumschifftaxi.png"
+disabled = false
+startx = -979
+starty = -606
 priority = 127
 overlay_only = false
 
