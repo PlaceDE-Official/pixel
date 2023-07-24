@@ -817,11 +817,20 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "Tom.png"
-file = "Tom.png"
+name = "PlaceStart_1.png"
+file = "PlaceStart_1.png"
 disabled = false
-startx = 39
-starty = -610
+startx = -1500
+starty = 966
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "PlaceStart_2.png"
+file = "PlaceStart_2.png"
+disabled = false
+startx = -1000
+starty = 966
 priority = 127
 overlay_only = false
 
