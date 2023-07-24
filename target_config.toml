@@ -938,7 +938,7 @@ name = "propellerente.png"
 file = "propellerente.png"
 disabled = false
 startx = -1092
-starty = -934
+starty = -932
 priority = 127
 overlay_only = false
 
