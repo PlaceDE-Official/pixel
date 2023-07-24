@@ -844,11 +844,11 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "W2G.png"
-file = "W2G.png"
+name = "HOB.png"
+file = "HOB.png"
 disabled = false
-startx = -666
-starty = -999
+startx = -525
+starty = -998
 priority = 127
 overlay_only = false
 
