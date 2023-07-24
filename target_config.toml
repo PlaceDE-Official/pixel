@@ -7,15 +7,6 @@ add-y = 1000
 default_prio = 120
 
 [[structure]]
-name = "fuckspezlarge2.png"
-file = "fuckspezlarge2.png"
-disabled = false
-startx = -1500
-starty = -1000
-priority = 20
-overlay_only = false
-
-[[structure]]
 name = "canada"
 file = "canada_without_flags.png"
 disabled = false
@@ -1158,6 +1149,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "ChEESEPLACE.png"
+file = "ChEESEPLACE.png"
+disabled = false
+startx = -1396
+starty = -959
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
@@ -1189,4 +1189,13 @@ disabled = true
 startx = -772
 starty = 642
 priority = 150
+overlay_only = false
+
+[[structure]]
+name = "fuckspezlarge2.png"
+file = "fuckspezlarge2.png"
+disabled = false
+startx = -1500
+starty = -1000
+priority = 170
 overlay_only = false
