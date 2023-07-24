@@ -47,20 +47,20 @@ jobs:
       - id: head
         run: -|
           echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-          
-          # echo "default=$()" >> "$GITHUB_OUTPUT"
-          # echo "overlay=$(base64 -w 0 ./outputs/overlay_target.png)" >> "$GITHUB_OUTPUT"
-      # TODO: find a way to make this work
-      #   somehow this breaks    
-      # - name: Comment PR
-      #   uses: thollander/actions-comment-pull-request@v2
-      #   if: github.event_name == 'pull_request'
-      #   with:
-      #     message: |
-      #       # Default:
-      #       ![Default](data:image/png;base64,${steps.head.outputs.default})
-      #       # Overlay:
-      #       ![Overlay](data:image/png;base64,${steps.head.outputs.default})
+      - id: images
+        run: -|
+          echo "default=$(base64 -w 0 ./outputs/default_target.png)" >> "$GITHUB_OUTPUT"
+          echo "overlay=$(base64 -w 0 ./outputs/overlay_target.png)" >> "$GITHUB_OUTPUT"
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v2
+        if: github.event_name == 'pull_request'
+        with:
+          message: |
+            # Default:
+            ![Default](data:image/png;base64,${{ steps.images.outputs.default }})
+            # Overlay:
+            ![Overlay](data:image/png;base64,${{ steps.images.outputs.overlay }})
 
   # Single deploy job since we're just deploying
   deploy:
