@@ -1164,3 +1164,12 @@ startx = -920
 starty = 602
 priority = 160
 overlay_only = false
+
+[[structure]]
+name = "fuckspezlarge2.png"
+file = "fuckspezlarge2.png"
+disabled = false
+startx = -1500
+starty = -1000
+priority = 166
+overlay_only = false
