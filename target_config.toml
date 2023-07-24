@@ -1,6 +1,6 @@
 ignored_colors = []
 allowed_colors = ["BE0039","FF4500","FFA800","FFD635","00A368","00CC78","7EED56","00756F","009EAA","2450A4","3690EA","51E9F4","493AC1","6A5CFF","811E9F","B44AC0","FF3881","FF99AA","6D482F","9C6926","000000","898D90","D4D7D9","FFFFFF"]
-width = 2500
+width = 3000
 height = 2000
 add-x = 1500
 add-y = 1000
@@ -1125,7 +1125,7 @@ overlay_only = false
 [[structure]]
 name = "fuckspezlarge2.png"
 file = "fuckspezlarge2.png"
-disabled = true
+disabled = false
 startx = -1500
 starty = -1000
 priority = 127
