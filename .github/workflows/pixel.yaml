@@ -48,9 +48,9 @@ jobs:
         run: -|
           echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - id: images
-        run: -|
-          echo "default=$(./bin/imgurbash2 ./outputs/default_target.png 2>&1 | cut -d" " -f1)" >> "$GITHUB_OUTPUT"
-          echo "overlay=$(./bin/imgurbash2 ./outputs/overlay_target.png 2>&1 | cut -d" " -f1)" >> "$GITHUB_OUTPUT"
+        run: |
+          echo "default=$(curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ secrets.ZIPLINE_TOKEN }}" -F file=@outputs/default_target.png ${{ secrets.ZIPLINE_HOST }}/api/upload | jq '.files[0]' -r)" >> "$GITHUB_OUTPUT"
+          echo "overlay=$(curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ secrets.ZIPLINE_TOKEN }}" -F file=@outputs/overlay_target.png ${{ secrets.ZIPLINE_HOST }}/api/upload | jq '.files[0]' -r)" >> "$GITHUB_OUTPUT"
 
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v2
@@ -58,9 +58,9 @@ jobs:
         with:
           message: |
             # Default:
-            ![Default](data:image/png;base64,${{ steps.images.outputs.default }})
+            ![Default](${{ steps.images.outputs.default }})
             # Overlay:
-            ![Overlay](data:image/png;base64,${{ steps.images.outputs.overlay }})
+            ![Overlay](${{ steps.images.outputs.overlay }})
 
   # Single deploy job since we're just deploying
   deploy:
