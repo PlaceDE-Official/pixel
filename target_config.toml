@@ -837,7 +837,7 @@ overlay_only = false
 [[structure]]
 name = "PlaceStart_1.png"
 file = "PlaceStart_1.png"
-disabled = true
+disabled = false
 startx = -1500
 starty = 966
 priority = 127
@@ -846,7 +846,7 @@ overlay_only = false
 [[structure]]
 name = "PlaceStart_2.png"
 file = "PlaceStart_2.png"
-disabled = true
+disabled = false
 startx = -1000
 starty = 966
 priority = 127
@@ -1184,9 +1184,10 @@ priority = 150
 overlay_only = false
 
 [[structure]]
-name = "rahmen"
-file = "rahmen.png"
-startx = -896
-starty = 617
-priority = 127
+name = "frame.png"
+file = "frame.png"
+disabled = true
+startx = -920
+starty = 602
+priority = 160
 overlay_only = false
