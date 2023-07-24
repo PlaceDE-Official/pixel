@@ -70,7 +70,7 @@ disabled = true
 [[structure]]
 name = "subredditstra"
 file = "subredditstra.png"
-startx = -1000
+startx = -1500
 starty = -450
 priority = 127
 
