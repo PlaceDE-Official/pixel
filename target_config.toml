@@ -1234,3 +1234,12 @@ startx = 1108
 starty = 522
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "fsociety_2.png"
+file = "fsociety_2.png"
+disabled = true
+startx = 185
+starty = -1000
+priority = 127
+overlay_only = true
