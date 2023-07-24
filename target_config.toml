@@ -508,7 +508,7 @@ disabled = false
 startx = 2
 starty = -596
 priority = 127
-overlay_only = false
+overlay_only = true
 
 [[structure]]
 name = "rapunzel.png"
@@ -1172,6 +1172,15 @@ file = "Suki_Panda.png"
 disabled = false
 startx = -1139
 starty = -942
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "terzrip1zu1dingtest.png"
+file = "terzrip1zu1dingtest.png"
+disabled = false
+startx = -15
+starty = -610
 priority = 127
 overlay_only = true
 
