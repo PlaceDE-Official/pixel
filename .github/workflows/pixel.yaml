@@ -49,8 +49,8 @@ jobs:
           echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - id: images
         run: -|
-          echo "default=$(base64 -w 0 ./outputs/default_target.png)" >> "$GITHUB_OUTPUT"
-          echo "overlay=$(base64 -w 0 ./outputs/overlay_target.png)" >> "$GITHUB_OUTPUT"
+          echo "default=$(./bin/imgurbash2 ./outputs/default_target.png 2>&1 | cut -d" " -f1)" >> "$GITHUB_OUTPUT"
+          echo "overlay=$(./bin/imgurbash2 ./outputs/overlay_target.png 2>&1 | cut -d" " -f1)" >> "$GITHUB_OUTPUT"
 
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v2
