@@ -871,6 +871,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "felix.png"
+file = "felix.png"
+disabled = false
+startx = 572
+starty = -995
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
