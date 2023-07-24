@@ -738,8 +738,8 @@ overlay_only = false
 [[structure]]
 name = "gekte.png"
 file = "gekte.png"
-disabled = false
-startx = -1500
+disabled = true
+startx = -1000
 starty = -389
 priority = 127
 overlay_only = false
@@ -880,6 +880,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "brazilcountryballs.png"
+file = "brazilcountryballs.png"
+disabled = false
+startx = -747
+starty = -624
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
@@ -898,7 +907,7 @@ overlay_only = false
 [[structure]]
 name = "1up.png"
 file = "1up.png"
-disabled = false
+disabled = true
 startx = -511
 starty = -387
 priority = 130
