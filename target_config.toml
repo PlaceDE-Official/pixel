@@ -766,7 +766,7 @@ overlay_only = false
 name = "loona.png"
 file = "loona.png"
 disabled = false
-startx = -589
+startx = -595
 starty = -964
 priority = 127
 overlay_only = false
@@ -1209,6 +1209,42 @@ startx = 1182
 starty = -949
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "regebogenfisch.png"
+file = "regebogenfisch.png"
+disabled = false
+startx = 1008
+starty = -602
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Kikaninchen.png"
+file = "Kikaninchen.png"
+disabled = false
+startx = 1275
+starty = -988
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "spekulatius.png"
+file = "spekulatius.png"
+disabled = false
+startx = -542
+starty = -973
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "programmleiste.png"
+file = "programmleiste.png"
+disabled = false
+startx = 1440
+starty = -1000
+priority = 127
+overlay_only = false
 
 [[structure]]
 name = "a380"
