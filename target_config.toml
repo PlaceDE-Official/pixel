@@ -401,7 +401,7 @@ disabled = true
 [[structure]]
 name = "alltrains"
 file = "alltrains.png"
-startx = -1000
+startx = -1500
 starty = -392
 priority = 127
 
