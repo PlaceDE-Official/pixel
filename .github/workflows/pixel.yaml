@@ -38,22 +38,26 @@ jobs:
       - run: pip install -r requirements.txt
       - run: ./bin/generate.sh
       - name: Commit & Push changes
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.head_ref || github.ref_name }}
       - run: echo $(git rev-parse HEAD)
       - id: head
-        run: echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+        run: -|
+          echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "default=$(base64 ./outputs/default_target.png)" >> "$GITHUB_OUTPUT"
+          echo "overlay=$(base64 ./outputs/overlay_target.png)" >> "$GITHUB_OUTPUT"
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v2
         if: github.event_name == 'pull_request'
         with:
           message: |
             # Default:
-            ![Default](https://raw.githubusercontent.com/PlaceDE-Official/pixel/${{ steps.head.outputs.head }}/outputs/default_target.png)
+            ![Default](data:image/png:${steps.head.outputs.default})
             # Overlay:
-            ![Overlay](https://raw.githubusercontent.com/PlaceDE-Official/pixel/${{ steps.head.outputs.head }}/outputs/overlay_target.png)
+            ![Overlay](data:image/png:${steps.head.outputs.default})
 
   # Single deploy job since we're just deploying
   deploy:
