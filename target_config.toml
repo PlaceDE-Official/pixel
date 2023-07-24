@@ -18,7 +18,7 @@ overlay_only = false
 [[structure]]
 name = "netherlands"
 file = "netherlands.png"
-startx = -1000
+startx = -1500
 starty = -1000
 priority = 126
 overlay_only = false
@@ -813,15 +813,6 @@ file = "Heldentasse.png"
 disabled = false
 startx = 503
 starty = -590
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "kurzgesagt.png"
-file = "kurzgesagt.png"
-disabled = false
-startx = -644
-starty = -599
 priority = 127
 overlay_only = false
 
