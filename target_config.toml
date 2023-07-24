@@ -1224,3 +1224,4 @@ file = "dragon.png"
 startx = 1108
 starty = 522
 priority = 127
+overlay_only = true
