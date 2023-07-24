@@ -55,9 +55,9 @@ jobs:
         with:
           message: |
             # Default:
-            ![Default](data:image/png:${steps.head.outputs.default})
+            ![Default](data:image/png;base64,${steps.head.outputs.default})
             # Overlay:
-            ![Overlay](data:image/png:${steps.head.outputs.default})
+            ![Overlay](data:image/png;base64,${steps.head.outputs.default})
 
   # Single deploy job since we're just deploying
   deploy:
