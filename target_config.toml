@@ -1217,3 +1217,10 @@ startx = -772
 starty = 642
 priority = 150
 overlay_only = false
+
+[[structure]]
+name = "dragon"
+file = "dragon.png"
+startx = 1108
+starty = 522
+priority = 127
