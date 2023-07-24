@@ -1,5 +1,5 @@
 ignored_colors = []
-allowed_colors = ["6D001A", "BE0039", "FF4500", "FFA800", "FFD635", "FFF8B8", "00A368", "00CC78", "7EED56", "00756F", "009EAA", "00CCC0", "2450A4", "3690EA", "51E9F4", "493AC1", "6A5CFF", "94B3FF", "811E9F", "B44AC0", "E4ABFF", "DE107F", "FF3881", "FF99AA", "6D482F", "9C6926", "FFB470", "000000", "515252", "898D90", "D4D7D9", "FFFFFF"]
+allowed_colors = ["6D001A","BE0039","FF4500","FFA800","FFD635","FFF8B8","00A368","00CC78","7EED56","00756F","009EAA","00CCC0","2450A4","3690EA","51E9F4","493AC1","6A5CFF","94B3FF","811E9F","B44AC0","E4ABFF","DE107F","FF3881","FF99AA","6D482F","9C6926","FFB470","000000","515252","898D90","D4D7D9","FFFFFF"]
 width = 3000
 height = 2000
 add-x = 1500
@@ -1141,6 +1141,14 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "rahmen"
+file = "rahmen.png"
+startx = -896
+starty = 617
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
@@ -1175,18 +1183,10 @@ priority = 150
 overlay_only = false
 
 [[structure]]
-name = "rahmen"
-file = "rahmen.png"
-startx = -896
-starty = 617
-priority = 127
-overlay_only = false
-
-[[structure]]
 name = "fuckspezlarge2.png"
 file = "fuckspezlarge2.png"
 disabled = false
 startx = -1500
 starty = -1000
 priority = 170
-overlay_only = false
+overlay_only = true
