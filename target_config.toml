@@ -817,11 +817,11 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "kikurii.png"
-file = "kikurii.png"
+name = "Tom.png"
+file = "Tom.png"
 disabled = false
-startx = -84
-starty = -997
+startx = 39
+starty = -610
 priority = 127
 overlay_only = false
 
