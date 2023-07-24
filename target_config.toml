@@ -763,6 +763,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "violetevergarden.png"
+file = "violetevergarden.png"
+disabled = false
+startx = -362
+starty = -969
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "loona.png"
 file = "loona.png"
 disabled = false
