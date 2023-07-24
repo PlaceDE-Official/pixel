@@ -1194,7 +1194,7 @@ priority = 127
 [[structure]]
 name = "fsociety_2.png"
 file = "fsociety_2.png"
-disabled = false
+disabled = true
 startx = 185
 starty = -1000
 priority = 127
