@@ -418,10 +418,10 @@ priority = 127
 name = "ukrainetemp"
 file = "ukrainetemp.png"
 startx = -1000
-starty = -500
+starty = -1000
 priority = 127
 overlay_only = false
-disabled = true
+disabled = false
 
 [[structure]]
 name = "nett_hier"
@@ -631,8 +631,8 @@ overlay_only = false
 name = "pokeball.png"
 file = "pokeball.png"
 disabled = false
-startx = -107
-starty = -948
+startx = -105
+starty = -986
 priority = 127
 overlay_only = false
 
@@ -1092,6 +1092,33 @@ file = "FFlogo.png"
 disabled = false
 startx = -1204
 starty = -997
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "maiplace.png"
+file = "maiplace.png"
+disabled = false
+startx = -921
+starty = -969
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "pixelklassikerstaiy.png"
+file = "pixelklassikerstaiy.png"
+disabled = false
+startx = -11
+starty = -947
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Fruchtzwerge.png"
+file = "Fruchtzwerge.png"
+disabled = false
+startx = -698
+starty = -583
 priority = 127
 overlay_only = false
 
