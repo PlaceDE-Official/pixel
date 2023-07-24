@@ -898,6 +898,51 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "worldbox.png"
+file = "worldbox.png"
+disabled = false
+startx = -556
+starty = -996
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "overlord.png"
+file = "overlord.png"
+disabled = false
+startx = -625
+starty = -986
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "nepeta.png"
+file = "nepeta.png"
+disabled = false
+startx = -720
+starty = -955
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "propellerente.png"
+file = "propellerente.png"
+disabled = false
+startx = -1092
+starty = -934
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "czech_bienemaja.png"
+file = "czech_bienemaja.png"
+disabled = false
+startx = -76
+starty = -589
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
