@@ -1123,6 +1123,24 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "fuckspezlarge2.png"
+file = "fuckspezlarge2.png"
+disabled = true
+startx = -1500
+starty = -1000
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "RitterRost.png"
+file = "RitterRost.png"
+disabled = false
+startx = -1171
+starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
