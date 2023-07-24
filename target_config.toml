@@ -1153,7 +1153,16 @@ name = "ChEESEPLACE.png"
 file = "ChEESEPLACE.png"
 disabled = false
 startx = -1396
-starty = -959
+starty = -950
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Suki_Panda.png"
+file = "Suki_Panda.png"
+disabled = false
+startx = -1139
+starty = -942
 priority = 127
 overlay_only = true
 
