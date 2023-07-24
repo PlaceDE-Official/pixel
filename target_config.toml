@@ -1197,5 +1197,5 @@ file = "fuckspezlarge2.png"
 disabled = false
 startx = -1500
 starty = -1000
-priority = 170
+priority = 20
 overlay_only = false
