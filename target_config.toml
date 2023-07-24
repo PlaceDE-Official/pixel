@@ -943,6 +943,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "StardewValley.png"
+file = "StardewValley.png"
+disabled = false
+startx = -1048
+starty = -450
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
