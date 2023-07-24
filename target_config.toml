@@ -739,8 +739,8 @@ overlay_only = false
 name = "rtypewriter.png"
 file = "rtypewriter.png"
 disabled = false
-startx = -361
-starty = -567
+startx = -915
+starty = -566
 priority = 127
 overlay_only = false
 
@@ -1013,6 +1013,51 @@ startx = 215
 starty = -331
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "RRH.png"
+file = "RRH.png"
+disabled = false
+startx = -602
+starty = -995
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "jayuhime.png"
+file = "jayuhime.png"
+disabled = false
+startx = -578
+starty = -987
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Werwolf.png"
+file = "Werwolf.png"
+disabled = false
+startx = 382
+starty = -571
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "bionicles.png"
+file = "bionicles.png"
+disabled = false
+startx = -810
+starty = -1000
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "kamikatze.png"
+file = "kamikatze.png"
+disabled = false
+startx = -1018
+starty = -586
+priority = 127
+overlay_only = false
 
 [[structure]]
 name = "a380"
