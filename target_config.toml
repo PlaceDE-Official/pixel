@@ -487,8 +487,8 @@ overlay_only = false
 name = "terraria.png"
 file = "terraria.png"
 disabled = false
-startx = -799
-starty = -944
+startx = -1495
+starty = -942
 priority = 127
 overlay_only = false
 
@@ -611,9 +611,9 @@ overlay_only = false
 
 [[structure]]
 name = "Ampel.png"
-file = "Ampel.png"
+file = "Raupeampellebkuchen.png"
 disabled = false
-startx = -452
+startx = -541
 starty = -1000
 priority = 127
 overlay_only = false
@@ -867,15 +867,6 @@ file = "W2G.png"
 disabled = false
 startx = -666
 starty = -999
-priority = 127
-overlay_only = false
-
-[[structure]]
-name = "lebkuchen.png"
-file = "lebkuchen.png"
-disabled = false
-startx = -535
-starty = -939
 priority = 127
 overlay_only = false
 
@@ -1137,6 +1128,15 @@ file = "RitterRost.png"
 disabled = false
 startx = -1171
 starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "terrariabeer.png"
+file = "terrariabeer.png"
+disabled = false
+startx = -1458
+starty = -943
 priority = 127
 overlay_only = false
 
