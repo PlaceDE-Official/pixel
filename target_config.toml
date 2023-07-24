@@ -801,7 +801,7 @@ overlay_only = false
 [[structure]]
 name = "german_lattice_heart"
 file = "german_lattice_heart.png"
-disabled = false
+disabled = true
 startx = 461
 starty = -953
 priority = 127
@@ -858,6 +858,15 @@ file = "W2G.png"
 disabled = false
 startx = -666
 starty = -999
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "lebkuchen.png"
+file = "lebkuchen.png"
+disabled = false
+startx = -535
+starty = -939
 priority = 127
 overlay_only = false
 
