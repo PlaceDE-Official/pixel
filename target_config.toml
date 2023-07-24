@@ -77,7 +77,7 @@ priority = 127
 [[structure]]
 name = "overhead_autobahn"
 file = "overhead_autobahn.png"
-startx = -902
+startx = -1402
 starty = -440
 priority = 127
 
@@ -984,6 +984,15 @@ file = "traumschifftaxi.png"
 disabled = false
 startx = -979
 starty = -606
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Naruto.png"
+file = "Naruto.png"
+disabled = false
+startx = -1005
+starty = -977
 priority = 127
 overlay_only = false
 
