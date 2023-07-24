@@ -1185,6 +1185,15 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "Edna__Harvey.png"
+file = "Edna__Harvey.png"
+disabled = false
+startx = -1106
+starty = -589
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
