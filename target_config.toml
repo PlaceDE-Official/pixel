@@ -1060,6 +1060,24 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "rPlaceMswDachs.png"
+file = "rPlaceMswDachs.png"
+disabled = false
+startx = -1325
+starty = -607
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Ghislaine.png"
+file = "Ghislaine.png"
+disabled = false
+startx = -1261
+starty = -610
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
