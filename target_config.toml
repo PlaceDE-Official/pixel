@@ -952,6 +952,33 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "TF2medic.png"
+file = "TF2medic.png"
+disabled = false
+startx = -970
+starty = -973
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "babymetal.png"
+file = "babymetal.png"
+disabled = false
+startx = -883
+starty = -995
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "spyro.png"
+file = "spyro.png"
+disabled = false
+startx = 78
+starty = -574
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
