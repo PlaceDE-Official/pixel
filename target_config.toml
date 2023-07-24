@@ -1187,7 +1187,7 @@ overlay_only = true
 [[structure]]
 name = "Edna__Harvey.png"
 file = "Edna__Harvey.png"
-disabled = false
+disabled = true
 startx = -1106
 starty = -589
 priority = 127
