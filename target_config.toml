@@ -1078,6 +1078,24 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "gronkhstuhl.png"
+file = "gronkhstuhl.png"
+disabled = false
+startx = -1283
+starty = -985
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "FFlogo.png"
+file = "FFlogo.png"
+disabled = false
+startx = -1204
+starty = -997
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
