@@ -10,7 +10,7 @@ default_prio = 120
 [[structure]]
 name = "end.png"
 file = "end.png"
-disabled = true
+disabled = false
 startx = 0
 starty = 0
 priority = 200
