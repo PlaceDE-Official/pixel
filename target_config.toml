@@ -1267,11 +1267,11 @@ overlay_only = true
 [[structure]]
 name = "rewe.png"
 file = "rewe.png"
-disabled = false
+disabled = true
 startx = 1
 starty = -565
 priority = 127
-overlay_only = false
+overlay_only = true
 
 [[structure]]
 name = "bearsshax.png"
@@ -1317,6 +1317,15 @@ startx = -773
 starty = 713
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "portal.png"
+file = "portal.png"
+disabled = false
+startx = 201
+starty = -390
+priority = 128
+overlay_only = false
 
 [[structure]]
 name = "a380"
