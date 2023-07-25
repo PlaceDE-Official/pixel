@@ -1385,11 +1385,11 @@ overlay_only = false
 [[structure]]
 name = "sanssouci.png"
 file = "sanssouci.png"
-disabled = true
+disabled = false
 startx = -1184
 starty = -407
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "kurzgesagt.png"
