@@ -1500,11 +1500,11 @@ overlay_only = true
 [[structure]]
 name = "hive_mind.png"
 file = "hive_mind.png"
-disabled = true
+disabled = false
 startx = 1256
 starty = -610
 priority = 130
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "fackju.png"
