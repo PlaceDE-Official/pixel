@@ -1402,7 +1402,7 @@ overlay_only = false
 
 [[structure]]
 name = "GDPRact.png"
-file = "GDPRact.png"
+file = "GDPR_colorfix.png"
 disabled = false
 startx = 12
 starty = -983
@@ -1433,6 +1433,24 @@ file = "framebansky.png"
 disabled = false
 startx = -734
 starty = 845
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Lubecker_Marzipan_kl.png"
+file = "Lubecker_Marzipan_kl.png"
+disabled = false
+startx = 1316
+starty = -448
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "mummler-iel_final.png"
+file = "mummler-iel_final.png"
+disabled = false
+startx = 1379
+starty = -437
 priority = 127
 overlay_only = true
 
