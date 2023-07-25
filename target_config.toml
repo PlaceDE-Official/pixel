@@ -88,7 +88,7 @@ priority = 127
 [[structure]]
 name = "skandinavien"
 file = "skandinavien.png"
-startx = -1000
+startx = -1500
 starty = -1000
 priority = 127
 overlay_only = true
