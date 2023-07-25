@@ -88,7 +88,7 @@ priority = 127
 [[structure]]
 name = "skandinavien"
 file = "skandinavien.png"
-startx = -1500
+startx = -1000
 starty = -1000
 priority = 127
 overlay_only = true
@@ -1343,6 +1343,15 @@ file = "kaktus.png"
 disabled = false
 startx = 1141
 starty = -413
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "BonjwaDhalucard.png"
+file = "BonjwaDhalucard.png"
+disabled = false
+startx = -1284
+starty = -444
 priority = 127
 overlay_only = true
 
