@@ -1362,7 +1362,7 @@ disabled = false
 startx = 526
 starty = -936
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "kleinerPrinz.png"
