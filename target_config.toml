@@ -1262,12 +1262,12 @@ disabled = false
 startx = 1210
 starty = -997
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "rewe.png"
 file = "rewe.png"
-disabled = true
+disabled = false
 startx = 1
 starty = -565
 priority = 127
@@ -1289,7 +1289,7 @@ disabled = false
 startx = 484
 starty = -447
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "a380"
