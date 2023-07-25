@@ -1470,7 +1470,7 @@ disabled = false
 startx = 1280
 starty = -503
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "Scholl.png"
