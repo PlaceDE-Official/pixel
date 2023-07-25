@@ -1358,7 +1358,7 @@ overlay_only = true
 [[structure]]
 name = "bluevsred.png"
 file = "bluevsred.png"
-disabled = true
+disabled = false
 startx = 526
 starty = -936
 priority = 127
@@ -1367,11 +1367,11 @@ overlay_only = true
 [[structure]]
 name = "kleinerPrinz.png"
 file = "kleinerPrinz.png"
-disabled = true
+disabled = false
 startx = 1313
 starty = -959
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "portal.png"
