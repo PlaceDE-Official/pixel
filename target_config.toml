@@ -1212,7 +1212,7 @@ overlay_only = false
 
 [[structure]]
 name = "violetEvergarden.png"
-file = "violetEvergarden.png"
+file = "violetevergarden.png"
 disabled = false
 startx = 1182
 starty = -949
@@ -1262,12 +1262,12 @@ disabled = false
 startx = 1210
 starty = -997
 priority = 127
-overlay_only = false
+overlay_only = true
 
 [[structure]]
 name = "rewe.png"
 file = "rewe.png"
-disabled = false
+disabled = true
 startx = 1
 starty = -565
 priority = 127
@@ -1289,7 +1289,34 @@ disabled = false
 startx = 484
 starty = -447
 priority = 127
-overlay_only = false
+overlay_only = true
+
+[[structure]]
+name = "frameScream.png"
+file = "frameScream.png"
+disabled = false
+startx = -660
+starty = 642
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "framebluehorse.png"
+file = "framebluehorse.png"
+disabled = true
+startx = -660
+starty = 741
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "framejapenesebridge.png"
+file = "framejapenesebridge.png"
+disabled = true
+startx = -773
+starty = 713
+priority = 127
+overlay_only = true
 
 [[structure]]
 name = "a380"
