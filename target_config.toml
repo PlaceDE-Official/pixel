@@ -43,6 +43,15 @@ priority = 120
 overlay_only = false
 
 [[structure]]
+name = "Naruto.png"
+file = "Naruto.png"
+disabled = false
+startx = -1005
+starty = -977
+priority = 120
+overlay_only = false
+
+[[structure]]
 name = "netherlands"
 file = "netherlands.png"
 startx = -1500
@@ -997,15 +1006,6 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "Naruto.png"
-file = "Naruto.png"
-disabled = false
-startx = -1005
-starty = -977
-priority = 127
-overlay_only = false
-
-[[structure]]
 name = "gronkh.png"
 file = "gronkh.png"
 disabled = false
@@ -1365,15 +1365,6 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "kleinerPrinz.png"
-file = "kleinerPrinz.png"
-disabled = false
-startx = 1313
-starty = -959
-priority = 127
-overlay_only = false
-
-[[structure]]
 name = "karamalz.png"
 file = "karamalz.png"
 disabled = false
@@ -1402,7 +1393,7 @@ overlay_only = false
 
 [[structure]]
 name = "GDPRact.png"
-file = "GDPR_colorfix.png"
+file = "GDPRact.png"
 disabled = false
 startx = 12
 starty = -983
@@ -1437,22 +1428,13 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Lubecker_Marzipan_kl.png"
-file = "Lubecker_Marzipan_kl.png"
+name = "kleinerPrinz.png"
+file = "kleinerPrinz.png"
 disabled = false
-startx = 1316
-starty = -448
+startx = -1030
+starty = -1000
 priority = 127
-overlay_only = true
-
-[[structure]]
-name = "mummler-iel_final.png"
-file = "mummler-iel_final.png"
-disabled = false
-startx = 1379
-starty = -437
-priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "portal.png"
