@@ -1267,11 +1267,11 @@ overlay_only = true
 [[structure]]
 name = "rewe.png"
 file = "rewe.png"
-disabled = true
+disabled = false
 startx = 1
 starty = -565
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "bearsshax.png"
