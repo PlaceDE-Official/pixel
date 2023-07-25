@@ -40,7 +40,7 @@ disabled = false
 startx = -367
 starty = 617
 priority = 120
-overlay_only = false
+overlay_only = true
 
 [[structure]]
 name = "Naruto.png"
@@ -100,7 +100,7 @@ file = "skandinavien.png"
 startx = -1500
 starty = -1000
 priority = 127
-overlay_only = false
+overlay_only = true
 disabled = false
 
 [[structure]]
@@ -1341,10 +1341,10 @@ overlay_only = false
 name = "kaktus.png"
 file = "kaktus.png"
 disabled = false
-startx = 1141
-starty = -413
+startx = 1239
+starty = -573
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "BonjwaDhalucard.png"
@@ -1487,6 +1487,24 @@ file = "a380.png"
 startx = -969
 starty = -416
 priority = 128
+
+[[structure]]
+name = "99Luftballons.png"
+file = "99Luftballons.png"
+disabled = true
+startx = 1133
+starty = -450
+priority = 130
+overlay_only = true
+
+[[structure]]
+name = "hive_mind.png"
+file = "hive_mind.png"
+disabled = true
+startx = 1256
+starty = -610
+priority = 130
+overlay_only = true
 
 [[structure]]
 name = "fackju.png"
