@@ -1204,11 +1204,11 @@ overlay_only = true
 [[structure]]
 name = "violetEvergarden.png"
 file = "violetEvergarden.png"
-disabled = true
+disabled = false
 startx = 1182
 starty = -949
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "regebogenfisch.png"
@@ -1249,16 +1249,16 @@ overlay_only = false
 [[structure]]
 name = "fackju.png"
 file = "fackju.png"
-disabled = false
+disabled = true
 startx = -1278
 starty = -384
 priority = 127
-overlay_only = false
+overlay_only = true
 
 [[structure]]
 name = "BibiBlocksberg.png"
 file = "BibiBlocksberg.png"
-disabled = false
+disabled = true
 startx = 1210
 starty = -997
 priority = 127
@@ -1267,7 +1267,7 @@ overlay_only = true
 [[structure]]
 name = "rewe.png"
 file = "rewe.png"
-disabled = false
+disabled = true
 startx = 1
 starty = -565
 priority = 127
