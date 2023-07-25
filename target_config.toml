@@ -1319,6 +1319,24 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "framePersistanceOfMemory.png"
+file = "framePersistanceOfMemory.png"
+disabled = true
+startx = -871
+starty = 742
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "framegentileschi.png"
+file = "framegentileschi.png"
+disabled = true
+startx = -661
+starty = 842
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "portal.png"
 file = "portal.png"
 disabled = false
