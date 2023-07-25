@@ -1412,7 +1412,7 @@ overlay_only = true
 [[structure]]
 name = "rotkappchen.png"
 file = "rotkappchen.png"
-disabled = true
+disabled = false
 startx = 1073
 starty = -593
 priority = 127
