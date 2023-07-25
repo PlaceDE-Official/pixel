@@ -1376,11 +1376,11 @@ overlay_only = false
 [[structure]]
 name = "karamalz.png"
 file = "karamalz.png"
-disabled = true
+disabled = false
 startx = 659
 starty = -962
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "sanssouci.png"
