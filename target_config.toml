@@ -1235,7 +1235,7 @@ disabled = false
 startx = -542
 starty = -973
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "programmleiste.png"
@@ -1245,6 +1245,33 @@ startx = 1440
 starty = -1000
 priority = 127
 overlay_only = false
+
+[[structure]]
+name = "fackju.png"
+file = "fackju.png"
+disabled = false
+startx = -1278
+starty = -384
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "BibiBlocksberg.png"
+file = "BibiBlocksberg.png"
+disabled = false
+startx = 1210
+starty = -997
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "rewe.png"
+file = "rewe.png"
+disabled = false
+startx = 1
+starty = -565
+priority = 127
+overlay_only = true
 
 [[structure]]
 name = "a380"
