@@ -1182,7 +1182,7 @@ disabled = false
 startx = -1106
 starty = -589
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "dragon"
@@ -1199,7 +1199,7 @@ disabled = false
 startx = 185
 starty = -1000
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "violetEvergarden.png"
@@ -1258,7 +1258,7 @@ overlay_only = true
 [[structure]]
 name = "BibiBlocksberg.png"
 file = "BibiBlocksberg.png"
-disabled = true
+disabled = false
 startx = 1210
 starty = -997
 priority = 127
