@@ -1347,6 +1347,15 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "BonjwaDhalucard.png"
+file = "BonjwaDhalucard.png"
+disabled = false
+startx = -1284
+starty = -444
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "portal.png"
 file = "portal.png"
 disabled = false
