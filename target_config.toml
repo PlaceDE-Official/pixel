@@ -1491,11 +1491,11 @@ priority = 128
 [[structure]]
 name = "99Luftballons.png"
 file = "99Luftballons.png"
-disabled = true
+disabled = false
 startx = 1133
 starty = -450
 priority = 130
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "hive_mind.png"
