@@ -1482,6 +1482,15 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "valorant-shotbow.png"
+file = "valorant-shotbow.png"
+disabled = false
+startx = 682
+starty = -676
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "portal.png"
 file = "portal.png"
 disabled = false
