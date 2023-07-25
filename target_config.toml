@@ -110,7 +110,7 @@ startx = -1500
 starty = -1000
 priority = 127
 overlay_only = false
-disabled = false
+disabled = true
 
 [[structure]]
 name = "subredditstra"
@@ -1478,6 +1478,15 @@ file = "Scholl.png"
 disabled = false
 startx = -1088
 starty = -450
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "denmark.png"
+file = "denmark.png"
+disabled = false
+startx = -196
+starty = -279
 priority = 127
 overlay_only = false
 
