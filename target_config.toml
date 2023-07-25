@@ -13,7 +13,7 @@ disabled = false
 startx = -1500
 starty = -1000
 priority = 20
-overlay_only = false
+overlay_only = true
 
 [[structure]]
 name = "canada"
@@ -100,7 +100,7 @@ file = "skandinavien.png"
 startx = -1500
 starty = -1000
 priority = 127
-overlay_only = true
+overlay_only = false
 disabled = false
 
 [[structure]]
@@ -1425,7 +1425,7 @@ disabled = false
 startx = -734
 starty = 845
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "kleinerPrinz.png"
