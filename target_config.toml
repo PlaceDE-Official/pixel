@@ -1143,7 +1143,7 @@ overlay_only = false
 [[structure]]
 name = "valorant-fuckfix.png"
 file = "valorant-fuckfix.png"
-disabled = false
+disabled = true
 startx = 677
 starty = -610
 priority = 127
