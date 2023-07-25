@@ -88,7 +88,7 @@ priority = 127
 [[structure]]
 name = "skandinavien"
 file = "skandinavien.png"
-startx = -1500
+startx = -1000
 starty = -1000
 priority = 127
 overlay_only = true
@@ -1322,7 +1322,7 @@ overlay_only = false
 [[structure]]
 name = "framePersistanceOfMemory.png"
 file = "framePersistanceOfMemory.png"
-disabled = true
+disabled = false
 startx = -871
 starty = 742
 priority = 127
@@ -1335,7 +1335,7 @@ disabled = false
 startx = -661
 starty = 842
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "kaktus.png"
@@ -1352,6 +1352,24 @@ file = "BonjwaDhalucard.png"
 disabled = false
 startx = -1284
 starty = -444
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "bluevsred.png"
+file = "bluevsred.png"
+disabled = true
+startx = 526
+starty = -936
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "kleinerPrinz.png"
+file = "kleinerPrinz.png"
+disabled = true
+startx = 1313
+starty = -959
 priority = 127
 overlay_only = true
 
