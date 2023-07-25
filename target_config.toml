@@ -6,6 +6,14 @@ add-x = 1500
 add-y = 1000
 default_prio = 120
 
+[[structure]]
+name = "brotthanos_gray.png"
+file = "brotthanos_gray.png"
+disabled = false
+startx = -756
+starty = -992
+priority = 127
+overlay_only = false
 
 [[structure]]
 name = "end.png"
