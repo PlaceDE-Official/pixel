@@ -1403,7 +1403,7 @@ overlay_only = false
 [[structure]]
 name = "GDPRact.png"
 file = "GDPRact.png"
-disabled = true
+disabled = false
 startx = 12
 starty = -983
 priority = 127
@@ -1415,6 +1415,15 @@ file = "rotkappchen.png"
 disabled = false
 startx = 1073
 starty = -593
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "DLRG.png"
+file = "DLRG.png"
+disabled = true
+startx = 1005
+starty = -477
 priority = 127
 overlay_only = true
 
