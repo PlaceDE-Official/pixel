@@ -1286,7 +1286,7 @@ file = "eu.png"
 disabled = false
 startx = -367
 starty = 617
-priority = 130
+priority = 120
 overlay_only = false
 
 [[structure]]
