@@ -109,7 +109,7 @@ file = "skandinavien.png"
 startx = -1500
 starty = -1000
 priority = 127
-overlay_only = true
+overlay_only = false
 disabled = false
 
 [[structure]]
