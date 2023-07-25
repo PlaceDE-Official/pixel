@@ -60,6 +60,15 @@ priority = 126
 overlay_only = false
 
 [[structure]]
+name = "framebansky.png"
+file = "framebansky.png"
+disabled = false
+startx = -734
+starty = 845
+priority = 126
+overlay_only = false
+
+[[structure]]
 name = "brotthanos"
 file = "brotthanos.png"
 startx = -756
@@ -964,8 +973,8 @@ overlay_only = false
 name = "StardewValley.png"
 file = "StardewValley.png"
 disabled = false
-startx = -1048
-starty = -450
+startx = -924
+starty = -451
 priority = 127
 overlay_only = false
 
@@ -1419,15 +1428,6 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "framebansky.png"
-file = "framebansky.png"
-disabled = false
-startx = -734
-starty = 845
-priority = 127
-overlay_only = false
-
-[[structure]]
 name = "kleinerPrinz.png"
 file = "kleinerPrinz.png"
 disabled = false
@@ -1473,6 +1473,15 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "Scholl.png"
+file = "Scholl.png"
+disabled = false
+startx = -1088
+starty = -450
+priority = 127
+overlay_only = false
+
+[[structure]]
 name = "portal.png"
 file = "portal.png"
 disabled = false
@@ -1487,6 +1496,15 @@ file = "a380.png"
 startx = -969
 starty = -416
 priority = 128
+
+[[structure]]
+name = "frameeinsamerbaum.png"
+file = "frameeinsamerbaum.png"
+disabled = false
+startx = -758
+starty = 784
+priority = 130
+overlay_only = false
 
 [[structure]]
 name = "99Luftballons.png"
