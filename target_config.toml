@@ -684,7 +684,7 @@ overlay_only = false
 [[structure]]
 name = "KIT.png"
 file = "KIT.png"
-disabled = false
+disabled = true
 startx = -585
 starty = -368
 priority = 127
@@ -1453,6 +1453,24 @@ startx = 1467
 starty = -448
 priority = 127
 overlay_only = false
+
+[[structure]]
+name = "gregserrif.png"
+file = "gregserrif.png"
+disabled = false
+startx = -1176
+starty = -450
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "SexualTension.png"
+file = "SexualTension.png"
+disabled = false
+startx = 1280
+starty = -503
+priority = 127
+overlay_only = true
 
 [[structure]]
 name = "portal.png"
