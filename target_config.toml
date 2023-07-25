@@ -1374,6 +1374,51 @@ priority = 127
 overlay_only = false
 
 [[structure]]
+name = "karamalz.png"
+file = "karamalz.png"
+disabled = true
+startx = 659
+starty = -962
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "sanssouci.png"
+file = "sanssouci.png"
+disabled = true
+startx = -1184
+starty = -407
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "kurzgesagt.png"
+file = "kurzgesagt.png"
+disabled = false
+startx = -644
+starty = -599
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "GDPRact.png"
+file = "GDPRact.png"
+disabled = true
+startx = 12
+starty = -983
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "rotkappchen.png"
+file = "rotkappchen.png"
+disabled = true
+startx = 1073
+starty = -593
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "portal.png"
 file = "portal.png"
 disabled = false
