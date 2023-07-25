@@ -1421,7 +1421,7 @@ overlay_only = true
 [[structure]]
 name = "DLRG.png"
 file = "DLRG.png"
-disabled = true
+disabled = false
 startx = 1005
 starty = -477
 priority = 127
