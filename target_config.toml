@@ -1337,6 +1337,15 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "kaktus.png"
+file = "kaktus.png"
+disabled = false
+startx = 1141
+starty = -413
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "portal.png"
 file = "portal.png"
 disabled = false
