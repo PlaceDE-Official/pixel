@@ -34,6 +34,15 @@ priority = 120
 overlay_only = false
 
 [[structure]]
+name = "eu.png"
+file = "eu.png"
+disabled = false
+startx = -367
+starty = 617
+priority = 120
+overlay_only = false
+
+[[structure]]
 name = "netherlands"
 file = "netherlands.png"
 startx = -1500
@@ -1247,15 +1256,6 @@ priority = 127
 overlay_only = false
 
 [[structure]]
-name = "fackju.png"
-file = "fackju.png"
-disabled = false
-startx = -1278
-starty = -384
-priority = 130
-overlay_only = false
-
-[[structure]]
 name = "BibiBlocksberg.png"
 file = "BibiBlocksberg.png"
 disabled = false
@@ -1274,6 +1274,24 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "bearsshax.png"
+file = "bearsshax.png"
+disabled = false
+startx = 398
+starty = -608
+priority = 127
+overlay_only = false
+
+[[structure]]
+name = "Jagernew.png"
+file = "Jagernew.png"
+disabled = false
+startx = 484
+starty = -447
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "a380"
 file = "a380.png"
 startx = -969
@@ -1281,12 +1299,12 @@ starty = -416
 priority = 128
 
 [[structure]]
-name = "eu.png"
-file = "eu.png"
+name = "fackju.png"
+file = "fackju.png"
 disabled = false
-startx = -367
-starty = 617
-priority = 120
+startx = -1278
+starty = -384
+priority = 130
 overlay_only = false
 
 [[structure]]
