@@ -1303,7 +1303,7 @@ overlay_only = true
 [[structure]]
 name = "framebluehorse.png"
 file = "framebluehorse.png"
-disabled = true
+disabled = false
 startx = -660
 starty = 741
 priority = 127
