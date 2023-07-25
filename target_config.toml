@@ -1249,11 +1249,11 @@ overlay_only = false
 [[structure]]
 name = "fackju.png"
 file = "fackju.png"
-disabled = true
+disabled = false
 startx = -1278
 starty = -384
-priority = 127
-overlay_only = true
+priority = 130
+overlay_only = false
 
 [[structure]]
 name = "BibiBlocksberg.png"
