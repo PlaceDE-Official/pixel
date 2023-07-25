@@ -1298,7 +1298,7 @@ disabled = false
 startx = -660
 starty = 642
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "framebluehorse.png"
@@ -1307,12 +1307,12 @@ disabled = false
 startx = -660
 starty = 741
 priority = 127
-overlay_only = true
+overlay_only = false
 
 [[structure]]
 name = "framejapenesebridge.png"
 file = "framejapenesebridge.png"
-disabled = true
+disabled = false
 startx = -773
 starty = 713
 priority = 127
