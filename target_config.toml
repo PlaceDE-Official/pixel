@@ -7,15 +7,6 @@ add-y = 1000
 default_prio = 120
 
 [[structure]]
-name = "fuckspezlarge2.png"
-file = "fuckspezlarge2.png"
-disabled = false
-startx = -1500
-starty = -1000
-priority = 20
-overlay_only = true
-
-[[structure]]
 name = "canada"
 file = "canada_without_flags.png"
 disabled = false
