@@ -96,8 +96,7 @@ jobs:
           fetch-depth: 0
           sparse-checkout: |
             outputs
-          sparse-checkout-cone-mode: true 
-          fetch-depth: 0
+          sparse-checkout-cone-mode: true
       - run: git rev-parse HEAD
       - name: Setup Pages
         uses: actions/configure-pages@v5
