@@ -1,26 +1,25 @@
 ignored_colors = []
-allowed_colors = [
-  "FFFFFF",
-  "000000",
-  "FF0704",
-  "FFB363",
-  "FCF88F",
-  "67AA62",
-  "284F85",
-  "448CF7",
-  "7849F7",
-  "EE85B9",
-]
-width = 500
-height = 500
+allowed_colors = ["FFFFFF","000000","FF0000","FFB463","FDF890","51864D","68AC62","244D86","2E62AC","428DF8","7948F7","EF86BA","737373"]
+width = 510
+height = 510
 add-x = 0
 add-y = 0
 default_prio = 120
 
 [[structure]]
-name = "bibi"
-file = "BibiBlocksberg.png"
+name = "Bier_Transparent.png"
+file = "Bier_Transparent.png"
 disabled = false
-startx = 0
-starty = 0
-priority = 20
+startx = 308
+starty = 24
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "hohenzollern.png"
+file = "hohenzollern.png"
+disabled = false
+startx = 420
+starty = 6
+priority = 127
+overlay_only = true

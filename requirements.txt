@@ -1,2 +1,4 @@
 Pillow~=9.4.0
 toml~=0.10.2
+pycapnp~=2.0.0
+websockets~=15.0
