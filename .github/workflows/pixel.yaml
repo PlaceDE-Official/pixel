@@ -31,18 +31,12 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
-          cache: "pip"
       - name: Pixelmaschine
-        uses: addnab/docker-run-action@v3
-        with:
-          registry: docker.io
-          image: tiedemann/pixelmaschine:362d50b
-          options: -v ${{ github.workspace }}:/data
-          run: |
-            pixelmaschine --target-config /data/target_config.toml --picture-directory /data/pictures --output-directory /data/outputs
+        run: |
+          docker run  --rm \
+          -v ${{github.workspace}}:/data \
+          docker.io/tiedemann/pixelmaschine:362d50b \
+          --target-config /data/target_config.toml --picture-directory /data/pictures --output-directory /data/outputs
 
       - name: Commit & Push changes
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
