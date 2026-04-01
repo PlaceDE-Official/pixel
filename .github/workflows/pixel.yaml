@@ -61,7 +61,7 @@ jobs:
           ZIPLINE_HOST: ${{ secrets.ZIPLINE_HOST }}
         run: |
           DEFAULT_URL=$(curl -H "authorization: $ZIPLINE_TOKEN" -F file=@outputs/default_target.png "$ZIPLINE_HOST/api/upload" | jq -r '.files[0]')
-          OVERLAY_URL=$(curl -H "authorization: $ZIPLINE_TOKEN" -F file=@outputs/overlay_target.png "$ZIPLINE_HOST/api/upload" | jq -r '.files[0]')
+          OVERLAY_URL=$(curl -H "authorization: $ZIPLINE_TOKEN" -F file=@outputs/overlay.png "$ZIPLINE_HOST/api/upload" | jq -r '.files[0]')
           echo "default=$DEFAULT_URL" >> "$GITHUB_OUTPUT"
           echo "overlay=$OVERLAY_URL" >> "$GITHUB_OUTPUT"
 
