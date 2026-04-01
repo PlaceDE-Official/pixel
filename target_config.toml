@@ -1,7 +1,16 @@
 ignored_colors = []
-allowed_colors = [ "FFFFFF", "000000", "FF0000", "FFB463", "FDF890", "51864D", "68AC62", "244D86", "2E62AC", "428DF8", "7948F7", "EF86BA", "737373",]
+allowed_colors = ["FFFFFF","000000","FF0000","FFB463","FDF890","51864D","68AC62","244D86","2E62AC","428DF8","7948F7","EF86BA","737373"]
 width = 500
 height = 500
 add-x = 0
 add-y = 0
 default_prio = 120
+
+[[structure]]
+name = "Bier_Transparent.png"
+file = "Bier_Transparent.png"
+disabled = false
+startx = 308
+starty = 24
+priority = 127
+overlay_only = true
