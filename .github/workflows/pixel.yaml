@@ -27,9 +27,9 @@ jobs:
     outputs:
       head: ${{ steps.head.outputs.head }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          persist-credentials: true
           fetch-depth: 0
       - name: Pixelmaschine
         run: |
@@ -40,21 +40,33 @@ jobs:
 
       - name: Commit & Push changes
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref || github.ref_name }}
-      - run: echo $(git rev-parse HEAD)
-      - id: head
-        run: -|
-          echo "head=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - id: images
         run: |
-          echo "default=$(curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ secrets.ZIPLINE_TOKEN }}" -F file=@outputs/default_target.png ${{ secrets.ZIPLINE_HOST }}/api/upload | jq '.files[0]' -r)" >> "$GITHUB_OUTPUT"
-          echo "overlay=$(curl -H "Content-Type: multipart/form-data" -H "authorization: ${{ secrets.ZIPLINE_TOKEN }}" -F file=@outputs/overlay_target.png ${{ secrets.ZIPLINE_HOST }}/api/upload | jq '.files[0]' -r)" >> "$GITHUB_OUTPUT"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          # Only commit and push if there are actual changes
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update generated pixels [skip ci]"
+            git push
+          fi
+
+      - name: Capture SHA
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Upload to Zipline
+        id: images
+        env:
+          ZIPLINE_TOKEN: ${{ secrets.ZIPLINE_TOKEN }}
+          ZIPLINE_HOST: ${{ secrets.ZIPLINE_HOST }}
+        run: |
+          DEFAULT_URL=$(curl -H "authorization: $ZIPLINE_TOKEN" -F file=@outputs/default_target.png "$ZIPLINE_HOST/api/upload" | jq -r '.files[0]')
+          OVERLAY_URL=$(curl -H "authorization: $ZIPLINE_TOKEN" -F file=@outputs/overlay_target.png "$ZIPLINE_HOST/api/upload" | jq -r '.files[0]')
+          echo "default=$DEFAULT_URL" >> "$GITHUB_OUTPUT"
+          echo "overlay=$OVERLAY_URL" >> "$GITHUB_OUTPUT"
 
       - name: Comment PR
-        uses: thollander/actions-comment-pull-request@v2
+        uses: thollander/actions-comment-pull-request@v3
         if: github.event_name == 'pull_request'
         with:
           message: |
