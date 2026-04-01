@@ -14,3 +14,12 @@ startx = 308
 starty = 24
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "hohenzollern.png"
+file = "hohenzollern.png"
+disabled = false
+startx = 420
+starty = 6
+priority = 127
+overlay_only = true
