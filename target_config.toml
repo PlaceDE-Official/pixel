@@ -34,19 +34,19 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Artemis2.png"
-file = "Artemis2.png"
+name = "marmeladenomapixel10.png"
+file = "marmeladenomapixel10.png"
 disabled = false
-startx = 350
-starty = 7
+startx = 392
+starty = 4
 priority = 127
 overlay_only = true
 
 [[structure]]
-name = "marmeladenomapixel9.png"
-file = "marmeladenomapixel9.png"
+name = "Artemis2_2.png"
+file = "Artemis2_2.png"
 disabled = false
-startx = 392
-starty = 4
+startx = 350
+starty = 6
 priority = 127
 overlay_only = true
