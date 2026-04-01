@@ -1,16 +1,5 @@
 ignored_colors = []
-allowed_colors = [
-  "FFFFFF",
-  "000000",
-  "FF0704",
-  "FFB363",
-  "FCF88F",
-  "67AA62",
-  "284F85",
-  "448CF7",
-  "7849F7",
-  "EE85B9",
-]
+allowed_colors = [ "FFFFFF", "000000", "FF0000", "FFB463", "FDF890", "51864D", "68AC62", "244D86", "2E62AC", "428DF8", "7948F7", "EF86BA", "737373",]
 width = 500
 height = 500
 add-x = 0
