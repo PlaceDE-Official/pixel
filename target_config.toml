@@ -25,8 +25,17 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "reclamheft.png"
-file = "reclamheft.png"
+name = "marmeladenomapixel8.png"
+file = "marmeladenomapixel8.png"
+disabled = false
+startx = 392
+starty = 4
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "reclamheft_new.png"
+file = "reclamheft_new.png"
 disabled = false
 startx = 288
 starty = 33
@@ -34,10 +43,10 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "marmeladenomapixel8.png"
-file = "marmeladenomapixel8.png"
+name = "Artemis2.png"
+file = "Artemis2.png"
 disabled = false
-startx = 392
-starty = 4
+startx = 350
+starty = 7
 priority = 127
 overlay_only = true
