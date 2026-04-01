@@ -24,4 +24,3 @@ disabled = false
 startx = 0
 starty = 0
 priority = 20
-overlay_only = true
