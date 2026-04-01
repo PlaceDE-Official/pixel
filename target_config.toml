@@ -32,3 +32,12 @@ startx = 288
 starty = 33
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "marmeladenomapixel8.png"
+file = "marmeladenomapixel8.png"
+disabled = false
+startx = 392
+starty = 4
+priority = 127
+overlay_only = true
