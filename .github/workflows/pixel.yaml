@@ -3,10 +3,10 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'main'
+      - "main"
   pull_request:
     branches:
-      - 'main'
+      - "main"
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -33,10 +33,17 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
-          cache: 'pip'
-      - run: pip install -r requirements.txt
-      - run: ./bin/generate.sh
+          python-version: "3.11"
+          cache: "pip"
+      - name: Pixelmaschine
+        uses: addnab/docker-run-action@v3
+        with:
+          registry: docker.io
+          image: tiedemann/pixelmaschine:362d50b
+          options: -v ${{ github.workspace }}:/data
+          run: |
+            pixelmaschine --target-config /data/target_config.toml --picture-directory /data/pictures --output-directory /data/outputs
+
       - name: Commit & Push changes
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions-js/push@master
@@ -82,7 +89,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './outputs/'
+          path: "./outputs/"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
