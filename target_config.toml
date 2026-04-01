@@ -1,18 +1,16 @@
 ignored_colors = []
-allowed_colors = [
-  "FFFFFF",
-  "000000",
-  "FF0704",
-  "FFB363",
-  "FCF88F",
-  "67AA62",
-  "284F85",
-  "448CF7",
-  "7849F7",
-  "EE85B9",
-]
+allowed_colors = ["FFFFFF","000000","FF0704","FFB363","FCF88F","67AA62","284F85","448CF7","7849F7","EE85B9"]
 width = 500
 height = 500
 add-x = 0
 add-y = 0
 default_prio = 120
+
+[[structure]]
+name = "worldbox.png"
+file = "worldbox.png"
+disabled = false
+startx = 0
+starty = 0
+priority = 127
+overlay_only = true
