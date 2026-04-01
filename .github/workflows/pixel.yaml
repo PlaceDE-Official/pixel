@@ -27,7 +27,7 @@ jobs:
     outputs:
       head: ${{ steps.head.outputs.head }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           persist-credentials: true
           fetch-depth: 0
@@ -90,9 +90,13 @@ jobs:
     steps:
       - run: echo ${{needs.generate.outputs.head}}
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{needs.generate.outputs.head}}
+          fetch-depth: 0
+          sparse-checkout: |
+            outputs
+          sparse-checkout-cone-mode: true 
           fetch-depth: 0
       - run: git rev-parse HEAD
       - name: Setup Pages
