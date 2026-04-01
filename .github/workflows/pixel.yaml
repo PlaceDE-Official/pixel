@@ -35,7 +35,7 @@ jobs:
         run: |
           docker run  --rm \
           -v ${{github.workspace}}:/data \
-          docker.io/tiedemann/pixelmaschine:362d50b \
+          docker.io/tiedemann/pixelmaschine:4ab9b3d \
           --target-config /data/target_config.toml --picture-directory /data/pictures --output-directory /data/outputs
 
       - name: Commit & Push changes
