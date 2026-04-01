@@ -18,8 +18,8 @@ add-y = 0
 default_prio = 120
 
 [[structure]]
-name = "fuckspezlarge2.png"
-file = "fuckspezlarge2.png"
+name = "bibi"
+file = "BibiBlocksberg.png"
 disabled = false
 startx = 0
 starty = 0
