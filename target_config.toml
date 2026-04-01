@@ -23,3 +23,12 @@ startx = 420
 starty = 6
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "reclamheft.png"
+file = "reclamheft.png"
+disabled = false
+startx = 288
+starty = 33
+priority = 127
+overlay_only = true
