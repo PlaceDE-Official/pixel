@@ -31,13 +31,18 @@ jobs:
         with:
           persist-credentials: true
           fetch-depth: 0
-      - name: Pixelmaschine
-        run: |
-          docker run  --rm \
-          -v ${{github.workspace}}:/data \
-          docker.io/tiedemann/pixelmaschine:4ab9b3d \
-          --target-config /data/target_config.toml --picture-directory /data/pictures --output-directory /data/outputs
-
+      # - name: Pixelmaschine
+      #   run: |
+      #     docker run  --rm \
+      #     -v ${{github.workspace}}:/data \
+      #     docker.io/tiedemann/pixelmaschine:4ab9b3d \
+      #     --target-config /data/target_config.toml --picture-directory /data/pictures --output-directory /data/outputs
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      - run: ./bin/generate.sh
       - name: Commit & Push changes
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
