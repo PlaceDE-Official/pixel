@@ -34,15 +34,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "marmeladenomapixel10.png"
-file = "marmeladenomapixel10.png"
-disabled = false
-startx = 392
-starty = 4
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "Artemis2_2.png"
 file = "Artemis2_2.png"
 disabled = false
@@ -57,15 +48,6 @@ file = "fax.png"
 disabled = false
 startx = 154
 starty = 28
-priority = 127
-overlay_only = true
-
-[[structure]]
-name = "fck_nzsKAMI2.png"
-file = "fck_nzsKAMI2.png"
-disabled = false
-startx = 114
-starty = 10
 priority = 127
 overlay_only = true
 
@@ -93,5 +75,23 @@ file = "sdaubner_new.png"
 disabled = false
 startx = 190
 starty = 3
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "marmeladenoma_Haut.png"
+file = "marmeladenoma_Haut.png"
+disabled = false
+startx = 391
+starty = 2
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "fck_nzs_final.png"
+file = "fck_nzs_final.png"
+disabled = false
+startx = 114
+starty = 4
 priority = 127
 overlay_only = true
