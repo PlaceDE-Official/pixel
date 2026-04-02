@@ -158,3 +158,12 @@ startx = 84
 starty = 83
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "curling.png"
+file = "curling.png"
+disabled = false
+startx = 135
+starty = 103
+priority = 127
+overlay_only = true
