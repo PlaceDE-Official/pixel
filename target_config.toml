@@ -1,5 +1,5 @@
 ignored_colors = []
-allowed_colors = ["FFFFFF","000000","FF0000","FFB463","FDF890","51864D","68AC62","244D86","2E62AC","428DF8","7948F7","EF86BA","D48D66","875A41","737373"]
+allowed_colors = ["FFFFFF","000000","FF0000","FFB463","FDF890","51864D","68AC62","244D86","2E62AC","428DF8","7948F7","EF86BA","737373"]
 width = 510
 height = 510
 add-x = 0
@@ -57,5 +57,14 @@ file = "fax.png"
 disabled = false
 startx = 154
 starty = 28
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "fck_nzsKAMI2.png"
+file = "fck_nzsKAMI2.png"
+disabled = false
+startx = 114
+starty = 10
 priority = 127
 overlay_only = true
