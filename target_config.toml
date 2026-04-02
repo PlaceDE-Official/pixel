@@ -68,3 +68,12 @@ startx = 114
 starty = 10
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "placeLinks.png"
+file = "placeLinks.png"
+disabled = false
+startx = 0
+starty = 0
+priority = 127
+overlay_only = true
