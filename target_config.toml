@@ -86,3 +86,12 @@ startx = 240
 starty = 10
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "sdaubner.png"
+file = "sdaubner.png"
+disabled = false
+startx = 190
+starty = 3
+priority = 127
+overlay_only = true
