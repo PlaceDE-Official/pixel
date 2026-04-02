@@ -140,3 +140,12 @@ startx = 3
 starty = 505
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "monkeklein.png"
+file = "monkeklein.png"
+disabled = false
+startx = 102
+starty = 56
+priority = 127
+overlay_only = true
