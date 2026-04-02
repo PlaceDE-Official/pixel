@@ -7,15 +7,6 @@ add-y = 0
 default_prio = 120
 
 [[structure]]
-name = "Bier_Transparent.png"
-file = "Bier_Transparent.png"
-disabled = false
-startx = 308
-starty = 24
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "hohenzollern.png"
 file = "hohenzollern.png"
 disabled = false
@@ -93,5 +84,14 @@ file = "fck_nzs_final.png"
 disabled = false
 startx = 114
 starty = 4
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Bier_Transparent.png"
+file = "Bier_Transparent.png"
+disabled = false
+startx = 308
+starty = 24
 priority = 127
 overlay_only = true
