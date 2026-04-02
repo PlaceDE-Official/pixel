@@ -113,3 +113,12 @@ startx = 84
 starty = 96
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "weizenglas.png"
+file = "weizenglas.png"
+disabled = false
+startx = 310
+starty = 513
+priority = 127
+overlay_only = true
