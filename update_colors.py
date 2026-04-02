@@ -10,6 +10,7 @@ schema = capnp.load("tyles_protocol.capnp")
 TOML_PATH = "target_config.toml"
 ACO_PATH = "outputs/colors.aco"
 GPL_PATH = "outputs/colors.gpl"
+PDN_PATH = "outputs/colors.txt"
 
 
 async def fetch_config():
@@ -76,18 +77,27 @@ def write_gpl(colors: list[str]):
         f.write("\n".join(lines) + "\n")
 
 
+def write_pdn(colors: list[str]):
+    """Write a Paint.NET .txt palette file."""
+    lines = [f"FF{hex_color}" for hex_color in colors]
+    with open(PDN_PATH, "w") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def main():
     msg = asyncio.run(fetch_config())
     allowed, dimensions = decode(msg)
     update_toml(allowed, dimensions)
     write_aco(allowed)
     write_gpl(allowed)
+    write_pdn(allowed)
     print(f"Updated {TOML_PATH} with {len(allowed)} colors:")
     for c in allowed:
         print(f"  #{c}")
     print(f"Updated size to {dimensions[0]} x {dimensions[1]}")
     print(f"Wrote {ACO_PATH} with {len(allowed)} swatches")
     print(f"Wrote {GPL_PATH} with {len(allowed)} swatches")
+    print(f"Wrote {PDN_PATH} with {len(allowed)} swatches")
 
 
 if __name__ == "__main__":
