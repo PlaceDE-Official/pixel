@@ -122,3 +122,12 @@ startx = 310
 starty = 513
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "Spezi.png"
+file = "Spezi.png"
+disabled = false
+startx = 483
+starty = 6
+priority = 127
+overlay_only = true
