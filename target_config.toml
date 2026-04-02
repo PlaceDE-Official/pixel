@@ -43,24 +43,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "placeLinks.png"
-file = "placeLinks.png"
-disabled = false
-startx = 0
-starty = 0
-priority = 127
-overlay_only = true
-
-[[structure]]
-name = "Burns_Merz.png"
-file = "Burns_Merz.png"
-disabled = false
-startx = 240
-starty = 10
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "sdaubner_new.png"
 file = "sdaubner_new.png"
 disabled = false
@@ -102,5 +84,32 @@ file = "CANADA.png"
 disabled = false
 startx = 81
 starty = 96
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Burns_Merz.png"
+file = "Burns_Merz.png"
+disabled = false
+startx = 240
+starty = 10
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "placeLinks.png"
+file = "placeLinks.png"
+disabled = false
+startx = 0
+starty = 0
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "wels_bernd_outline.png"
+file = "wels_bernd_outline.png"
+disabled = false
+startx = 26
+starty = 0
 priority = 127
 overlay_only = true
