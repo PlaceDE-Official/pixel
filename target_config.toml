@@ -88,8 +88,8 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "sdaubner.png"
-file = "sdaubner.png"
+name = "sdaubner_new.png"
+file = "sdaubner_new.png"
 disabled = false
 startx = 190
 starty = 3
