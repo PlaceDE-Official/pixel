@@ -106,15 +106,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Canada_final.png"
-file = "Canada_final.png"
-disabled = false
-startx = 84
-starty = 96
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "weizenglas.png"
 file = "weizenglas.png"
 disabled = false
@@ -147,5 +138,23 @@ file = "monkeklein.png"
 disabled = false
 startx = 102
 starty = 56
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ado_smol.png"
+file = "Ado_smol.png"
+disabled = false
+startx = 92
+starty = 1
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Canada_final_2.png"
+file = "Canada_final_2.png"
+disabled = false
+startx = 84
+starty = 83
 priority = 127
 overlay_only = true
