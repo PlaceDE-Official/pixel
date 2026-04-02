@@ -77,3 +77,12 @@ startx = 0
 starty = 0
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "Burns_Merz.png"
+file = "Burns_Merz.png"
+disabled = false
+startx = 240
+starty = 10
+priority = 127
+overlay_only = true
