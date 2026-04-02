@@ -50,3 +50,12 @@ startx = 350
 starty = 6
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "fax.png"
+file = "fax.png"
+disabled = false
+startx = 154
+starty = 28
+priority = 127
+overlay_only = true
