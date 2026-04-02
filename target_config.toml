@@ -1,5 +1,5 @@
 ignored_colors = []
-allowed_colors = ["FFFFFF","000000","FF0000","FF5F1F","FFB463","FDF890","51864D","68AC62","96F88D","244D86","2E62AC","428DF8","7948F7","4F2C96","EF86BA","FEF3EA","D48D66","875A41","737373","EBBDAD","FFCC00","B51A00","CACACA"]
+allowed_colors = ["FFFFFF","000000","FF0000","FF5F1F","FFB463","FDF890","51864D","68AC62","244D86","2E62AC","428DF8","7948F7","EF86BA","FEF3EA","D48D66","875A41","737373","EBBDAD","FFCC00","B51A00"]
 width = 512
 height = 512
 add-x = 0
@@ -79,15 +79,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "CANADA.png"
-file = "CANADA.png"
-disabled = false
-startx = 81
-starty = 96
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "Burns_Merz.png"
 file = "Burns_Merz.png"
 disabled = false
@@ -111,5 +102,14 @@ file = "wels_bernd_outline.png"
 disabled = false
 startx = 26
 starty = 0
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Canada_final.png"
+file = "Canada_final.png"
+disabled = false
+startx = 84
+starty = 96
 priority = 127
 overlay_only = true
