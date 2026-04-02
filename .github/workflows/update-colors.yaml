@@ -1,0 +1,35 @@
+name: update colors
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "update-colors"
+  cancel-in-progress: true
+
+jobs:
+  update-colors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: "pip"
+      - run: pip install toml pycapnp websockets
+      - run: python update_colors.py
+      - name: Commit & Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add target_config.toml
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update colors [skip ci]"
+            git push
+          fi
