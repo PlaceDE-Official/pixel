@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import asyncio, re
+import asyncio, re, struct
 import capnp
 import toml
 import websockets
@@ -8,6 +8,7 @@ capnp.remove_import_hook()
 schema = capnp.load("tyles_protocol.capnp")
 
 TOML_PATH = "target_config.toml"
+ACO_PATH = "outputs/colors.aco"
 
 
 async def fetch_config():
@@ -33,14 +34,45 @@ def update_toml(allowed_colors: list[str], dimensions: tuple[int, int]):
         f.write(text)
 
 
+def write_aco(colors: list[str]):
+    """Write a Photoshop .aco color swatch file (v1 + v2)."""
+    parsed = []
+    for hex_color in colors:
+        r = int(hex_color[0:2], 16)
+        g = int(hex_color[2:4], 16)
+        b = int(hex_color[4:6], 16)
+        parsed.append((r, g, b))
+
+    buf = bytearray()
+
+    # Version 1
+    buf += struct.pack(">HH", 1, len(parsed))
+    for r, g, b in parsed:
+        buf += struct.pack(">HHHHH", 0, r * 257, g * 257, b * 257, 0)
+
+    # Version 2 (with names)
+    buf += struct.pack(">HH", 2, len(parsed))
+    for i, (r, g, b) in enumerate(parsed):
+        buf += struct.pack(">HHHHH", 0, r * 257, g * 257, b * 257, 0)
+        name = f"#{colors[i]}"
+        encoded = name.encode("utf-16-be") + b"\x00\x00"
+        buf += struct.pack(">I", len(name) + 1)
+        buf += encoded
+
+    with open(ACO_PATH, "wb") as f:
+        f.write(buf)
+
+
 def main():
     msg = asyncio.run(fetch_config())
     allowed, dimensions = decode(msg)
     update_toml(allowed, dimensions)
+    write_aco(allowed)
     print(f"Updated {TOML_PATH} with {len(allowed)} colors:")
     for c in allowed:
         print(f"  #{c}")
     print(f"Updated size to {dimensions[0]} x {dimensions[1]}")
+    print(f"Wrote {ACO_PATH} with {len(allowed)} swatches")
 
 
 if __name__ == "__main__":

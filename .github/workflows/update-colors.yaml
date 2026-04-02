@@ -6,6 +6,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "update-colors"
@@ -14,6 +16,8 @@ concurrency:
 jobs:
   update-colors:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -25,11 +29,35 @@ jobs:
       - run: pip install toml pycapnp websockets
       - run: python update_colors.py
       - name: Commit & Push changes
+        id: commit
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add target_config.toml
+          git add target_config.toml outputs/colors.aco
           if ! git diff --cached --quiet; then
             git commit -m "chore: update colors [skip ci]"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+  deploy:
+    needs: update-colors
+    if: needs.update-colors.outputs.changed == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          sparse-checkout: |
+            outputs
+          sparse-checkout-cone-mode: true
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: "./outputs/"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
