@@ -131,3 +131,12 @@ startx = 483
 starty = 6
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "GrrrOhneBL.png"
+file = "GrrrOhneBL.png"
+disabled = false
+startx = 3
+starty = 505
+priority = 127
+overlay_only = true
