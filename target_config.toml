@@ -95,3 +95,12 @@ startx = 308
 starty = 24
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "CANADA.png"
+file = "CANADA.png"
+disabled = false
+startx = 81
+starty = 96
+priority = 127
+overlay_only = true
