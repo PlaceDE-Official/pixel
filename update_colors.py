@@ -9,6 +9,7 @@ schema = capnp.load("tyles_protocol.capnp")
 
 TOML_PATH = "target_config.toml"
 ACO_PATH = "outputs/colors.aco"
+GPL_PATH = "outputs/colors.gpl"
 
 
 async def fetch_config():
@@ -63,16 +64,30 @@ def write_aco(colors: list[str]):
         f.write(buf)
 
 
+def write_gpl(colors: list[str]):
+    """Write a GIMP .gpl palette file."""
+    lines = ["GIMP Palette", "Name: tyles", "#"]
+    for hex_color in colors:
+        r = int(hex_color[0:2], 16)
+        g = int(hex_color[2:4], 16)
+        b = int(hex_color[4:6], 16)
+        lines.append(f"{r:>3} {g:>3} {b:>3}\t#{hex_color}")
+    with open(GPL_PATH, "w") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def main():
     msg = asyncio.run(fetch_config())
     allowed, dimensions = decode(msg)
     update_toml(allowed, dimensions)
     write_aco(allowed)
+    write_gpl(allowed)
     print(f"Updated {TOML_PATH} with {len(allowed)} colors:")
     for c in allowed:
         print(f"  #{c}")
     print(f"Updated size to {dimensions[0]} x {dimensions[1]}")
     print(f"Wrote {ACO_PATH} with {len(allowed)} swatches")
+    print(f"Wrote {GPL_PATH} with {len(allowed)} swatches")
 
 
 if __name__ == "__main__":
