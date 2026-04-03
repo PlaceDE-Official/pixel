@@ -248,3 +248,12 @@ startx = 1
 starty = 19
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "grill.png"
+file = "grill.png"
+disabled = false
+startx = 293
+starty = 542
+priority = 127
+overlay_only = true
