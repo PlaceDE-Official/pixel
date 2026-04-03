@@ -64,7 +64,7 @@ overlay_only = true
 name = "fck_nzs_final.png"
 file = "fck_nzs_final.png"
 disabled = false
-startx = 114
+startx = 115
 starty = 4
 priority = 127
 overlay_only = true
@@ -151,19 +151,19 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Canada_final_2.png"
-file = "Canada_final_2.png"
-disabled = false
-startx = 84
-starty = 83
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "curling.png"
 file = "curling.png"
 disabled = false
 startx = 132
 starty = 94
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Canada_final_2.png"
+file = "Canada_final_2.png"
+disabled = false
+startx = 84
+starty = 96
 priority = 127
 overlay_only = true
