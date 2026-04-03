@@ -239,3 +239,12 @@ startx = 236
 starty = 215
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "wal2.png"
+file = "wal2.png"
+disabled = false
+startx = 1
+starty = 19
+priority = 127
+overlay_only = true
