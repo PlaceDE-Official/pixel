@@ -160,15 +160,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "portal_spider.png"
-file = "portal_spider.png"
-disabled = false
-startx = 374
-starty = 180
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "Zwieback.png"
 file = "Zwieback.png"
 disabled = false
@@ -219,5 +210,23 @@ file = "Ahoi_Brause.png"
 disabled = false
 startx = 391
 starty = 40
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "portal_spider.png"
+file = "portal_spider.png"
+disabled = false
+startx = 374
+starty = 180
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Dino_Nuggis.png"
+file = "Dino_Nuggis.png"
+disabled = false
+startx = 13
+starty = 41
 priority = 127
 overlay_only = true
