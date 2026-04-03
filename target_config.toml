@@ -142,15 +142,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Ahoi-Brause.png"
-file = "Ahoi-Brause.png"
-disabled = false
-startx = 391
-starty = 40
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "durstloscher.png"
 file = "durstloscher.png"
 disabled = false
@@ -210,5 +201,23 @@ file = "fax.png"
 disabled = false
 startx = 154
 starty = 28
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "GrrrrText.png"
+file = "GrrrrText.png"
+disabled = false
+startx = 0
+starty = 548
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ahoi_Brause.png"
+file = "Ahoi_Brause.png"
+disabled = false
+startx = 391
+starty = 40
 priority = 127
 overlay_only = true
