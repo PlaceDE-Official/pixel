@@ -176,3 +176,12 @@ startx = 391
 starty = 40
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "durstloscher.png"
+file = "durstloscher.png"
+disabled = false
+startx = 73
+starty = 35
+priority = 127
+overlay_only = true
