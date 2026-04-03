@@ -34,15 +34,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "fax.png"
-file = "fax.png"
-disabled = false
-startx = 154
-starty = 28
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "sdaubner_new.png"
 file = "sdaubner_new.png"
 disabled = false
@@ -84,15 +75,6 @@ file = "Burns_Merz.png"
 disabled = false
 startx = 240
 starty = 10
-priority = 127
-overlay_only = true
-
-[[structure]]
-name = "placeLinks.png"
-file = "placeLinks.png"
-disabled = false
-startx = 0
-starty = 0
 priority = 127
 overlay_only = true
 
@@ -160,15 +142,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Canada_final_2.png"
-file = "Canada_final_2.png"
-disabled = false
-startx = 84
-starty = 96
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "Ahoi-Brause.png"
 file = "Ahoi-Brause.png"
 disabled = false
@@ -210,5 +183,32 @@ file = "Zwieback.png"
 disabled = false
 startx = 126
 starty = 527
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "fax.png"
+file = "fax.png"
+disabled = false
+startx = 154
+starty = 28
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Canada_final_2.png"
+file = "Canada_final_2.png"
+disabled = false
+startx = 84
+starty = 96
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "placeLinks.png"
+file = "placeLinks.png"
+disabled = false
+startx = 0
+starty = 0
 priority = 127
 overlay_only = true
