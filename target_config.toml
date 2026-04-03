@@ -167,3 +167,12 @@ startx = 84
 starty = 96
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "Ahoi-Brause.png"
+file = "Ahoi-Brause.png"
+disabled = false
+startx = 391
+starty = 40
+priority = 127
+overlay_only = true
