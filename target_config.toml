@@ -160,15 +160,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Canada_final_2.png"
-file = "Canada_final_2.png"
-disabled = false
-startx = 84
-starty = 96
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "placeLinks.png"
 file = "placeLinks.png"
 disabled = false
@@ -295,8 +286,26 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "VC1.png"
-file = "VC1.png"
+name = "Kika.png"
+file = "Kika.png"
+disabled = false
+startx = 422
+starty = 512
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "kamellen.png"
+file = "kamellen.png"
+disabled = false
+startx = 422
+starty = 530
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "VC1b.png"
+file = "VC1b.png"
 disabled = false
 startx = 163
 starty = 3
@@ -304,10 +313,10 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Kika.png"
-file = "Kika.png"
+name = "Canada_final_2.png"
+file = "Canada_final_2.png"
 disabled = false
-startx = 422
-starty = 512
-priority = 127
+startx = 84
+starty = 96
+priority = 128
 overlay_only = true
