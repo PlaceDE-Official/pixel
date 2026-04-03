@@ -275,3 +275,30 @@ startx = 248
 starty = 544
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "loon.png"
+file = "loon.png"
+disabled = false
+startx = 439
+starty = 344
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "loonreversed.png"
+file = "loonreversed.png"
+disabled = false
+startx = 406
+starty = 344
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "VC1.png"
+file = "VC1.png"
+disabled = false
+startx = 163
+starty = 3
+priority = 127
+overlay_only = true
