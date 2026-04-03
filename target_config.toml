@@ -185,3 +185,21 @@ startx = 73
 starty = 35
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "portal_void.png"
+file = "portal_void.png"
+disabled = false
+startx = 195
+starty = 391
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "portal_spider.png"
+file = "portal_spider.png"
+disabled = false
+startx = 374
+starty = 180
+priority = 127
+overlay_only = true
