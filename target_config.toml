@@ -230,3 +230,12 @@ startx = 13
 starty = 41
 priority = 127
 overlay_only = true
+
+[[structure]]
+name = "Vietnam.png"
+file = "Vietnam.png"
+disabled = false
+startx = 236
+starty = 215
+priority = 127
+overlay_only = true
