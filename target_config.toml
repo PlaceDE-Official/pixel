@@ -7,6 +7,15 @@ add-y = 0
 default_prio = 120
 
 [[structure]]
+name = "curling.png"
+file = "curling.png"
+disabled = false
+startx = 132
+starty = 94
+priority = 126
+overlay_only = true
+
+[[structure]]
 name = "hohenzollern.png"
 file = "hohenzollern.png"
 disabled = false
@@ -100,8 +109,8 @@ overlay_only = true
 name = "Spezi.png"
 file = "Spezi.png"
 disabled = false
-startx = 483
-starty = 6
+startx = 333
+starty = 517
 priority = 127
 overlay_only = true
 
@@ -129,15 +138,6 @@ file = "Ado_smol.png"
 disabled = false
 startx = 92
 starty = 1
-priority = 127
-overlay_only = true
-
-[[structure]]
-name = "curling.png"
-file = "curling.png"
-disabled = false
-startx = 132
-starty = 94
 priority = 127
 overlay_only = true
 
@@ -244,7 +244,7 @@ overlay_only = true
 name = "Veggie_Wurst.png"
 file = "Veggie_Wurst.png"
 disabled = false
-startx = 260
+startx = 261
 starty = 512
 priority = 127
 overlay_only = true
@@ -478,8 +478,8 @@ overlay_only = true
 name = "Osterei_de.png"
 file = "Osterei_de.png"
 disabled = false
-startx = 474
-starty = 40
+startx = 336
+starty = 51
 priority = 127
 overlay_only = true
 
@@ -502,10 +502,46 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "DExCA_hockey.png"
+file = "DExCA_hockey.png"
+disabled = false
+startx = 62
+starty = 97
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "duck_germany.png"
+file = "duck_germany.png"
+disabled = false
+startx = 66
+starty = 505
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "Canada_final_2.png"
 file = "Canada_final_2.png"
 disabled = false
 startx = 84
 starty = 96
-priority = 128
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Aldi_Nord.png"
+file = "Aldi_Nord.png"
+disabled = false
+startx = 478
+starty = 9
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Aldi_Sud.png"
+file = "Aldi_Sud.png"
+disabled = false
+startx = 226
+starty = 510
+priority = 127
 overlay_only = true
