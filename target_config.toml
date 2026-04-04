@@ -9,7 +9,7 @@ default_prio = 120
 [[structure]]
 name = "curling.png"
 file = "curling.png"
-disabled = false
+disabled = true
 startx = 132
 starty = 94
 priority = 126
@@ -18,7 +18,7 @@ overlay_only = true
 [[structure]]
 name = "hohenzollern.png"
 file = "hohenzollern.png"
-disabled = false
+disabled = true
 startx = 420
 starty = 6
 priority = 127
@@ -27,7 +27,7 @@ overlay_only = true
 [[structure]]
 name = "reclamheft_new.png"
 file = "reclamheft_new.png"
-disabled = false
+disabled = true
 startx = 288
 starty = 33
 priority = 127
@@ -36,7 +36,7 @@ overlay_only = true
 [[structure]]
 name = "Artemis2_2.png"
 file = "Artemis2_2.png"
-disabled = false
+disabled = true
 startx = 350
 starty = 6
 priority = 127
@@ -45,7 +45,7 @@ overlay_only = true
 [[structure]]
 name = "sdaubner_new.png"
 file = "sdaubner_new.png"
-disabled = false
+disabled = true
 startx = 190
 starty = 3
 priority = 127
@@ -54,7 +54,7 @@ overlay_only = true
 [[structure]]
 name = "marmeladenoma_Haut.png"
 file = "marmeladenoma_Haut.png"
-disabled = false
+disabled = true
 startx = 391
 starty = 2
 priority = 127
@@ -63,7 +63,7 @@ overlay_only = true
 [[structure]]
 name = "fck_nzs_final.png"
 file = "fck_nzs_final.png"
-disabled = false
+disabled = true
 startx = 115
 starty = 4
 priority = 127
@@ -72,7 +72,7 @@ overlay_only = true
 [[structure]]
 name = "Burns_Merz.png"
 file = "Burns_Merz.png"
-disabled = false
+disabled = true
 startx = 240
 starty = 10
 priority = 127
@@ -81,7 +81,7 @@ overlay_only = true
 [[structure]]
 name = "wels_bernd_outline.png"
 file = "wels_bernd_outline.png"
-disabled = false
+disabled = true
 startx = 26
 starty = 0
 priority = 127
@@ -90,7 +90,7 @@ overlay_only = true
 [[structure]]
 name = "GrrrOhneBL.png"
 file = "GrrrOhneBL.png"
-disabled = false
+disabled = true
 startx = 3
 starty = 505
 priority = 127
@@ -99,7 +99,7 @@ overlay_only = true
 [[structure]]
 name = "monkeklein.png"
 file = "monkeklein.png"
-disabled = false
+disabled = true
 startx = 102
 starty = 56
 priority = 127
@@ -108,7 +108,7 @@ overlay_only = true
 [[structure]]
 name = "Ado_smol.png"
 file = "Ado_smol.png"
-disabled = false
+disabled = true
 startx = 92
 starty = 1
 priority = 127
@@ -117,7 +117,7 @@ overlay_only = true
 [[structure]]
 name = "durstloscher.png"
 file = "durstloscher.png"
-disabled = false
+disabled = true
 startx = 73
 starty = 35
 priority = 127
@@ -126,7 +126,7 @@ overlay_only = true
 [[structure]]
 name = "Zwieback.png"
 file = "Zwieback.png"
-disabled = false
+disabled = true
 startx = 126
 starty = 527
 priority = 127
@@ -135,7 +135,7 @@ overlay_only = true
 [[structure]]
 name = "fax.png"
 file = "fax.png"
-disabled = false
+disabled = true
 startx = 154
 starty = 28
 priority = 127
@@ -144,7 +144,7 @@ overlay_only = true
 [[structure]]
 name = "GrrrrText.png"
 file = "GrrrrText.png"
-disabled = false
+disabled = true
 startx = 0
 starty = 548
 priority = 127
@@ -153,7 +153,7 @@ overlay_only = true
 [[structure]]
 name = "Ahoi_Brause.png"
 file = "Ahoi_Brause.png"
-disabled = false
+disabled = true
 startx = 391
 starty = 40
 priority = 127
@@ -162,7 +162,7 @@ overlay_only = true
 [[structure]]
 name = "portal_spider.png"
 file = "portal_spider.png"
-disabled = false
+disabled = true
 startx = 374
 starty = 180
 priority = 127
@@ -171,7 +171,7 @@ overlay_only = true
 [[structure]]
 name = "Dino_Nuggis.png"
 file = "Dino_Nuggis.png"
-disabled = false
+disabled = true
 startx = 13
 starty = 41
 priority = 127
@@ -180,7 +180,7 @@ overlay_only = true
 [[structure]]
 name = "wal2.png"
 file = "wal2.png"
-disabled = false
+disabled = true
 startx = 1
 starty = 19
 priority = 127
@@ -189,7 +189,7 @@ overlay_only = true
 [[structure]]
 name = "grill.png"
 file = "grill.png"
-disabled = false
+disabled = true
 startx = 293
 starty = 542
 priority = 127
@@ -198,7 +198,7 @@ overlay_only = true
 [[structure]]
 name = "portal_void.png"
 file = "portal_void.png"
-disabled = false
+disabled = true
 startx = 195
 starty = 391
 priority = 127
@@ -207,7 +207,7 @@ overlay_only = true
 [[structure]]
 name = "Veggie_Wurst.png"
 file = "Veggie_Wurst.png"
-disabled = false
+disabled = true
 startx = 260
 starty = 512
 priority = 127
@@ -216,7 +216,7 @@ overlay_only = true
 [[structure]]
 name = "Spargel3.png"
 file = "Spargel3.png"
-disabled = false
+disabled = true
 startx = 248
 starty = 544
 priority = 127
@@ -225,7 +225,7 @@ overlay_only = true
 [[structure]]
 name = "loon.png"
 file = "loon.png"
-disabled = false
+disabled = true
 startx = 439
 starty = 344
 priority = 127
@@ -234,7 +234,7 @@ overlay_only = true
 [[structure]]
 name = "loonreversed.png"
 file = "loonreversed.png"
-disabled = false
+disabled = true
 startx = 406
 starty = 344
 priority = 127
@@ -243,7 +243,7 @@ overlay_only = true
 [[structure]]
 name = "Kika.png"
 file = "Kika.png"
-disabled = false
+disabled = true
 startx = 422
 starty = 512
 priority = 127
@@ -252,7 +252,7 @@ overlay_only = true
 [[structure]]
 name = "kamellen.png"
 file = "kamellen.png"
-disabled = false
+disabled = true
 startx = 422
 starty = 530
 priority = 127
@@ -261,7 +261,7 @@ overlay_only = true
 [[structure]]
 name = "VC1b.png"
 file = "VC1b.png"
-disabled = false
+disabled = true
 startx = 163
 starty = 3
 priority = 127
@@ -270,7 +270,7 @@ overlay_only = true
 [[structure]]
 name = "Ei2.png"
 file = "Ei2.png"
-disabled = false
+disabled = true
 startx = 187
 starty = 203
 priority = 127
@@ -279,7 +279,7 @@ overlay_only = true
 [[structure]]
 name = "Ei3.png"
 file = "Ei3.png"
-disabled = false
+disabled = true
 startx = 319
 starty = 150
 priority = 127
@@ -288,7 +288,7 @@ overlay_only = true
 [[structure]]
 name = "Ei4.png"
 file = "Ei4.png"
-disabled = false
+disabled = true
 startx = 282
 starty = 290
 priority = 127
@@ -297,7 +297,7 @@ overlay_only = true
 [[structure]]
 name = "Ei5.png"
 file = "Ei5.png"
-disabled = false
+disabled = true
 startx = 190
 starty = 366
 priority = 127
@@ -306,7 +306,7 @@ overlay_only = true
 [[structure]]
 name = "Ei6.png"
 file = "Ei6.png"
-disabled = false
+disabled = true
 startx = 504
 starty = 175
 priority = 127
@@ -315,7 +315,7 @@ overlay_only = true
 [[structure]]
 name = "Ei7.png"
 file = "Ei7.png"
-disabled = false
+disabled = true
 startx = 216
 starty = 290
 priority = 127
@@ -324,7 +324,7 @@ overlay_only = true
 [[structure]]
 name = "Ei8.png"
 file = "Ei8.png"
-disabled = false
+disabled = true
 startx = 216
 starty = 440
 priority = 127
@@ -333,7 +333,7 @@ overlay_only = true
 [[structure]]
 name = "Ei9.png"
 file = "Ei9.png"
-disabled = false
+disabled = true
 startx = 327
 starty = 266
 priority = 127
@@ -342,7 +342,7 @@ overlay_only = true
 [[structure]]
 name = "Ei10.png"
 file = "Ei10.png"
-disabled = false
+disabled = true
 startx = 464
 starty = 444
 priority = 127
@@ -351,7 +351,7 @@ overlay_only = true
 [[structure]]
 name = "Ei11.png"
 file = "Ei11.png"
-disabled = false
+disabled = true
 startx = 152
 starty = 243
 priority = 127
@@ -360,7 +360,7 @@ overlay_only = true
 [[structure]]
 name = "Ei12.png"
 file = "Ei12.png"
-disabled = false
+disabled = true
 startx = 80
 starty = 411
 priority = 127
@@ -369,7 +369,7 @@ overlay_only = true
 [[structure]]
 name = "Ei13.png"
 file = "Ei13.png"
-disabled = false
+disabled = true
 startx = 305
 starty = 356
 priority = 127
@@ -378,7 +378,7 @@ overlay_only = true
 [[structure]]
 name = "Ei14.png"
 file = "Ei14.png"
-disabled = false
+disabled = true
 startx = 4
 starty = 367
 priority = 127
@@ -387,7 +387,7 @@ overlay_only = true
 [[structure]]
 name = "Ei15.png"
 file = "Ei15.png"
-disabled = false
+disabled = true
 startx = 236
 starty = 124
 priority = 127
@@ -396,7 +396,7 @@ overlay_only = true
 [[structure]]
 name = "Ei16.png"
 file = "Ei16.png"
-disabled = false
+disabled = true
 startx = 429
 starty = 258
 priority = 127
@@ -405,7 +405,7 @@ overlay_only = true
 [[structure]]
 name = "Ei17.png"
 file = "Ei17.png"
-disabled = false
+disabled = true
 startx = 56
 starty = 148
 priority = 127
@@ -414,7 +414,7 @@ overlay_only = true
 [[structure]]
 name = "Ei18.png"
 file = "Ei18.png"
-disabled = false
+disabled = true
 startx = 466
 starty = 224
 priority = 127
@@ -423,7 +423,7 @@ overlay_only = true
 [[structure]]
 name = "Ei19.png"
 file = "Ei19.png"
-disabled = false
+disabled = true
 startx = 328
 starty = 446
 priority = 127
@@ -432,7 +432,7 @@ overlay_only = true
 [[structure]]
 name = "Ei20.png"
 file = "Ei20.png"
-disabled = false
+disabled = true
 startx = 475
 starty = 300
 priority = 127
@@ -441,7 +441,7 @@ overlay_only = true
 [[structure]]
 name = "Osterei_de.png"
 file = "Osterei_de.png"
-disabled = false
+disabled = true
 startx = 382
 starty = 51
 priority = 127
@@ -450,7 +450,7 @@ overlay_only = true
 [[structure]]
 name = "Ei1.png"
 file = "Ei1.png"
-disabled = false
+disabled = true
 startx = 487
 starty = 463
 priority = 127
@@ -459,7 +459,7 @@ overlay_only = true
 [[structure]]
 name = "placeLinks.png"
 file = "placeLinks.png"
-disabled = false
+disabled = true
 startx = 0
 starty = 0
 priority = 127
@@ -468,7 +468,7 @@ overlay_only = true
 [[structure]]
 name = "DExCA_hockey.png"
 file = "DExCA_hockey.png"
-disabled = false
+disabled = true
 startx = 62
 starty = 97
 priority = 127
@@ -477,7 +477,7 @@ overlay_only = true
 [[structure]]
 name = "duck_germany.png"
 file = "duck_germany.png"
-disabled = false
+disabled = true
 startx = 66
 starty = 505
 priority = 127
@@ -486,7 +486,7 @@ overlay_only = true
 [[structure]]
 name = "Canada_final_2.png"
 file = "Canada_final_2.png"
-disabled = false
+disabled = true
 startx = 84
 starty = 96
 priority = 127
@@ -495,7 +495,7 @@ overlay_only = true
 [[structure]]
 name = "Aldi_Nord.png"
 file = "Aldi_Nord.png"
-disabled = false
+disabled = true
 startx = 478
 starty = 9
 priority = 127
@@ -504,7 +504,7 @@ overlay_only = true
 [[structure]]
 name = "Aldi_Sud.png"
 file = "Aldi_Sud.png"
-disabled = false
+disabled = true
 startx = 226
 starty = 510
 priority = 127
@@ -513,7 +513,7 @@ overlay_only = true
 [[structure]]
 name = "Paulaner_komplett.png"
 file = "Paulaner_komplett.png"
-disabled = false
+disabled = true
 startx = 388
 starty = 512
 priority = 127
@@ -522,7 +522,7 @@ overlay_only = true
 [[structure]]
 name = "Bierkrake.png"
 file = "Bierkrake.png"
-disabled = false
+disabled = true
 startx = 307
 starty = 513
 priority = 127
@@ -531,7 +531,7 @@ overlay_only = true
 [[structure]]
 name = "Vietnam_new.png"
 file = "Vietnam_new.png"
-disabled = false
+disabled = true
 startx = 235
 starty = 214
 priority = 127
@@ -540,7 +540,7 @@ overlay_only = true
 [[structure]]
 name = "Mehrzweck.png"
 file = "Mehrzweck.png"
-disabled = false
+disabled = true
 startx = 50
 starty = 513
 priority = 127
@@ -549,7 +549,7 @@ overlay_only = true
 [[structure]]
 name = "Bierfass.png"
 file = "Bierfass.png"
-disabled = false
+disabled = true
 startx = 310
 starty = 30
 priority = 127
@@ -558,7 +558,7 @@ overlay_only = true
 [[structure]]
 name = "kleine_Hexe.png"
 file = "kleine_Hexe.png"
-disabled = false
+disabled = true
 startx = 93
 starty = 533
 priority = 127
@@ -567,7 +567,7 @@ overlay_only = true
 [[structure]]
 name = "Bibi_Blocksberg.png"
 file = "Bibi_Blocksberg.png"
-disabled = false
+disabled = true
 startx = 61
 starty = 535
 priority = 127
@@ -576,7 +576,7 @@ overlay_only = true
 [[structure]]
 name = "BassGuitar24.png"
 file = "BassGuitar24.png"
-disabled = false
+disabled = true
 startx = 218
 starty = 544
 priority = 127
@@ -585,7 +585,7 @@ overlay_only = true
 [[structure]]
 name = "swiss_air.png"
 file = "swiss_air.png"
-disabled = false
+disabled = true
 startx = 1
 starty = 283
 priority = 127
@@ -594,7 +594,7 @@ overlay_only = true
 [[structure]]
 name = "indigo2.png"
 file = "indigo2.png"
-disabled = false
+disabled = true
 startx = 110
 starty = 563
 priority = 127
@@ -603,8 +603,17 @@ overlay_only = true
 [[structure]]
 name = "Schoko_Croissant.png"
 file = "Schoko_Croissant.png"
-disabled = false
+disabled = true
 startx = 171
 starty = 528
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "ende.png"
+file = "ende.png"
+disabled = false
+startx = 0
+starty = 0
 priority = 127
 overlay_only = true
