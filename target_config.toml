@@ -558,7 +558,7 @@ overlay_only = true
 [[structure]]
 name = "kleine_Hexe.png"
 file = "kleine_Hexe.png"
-disabled = true
+disabled = false
 startx = 93
 starty = 533
 priority = 127
@@ -567,7 +567,7 @@ overlay_only = true
 [[structure]]
 name = "Bibi_Blocksberg.png"
 file = "Bibi_Blocksberg.png"
-disabled = true
+disabled = false
 startx = 61
 starty = 535
 priority = 127
