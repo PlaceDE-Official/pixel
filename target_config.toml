@@ -63,7 +63,7 @@ overlay_only = true
 [[structure]]
 name = "fck_nzs_final.png"
 file = "fck_nzs_final.png"
-disabled = false
+disabled = true
 startx = 115
 starty = 4
 priority = 127
@@ -615,5 +615,14 @@ file = "ende_whiteborder.png"
 disabled = false
 startx = 0
 starty = 0
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "fck_nzs_sw.png"
+file = "fck_nzs_sw.png"
+disabled = false
+startx = 115
+starty = 4
 priority = 127
 overlay_only = true
