@@ -313,6 +313,195 @@ priority = 127
 overlay_only = true
 
 [[structure]]
+name = "Ei2.png"
+file = "Ei2.png"
+disabled = false
+startx = 187
+starty = 203
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei3.png"
+file = "Ei3.png"
+disabled = false
+startx = 319
+starty = 150
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei4.png"
+file = "Ei4.png"
+disabled = false
+startx = 282
+starty = 290
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei5.png"
+file = "Ei5.png"
+disabled = false
+startx = 190
+starty = 366
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei6.png"
+file = "Ei6.png"
+disabled = false
+startx = 504
+starty = 175
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei7.png"
+file = "Ei7.png"
+disabled = false
+startx = 216
+starty = 290
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei8.png"
+file = "Ei8.png"
+disabled = false
+startx = 216
+starty = 440
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei9.png"
+file = "Ei9.png"
+disabled = false
+startx = 327
+starty = 267
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei10.png"
+file = "Ei10.png"
+disabled = false
+startx = 464
+starty = 442
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei11.png"
+file = "Ei11.png"
+disabled = false
+startx = 152
+starty = 243
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei12.png"
+file = "Ei12.png"
+disabled = false
+startx = 80
+starty = 411
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei13.png"
+file = "Ei13.png"
+disabled = false
+startx = 305
+starty = 356
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei14.png"
+file = "Ei14.png"
+disabled = false
+startx = 4
+starty = 367
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei15.png"
+file = "Ei15.png"
+disabled = false
+startx = 236
+starty = 124
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei16.png"
+file = "Ei16.png"
+disabled = false
+startx = 429
+starty = 258
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei17.png"
+file = "Ei17.png"
+disabled = false
+startx = 53
+starty = 163
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei18.png"
+file = "Ei18.png"
+disabled = false
+startx = 466
+starty = 224
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei19.png"
+file = "Ei19.png"
+disabled = false
+startx = 328
+starty = 446
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei20.png"
+file = "Ei20.png"
+disabled = false
+startx = 475
+starty = 300
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Osterei_de.png"
+file = "Osterei_de.png"
+disabled = false
+startx = 474
+starty = 40
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Ei1.png"
+file = "Ei1.png"
+disabled = false
+startx = 484
+starty = 463
+priority = 127
+overlay_only = true
+
+[[structure]]
 name = "Canada_final_2.png"
 file = "Canada_final_2.png"
 disabled = false
