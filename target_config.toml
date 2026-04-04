@@ -595,7 +595,16 @@ overlay_only = true
 name = "indigo2.png"
 file = "indigo2.png"
 disabled = false
-startx = 103
-starty = 523
+startx = 110
+starty = 563
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Schoko_Croissant.png"
+file = "Schoko_Croissant.png"
+disabled = false
+startx = 171
+starty = 528
 priority = 127
 overlay_only = true
