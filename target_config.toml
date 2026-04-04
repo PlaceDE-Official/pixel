@@ -106,15 +106,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Spezi.png"
-file = "Spezi.png"
-disabled = false
-startx = 333
-starty = 517
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "GrrrOhneBL.png"
 file = "GrrrOhneBL.png"
 disabled = false
@@ -543,5 +534,14 @@ file = "Aldi_Sud.png"
 disabled = false
 startx = 226
 starty = 510
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Paulaner_komplett.png"
+file = "Paulaner_komplett.png"
+disabled = false
+startx = 388
+starty = 512
 priority = 127
 overlay_only = true
