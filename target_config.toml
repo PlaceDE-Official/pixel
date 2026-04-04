@@ -576,7 +576,7 @@ overlay_only = true
 [[structure]]
 name = "BassGuitar24.png"
 file = "BassGuitar24.png"
-disabled = true
+disabled = false
 startx = 218
 starty = 544
 priority = 127
