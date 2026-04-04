@@ -610,8 +610,8 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "ende.png"
-file = "ende.png"
+name = "ende_whiteborder.png"
+file = "ende_whiteborder.png"
 disabled = false
 startx = 0
 starty = 0
