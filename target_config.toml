@@ -70,15 +70,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "Bier_Transparent.png"
-file = "Bier_Transparent.png"
-disabled = false
-startx = 308
-starty = 24
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "Burns_Merz.png"
 file = "Burns_Merz.png"
 disabled = false
@@ -183,15 +174,6 @@ file = "Dino_Nuggis.png"
 disabled = false
 startx = 13
 starty = 41
-priority = 127
-overlay_only = true
-
-[[structure]]
-name = "Vietnam.png"
-file = "Vietnam.png"
-disabled = false
-startx = 236
-starty = 215
 priority = 127
 overlay_only = true
 
@@ -460,7 +442,7 @@ overlay_only = true
 name = "Osterei_de.png"
 file = "Osterei_de.png"
 disabled = false
-startx = 336
+startx = 382
 starty = 51
 priority = 127
 overlay_only = true
@@ -543,5 +525,59 @@ file = "Bierkrake.png"
 disabled = false
 startx = 307
 starty = 513
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Vietnam_new.png"
+file = "Vietnam_new.png"
+disabled = false
+startx = 235
+starty = 214
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Mehrzweck.png"
+file = "Mehrzweck.png"
+disabled = true
+startx = 50
+starty = 513
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Bierfass.png"
+file = "Bierfass.png"
+disabled = false
+startx = 310
+starty = 30
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "kleine_Hexe.png"
+file = "kleine_Hexe.png"
+disabled = true
+startx = 93
+starty = 533
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "Bibi_Blocksberg.png"
+file = "Bibi_Blocksberg.png"
+disabled = true
+startx = 61
+starty = 535
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "BassGuitar24.png"
+file = "BassGuitar24.png"
+disabled = true
+startx = 218
+starty = 544
 priority = 127
 overlay_only = true
