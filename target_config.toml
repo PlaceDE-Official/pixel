@@ -434,7 +434,7 @@ name = "Ei17.png"
 file = "Ei17.png"
 disabled = false
 startx = 56
-starty = 163
+starty = 148
 priority = 127
 overlay_only = true
 
