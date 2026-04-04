@@ -1,5 +1,5 @@
 ignored_colors = []
-allowed_colors = ["FFFFFF","000000"]
+allowed_colors = []
 width = 512
 height = 570
 add-x = 0
