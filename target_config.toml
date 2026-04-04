@@ -160,15 +160,6 @@ priority = 127
 overlay_only = true
 
 [[structure]]
-name = "placeLinks.png"
-file = "placeLinks.png"
-disabled = false
-startx = 0
-starty = 0
-priority = 127
-overlay_only = true
-
-[[structure]]
 name = "fax.png"
 file = "fax.png"
 disabled = false
@@ -498,6 +489,15 @@ file = "Ei1.png"
 disabled = false
 startx = 484
 starty = 463
+priority = 127
+overlay_only = true
+
+[[structure]]
+name = "placeLinks.png"
+file = "placeLinks.png"
+disabled = false
+startx = 0
+starty = 0
 priority = 127
 overlay_only = true
 
