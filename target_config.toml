@@ -380,7 +380,7 @@ name = "Ei9.png"
 file = "Ei9.png"
 disabled = false
 startx = 327
-starty = 267
+starty = 266
 priority = 127
 overlay_only = true
 
