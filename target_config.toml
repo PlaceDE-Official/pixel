@@ -389,7 +389,7 @@ name = "Ei10.png"
 file = "Ei10.png"
 disabled = false
 startx = 464
-starty = 442
+starty = 444
 priority = 127
 overlay_only = true
 
