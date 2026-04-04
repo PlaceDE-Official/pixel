@@ -586,8 +586,8 @@ overlay_only = true
 name = "swiss_air.png"
 file = "swiss_air.png"
 disabled = false
-startx = 38
-starty = 308
+startx = 1
+starty = 283
 priority = 127
 overlay_only = true
 
