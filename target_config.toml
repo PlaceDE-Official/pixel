@@ -540,7 +540,7 @@ overlay_only = true
 [[structure]]
 name = "Mehrzweck.png"
 file = "Mehrzweck.png"
-disabled = true
+disabled = false
 startx = 50
 starty = 513
 priority = 127
