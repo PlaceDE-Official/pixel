@@ -1,5 +1,5 @@
 ignored_colors = []
-allowed_colors = ["FFFFFF","000000"]
+allowed_colors = ["FFFFFF","000000","FF0000","FF5F1F","FFB463","FDF890","51864D","68AC62","96F88D","244D86","2E62AC","428DF8","7948F7","4F2C96","EF86BA","FEF3EA","D48D66","875A41","737373","EBBDAD","FFCC00","B51A00","CACACA","BB2F79","52D6FC","2C2C2C"]
 width = 512
 height = 570
 add-x = 0
@@ -63,7 +63,7 @@ overlay_only = true
 [[structure]]
 name = "fck_nzs_final.png"
 file = "fck_nzs_final.png"
-disabled = true
+disabled = false
 startx = 115
 starty = 4
 priority = 127
